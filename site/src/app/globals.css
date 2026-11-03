@@ -1,0 +1,292 @@
+@import "tailwindcss";
+
+:root {
+  /* =========================================================================
+     PALETA DE CORES V1 (CANÔNICA DA MARCA) — 03-design/paleta.md
+     ========================================================================= */
+  --bg-editorial: #f8faf8;
+  --bg-editorial-sand: #f5efe6;
+  --bg-editorial-card: #ffffff;
+  --bg-editorial-dark: #082112;
+  --bg-editorial-forest: #0a301a;
+  
+  --text-editorial: #0a301a;
+  --text-editorial-muted: #4a5c50;
+  --text-editorial-faint: #788a7e;
+
+  --brand-green: #157d40;
+  --brand-green-dark: #0e4f29;
+  --brand-green-tint: #eaf5ee;
+
+  --brand-amber: #f29b2f;
+  --brand-amber-hover: #d98520;
+
+  --brand-sea: #7abcd5;
+  --brand-sea-deep: #235b70;
+
+  --brand-divider: #e2eae3;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-jakarta), system-ui, -apple-system, sans-serif;
+  background-color: var(--bg-editorial);
+  color: var(--text-editorial);
+  overflow-x: hidden;
+}
+
+.font-editorial-italic {
+  font-family: var(--font-serif-editorial), Georgia, serif;
+  font-style: italic;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+}
+
+/* Estágios do Preloader Solene com a Logomark (3.0s suave, calmo e contemplativo) */
+@keyframes preloaderCurtain {
+  0%, 74% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+  98% {
+    transform: translateY(-102%);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-102%);
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+}
+
+@keyframes preloaderSymbolIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.90);
+    filter: blur(4px);
+  }
+  25%, 100% {
+    opacity: 1;
+    transform: scale(1);
+    filter: blur(0px);
+  }
+}
+
+@keyframes preloaderWordReveal {
+  0%, 22% {
+    max-width: 0px;
+    opacity: 0;
+    transform: translateX(-14px);
+    padding-left: 0px;
+  }
+  50%, 100% {
+    max-width: 600px;
+    opacity: 1;
+    transform: translateX(0px);
+    padding-left: 18px;
+  }
+}
+
+.animate-preloader-curtain {
+  animation: preloaderCurtain 3.0s cubic-bezier(0.76, 0, 0.24, 1) forwards;
+}
+
+.animate-preloader-symbol {
+  animation: preloaderSymbolIn 3.0s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-preloader-word {
+  animation: preloaderWordReveal 3.0s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* =========================================================================
+   TRANSIÇÕES DE PÁGINAS & TRANSIÇÕES DE SCROLL (ESTÉTICA ARQ2 & ARQ3)
+========================================================================= */
+@keyframes pageFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.page-transition {
+  animation: pageFadeIn 0.5s ease-out forwards;
+}
+
+/* Máscara de fade lateral suave nos marquees / faixas contínuas (estilo arq2) */
+.marquee-mask {
+  mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);
+}
+
+/* Transição de palavra em itálico e títulos de cena com Blur + Slide (sec_03 -> sec_17) */
+@keyframes wordBlurSlideIn {
+  0% {
+    opacity: 0;
+    filter: blur(10px);
+    transform: translateY(18px);
+  }
+  100% {
+    opacity: 1;
+    filter: blur(0px);
+    transform: translateY(0px);
+  }
+}
+
+.animate-word-blur {
+  display: inline-block;
+  animation: wordBlurSlideIn 0.65s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+.animate-scene-text {
+  animation: wordBlurSlideIn 0.55s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+/* Zoom suave contínuo nas imagens do Hero e Showcase */
+@keyframes subtleZoom {
+  0% {
+    transform: scale(1.08);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.animate-hero-zoom {
+  animation: subtleZoom 4.2s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+/* Barra de progresso automática das 3 abas do Hero */
+@keyframes heroTabProgress {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+.animate-tab-progress {
+  animation: heroTabProgress 4.2s linear forwards;
+}
+
+/* Giro lento do anel do selo na Seção 6 */
+@keyframes slowSpin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-slow-spin {
+  animation: slowSpin 24s linear infinite;
+}
+
+/* Marquee / Ticker infinito suave e calmo (movimento lento e contemplativo) */
+@keyframes tickerSlide {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+.animate-ticker {
+  display: flex;
+  width: max-content;
+  animation: tickerSlide 58s linear infinite;
+}
+
+.animate-ticker:hover {
+  animation-play-state: paused;
+}
+
+/* =========================================================================
+   PROPOSTA A — NASCER DO SOL NA ENSEADA: DESIGN SYSTEM DE GRADIENTES & OKLCH
+========================================================================= */
+:root {
+  --prop-a-bg-page: oklch(0.98 0.008 85);
+  --prop-a-bg-areia: #F6EFE3;
+  --prop-a-bg-stats: linear-gradient(135deg in oklch, oklch(0.96 0.025 80) 0%, oklch(0.93 0.035 75) 100%);
+  --prop-a-card-surf: linear-gradient(145deg in oklch, #FFFFFF 0%, oklch(0.98 0.012 85) 100%);
+  --prop-a-btn-cta: linear-gradient(135deg in oklch, oklch(0.75 0.18 68) 0%, oklch(0.69 0.16 55) 100%);
+  --prop-a-num-gradient: linear-gradient(135deg in oklch, #0A301A 0%, #157D40 60%, #D98520 100%);
+  --prop-a-scrim-up: linear-gradient(to top, oklch(0.18 0.06 148 / 0.88) 0%, oklch(0.22 0.04 148 / 0.3) 50%, transparent 80%);
+}
+
+.bg-prop-a-stats {
+  background: #F6EFE3;
+  background: var(--prop-a-bg-stats);
+}
+
+.text-gradient-prop-a {
+  background: linear-gradient(135deg, #0e502a 0%, #157d40 40%, #c47718 80%, #d98520 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  display: inline-block;
+}
+
+/* Jogo de Cores Editorial Caiçara (Verde Mata Atlântica -> Âmbar Solar) */
+.text-gradient-caiçara {
+  background: linear-gradient(135deg, #0e502a 0%, #157d40 42%, #c47718 82%, #d98520 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  display: inline-block;
+}
+
+/* Versão Iluminada para Fundos Escuros (Mata Noturna) */
+.text-gradient-caiçara-light {
+  background: linear-gradient(135deg, #4ade80 0%, #22c55e 35%, #f59e0b 80%, #f29b2f 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  display: inline-block;
+}
+
+/* Botão com Jogo de Cores Solar-Caiçara */
+.btn-gradient-caiçara {
+  background: linear-gradient(135deg, #f29b2f 0%, #e08316 45%, #157d40 100%);
+  background-size: 200% auto;
+  transition: all 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.btn-gradient-caiçara:hover {
+  background-position: right center;
+  box-shadow: 0 10px 24px -4px rgba(242, 155, 47, 0.35), 0 6px 12px -2px rgba(21, 125, 64, 0.2);
+  transform: translateY(-1px);
+}
+
+.scrim-prop-a {
+  background: linear-gradient(to top, rgba(10,48,26,0.88) 0%, rgba(10,48,26,0.3) 50%, transparent 80%);
+  background: var(--prop-a-scrim-up);
+}
+
+/* Glassmorphism Refinado Estilo arq.mp4 Print 3 */
+.glass-card-editorial {
+  background: rgba(10, 48, 26, 0.55);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

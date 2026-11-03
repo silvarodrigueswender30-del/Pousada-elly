@@ -1,0 +1,143 @@
+{
+  "uniqueHexes": [
+    "#f8faf8",
+    "#0a301a",
+    "#4a5c50",
+    "#082112",
+    "#f29b2f",
+    "#d98520",
+    "#157d40",
+    "#e2eae3",
+    "#788a7e",
+    "#f5efe6"
+  ],
+  "uniqueOverlays": [
+    "bg-black/45",
+    "bg-black/55",
+    "bg-black/65",
+    "bg-black/60",
+    "bg-black/80"
+  ],
+  "auditResults": [
+    {
+      "name": "Texto Normal em Fundo Claro",
+      "text": "#0a301a",
+      "bg": "#f8faf8",
+      "context": "Body, títulos, cards",
+      "ratio": "13.80:1",
+      "wcagAA_Normal": "PASS",
+      "wcagAA_Large": "PASS",
+      "wcagAAA": "PASS"
+    },
+    {
+      "name": "Texto Secundário em Fundo Claro",
+      "text": "#4a5c50",
+      "bg": "#f8faf8",
+      "context": "Subtítulos, parágrafos descritivos",
+      "ratio": "6.81:1",
+      "wcagAA_Normal": "PASS",
+      "wcagAA_Large": "PASS",
+      "wcagAAA": "FAIL"
+    },
+    {
+      "name": "Texto Muted em Fundo Claro",
+      "text": "#788a7e",
+      "bg": "#f8faf8",
+      "context": "Palavras não ativas do manifesto, contadores",
+      "ratio": "3.49:1",
+      "wcagAA_Normal": "FAIL",
+      "wcagAA_Large": "PASS",
+      "wcagAAA": "FAIL"
+    },
+    {
+      "name": "Texto Branco em Fundo Escuro",
+      "text": "#ffffff",
+      "bg": "#082112",
+      "context": "Hero, rodapé, seções escuras",
+      "ratio": "16.98:1",
+      "wcagAA_Normal": "PASS",
+      "wcagAA_Large": "PASS",
+      "wcagAAA": "PASS"
+    },
+    {
+      "name": "Texto Secundário em Fundo Escuro",
+      "text": "#f8faf8",
+      "bg": "#082112",
+      "context": "Labels e cards no bento grid",
+      "ratio": "16.19:1",
+      "wcagAA_Normal": "PASS",
+      "wcagAA_Large": "PASS",
+      "wcagAAA": "PASS"
+    },
+    {
+      "name": "Botão CTA Laranja com Texto Verde Noite",
+      "text": "#0a301a",
+      "bg": "#f29b2f",
+      "context": "Botão Solicitar Reserva (RECOMENDADO)",
+      "ratio": "6.55:1",
+      "wcagAA_Normal": "PASS",
+      "wcagAA_Large": "PASS",
+      "wcagAAA": "FAIL"
+    },
+    {
+      "name": "Botão CTA Laranja com Texto Branco (Erro clássico)",
+      "text": "#ffffff",
+      "bg": "#f29b2f",
+      "context": "Comparativo de perigo proibido",
+      "ratio": "2.21:1",
+      "wcagAA_Normal": "FAIL",
+      "wcagAA_Large": "FAIL",
+      "wcagAAA": "FAIL"
+    },
+    {
+      "name": "Números das Estatísticas em Fundo Areia",
+      "text": "#0a301a",
+      "bg": "#f5efe6",
+      "context": "Faixa de números 08, 0m, 3 a 15, +160",
+      "ratio": "12.66:1",
+      "wcagAA_Normal": "PASS",
+      "wcagAA_Large": "PASS",
+      "wcagAAA": "PASS"
+    },
+    {
+      "name": "Texto Secundário das Estatísticas em Fundo Areia",
+      "text": "#4a5c50",
+      "bg": "#f5efe6",
+      "context": "Legenda sob os números",
+      "ratio": "6.25:1",
+      "wcagAA_Normal": "PASS",
+      "wcagAA_Large": "PASS",
+      "wcagAAA": "FAIL"
+    },
+    {
+      "name": "Card Branco em Fundo Brisa",
+      "text": "#0a301a",
+      "bg": "#ffffff",
+      "context": "Cards de depoimentos e FAQ",
+      "ratio": "14.48:1",
+      "wcagAA_Normal": "PASS",
+      "wcagAA_Large": "PASS",
+      "wcagAAA": "PASS"
+    },
+    {
+      "name": "Tag Verde Mata com Texto Branco",
+      "text": "#ffffff",
+      "bg": "#157d40",
+      "context": "Pills de status e categorias",
+      "ratio": "5.20:1",
+      "wcagAA_Normal": "PASS",
+      "wcagAA_Large": "PASS",
+      "wcagAAA": "FAIL"
+    },
+    {
+      "name": "Acento Azul Enseada em Fundo Verde Noite",
+      "text": "#7abcd5",
+      "bg": "#082112",
+      "context": "Destaque náutico no escuro",
+      "ratio": "8.07:1",
+      "wcagAA_Normal": "PASS",
+      "wcagAA_Large": "PASS",
+      "wcagAAA": "PASS"
+    }
+  ]
+}

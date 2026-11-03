@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Specimen de Tipografia — Pousada Eliiy Zita Pedro</title>
+  <!-- Google Fonts: Syne, Epilogue, Albert Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@400;500;600;700&family=Epilogue:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+  <!-- Fontshare: General Sans -->
+  <link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600,700&display=swap" rel="stylesheet">
+
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: #f8f5f0;
+      color: #0e291e;
+      padding: 32px 20px;
+      font-size: 16px;
+    }
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .header-doc {
+      margin-bottom: 32px;
+      padding-bottom: 16px;
+      border-bottom: 2px solid #e2eae3;
+    }
+    .header-doc h1 {
+      font-family: 'Syne', sans-serif;
+      font-size: 24px;
+      font-weight: 700;
+      color: #077c37;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .header-doc p {
+      font-family: sans-serif;
+      font-size: 14px;
+      color: #4a5c50;
+      margin-top: 4px;
+    }
+
+    .pair-card {
+      background: #ffffff;
+      border: 1px solid #e2eae3;
+      border-radius: 20px;
+      padding: 28px;
+      margin-bottom: 32px;
+      box-shadow: 0 4px 20px rgba(7, 124, 55, 0.04);
+    }
+    .pair-badge {
+      display: inline-block;
+      font-family: sans-serif;
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      background: #eaf4ed;
+      color: #077c37;
+      padding: 6px 14px;
+      border-radius: 9999px;
+      margin-bottom: 20px;
+    }
+
+    /* Pair A: Syne + General Sans */
+    .pair-a .title-h1 { font-family: 'Syne', sans-serif; font-weight: 700; font-size: clamp(26px, 4vw, 36px); line-height: 1.15; color: #077c37; margin-bottom: 12px; }
+    .pair-a .title-h2 { font-family: 'Syne', sans-serif; font-weight: 600; font-size: 20px; color: #1e3d34; margin-bottom: 8px; }
+    .pair-a .body-text { font-family: 'General Sans', sans-serif; font-size: 15px; line-height: 1.6; color: #2c3e35; margin-bottom: 16px; }
+    .pair-a .metrics { font-family: 'General Sans', sans-serif; font-weight: 600; font-size: 14px; color: #077c37; margin-bottom: 20px; }
+    .pair-a .btn-solar { font-family: 'General Sans', sans-serif; font-weight: 600; }
+
+    /* Pair B: Syne + Epilogue */
+    .pair-b .title-h1 { font-family: 'Syne', sans-serif; font-weight: 700; font-size: clamp(26px, 4vw, 36px); line-height: 1.15; color: #077c37; margin-bottom: 12px; }
+    .pair-b .title-h2 { font-family: 'Syne', sans-serif; font-weight: 600; font-size: 20px; color: #1e3d34; margin-bottom: 8px; }
+    .pair-b .body-text { font-family: 'Epilogue', sans-serif; font-size: 15px; line-height: 1.6; color: #2c3e35; margin-bottom: 16px; }
+    .pair-b .metrics { font-family: 'Epilogue', sans-serif; font-weight: 600; font-size: 14px; color: #077c37; margin-bottom: 20px; }
+    .pair-b .btn-solar { font-family: 'Epilogue', sans-serif; font-weight: 600; }
+
+    /* Pair C: Syne + Albert Sans */
+    .pair-c .title-h1 { font-family: 'Syne', sans-serif; font-weight: 700; font-size: clamp(26px, 4vw, 36px); line-height: 1.15; color: #077c37; margin-bottom: 12px; }
+    .pair-c .title-h2 { font-family: 'Syne', sans-serif; font-weight: 600; font-size: 20px; color: #1e3d34; margin-bottom: 8px; }
+    .pair-c .body-text { font-family: 'Albert Sans', sans-serif; font-size: 15px; line-height: 1.6; color: #2c3e35; margin-bottom: 16px; }
+    .pair-c .metrics { font-family: 'Albert Sans', sans-serif; font-weight: 600; font-size: 14px; color: #077c37; margin-bottom: 20px; }
+    .pair-c .btn-solar { font-family: 'Albert Sans', sans-serif; font-weight: 600; }
+
+    .btn-solar {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: #f59e0b;
+      color: #0e291e;
+      text-decoration: none;
+      padding: 12px 24px;
+      border-radius: 9999px;
+      font-size: 14px;
+      box-shadow: 0 4px 14px rgba(245, 158, 11, 0.3);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header-doc">
+      <h1>Auditoria de Pares Tipográficos (Specimen Real)</h1>
+      <p>Testes visuais com texto real do site, acentuação em português, valores em R$, números e botões de conversão.</p>
+    </div>
+
+    <!-- Par A -->
+    <div class="pair-card pair-a">
+      <span class="pair-badge">Opção A: Syne (Títulos) + General Sans (Corpo & UI)</span>
+      <h2 class="title-h1">Seu refúgio familiar pé na areia na enseada mais calma de Ubatuba</h2>
+      <h3 class="title-h2">Chalé Master para até 15 pessoas com cozinha completa e churrasqueira</h3>
+      <p class="body-text">
+        Localizada diretamente na areia da Praia do Ubatumirim, a pousada conta com piscina ao ar livre, restaurante próprio de culinária caiçara, capela histórica e acesso a pé pela praia até a paradisíaca Praia da Justa. Ambiente seguro e tranquilo para crianças e famílias.
+      </p>
+      <div class="metrics">
+        0m da Praia ⬢ 4,3★ no Google (117 avaliações) ⬢ Diárias sob consulta a partir de R$ 380 ⬢ Check-out às 11:00
+      </div>
+      <a href="#" class="btn-solar">
+        Consultar Disponibilidade no WhatsApp
+      </a>
+    </div>
+
+    <!-- Par B -->
+    <div class="pair-card pair-b">
+      <span class="pair-badge">Opção B: Syne (Títulos) + Epilogue (Corpo & UI)</span>
+      <h2 class="title-h1">Seu refúgio familiar pé na areia na enseada mais calma de Ubatuba</h2>
+      <h3 class="title-h2">Chalé Master para até 15 pessoas com cozinha completa e churrasqueira</h3>
+      <p class="body-text">
+        Localizada diretamente na areia da Praia do Ubatumirim, a pousada conta com piscina ao ar livre, restaurante próprio de culinária caiçara, capela histórica e acesso a pé pela praia até a paradisíaca Praia da Justa. Ambiente seguro e tranquilo para crianças e famílias.
+      </p>
+      <div class="metrics">
+        0m da Praia ⬢ 4,3★ no Google (117 avaliações) ⬢ Diárias sob consulta a partir de R$ 380 ⬢ Check-out às 11:00
+      </div>
+      <a href="#" class="btn-solar">
+        Consultar Disponibilidade no WhatsApp
+      </a>
+    </div>
+
+    <!-- Par C -->
+    <div class="pair-card pair-c">
+      <span class="pair-badge">Opção C: Syne (Títulos) + Albert Sans (Corpo & UI)</span>
+      <h2 class="title-h1">Seu refúgio familiar pé na areia na enseada mais calma de Ubatuba</h2>
+      <h3 class="title-h2">Chalé Master para até 15 pessoas com cozinha completa e churrasqueira</h3>
+      <p class="body-text">
+        Localizada diretamente na areia da Praia do Ubatumirim, a pousada conta com piscina ao ar livre, restaurante próprio de culinária caiçara, capela histórica e acesso a pé pela praia até a paradisíaca Praia da Justa. Ambiente seguro e tranquilo para crianças e famílias.
+      </p>
+      <div class="metrics">
+        0m da Praia ⬢ 4,3★ no Google (117 avaliações) ⬢ Diárias sob consulta a partir de R$ 380 ⬢ Check-out às 11:00
+      </div>
+      <a href="#" class="btn-solar">
+        Consultar Disponibilidade no WhatsApp
+      </a>
+    </div>
+  </div>
+</body>
+</html>

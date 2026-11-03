@@ -1,0 +1,324 @@
+
+
+Auditoria Digital - Pousada Eliiy Zita Pedro
+
+Off Data • Auditoria & Inteligência Hoteleira
+
+AUDITORIA DIGITAL ABSOLUTA & DIAGNÓSTICO COMERCIAL
+
+Varredura Completa de Presença Web, SEO Local, Redes Sociais e Tráfego Pago
+
+Estabelecimento
+
+Pousada Eliiy Zita Pedro
+
+Localização
+
+Praia do Ubatumirim, Ubatuba/SP
+
+Contato Avaliado
+
++55 (12) 99232-3656
+
+Data da Auditoria
+
+Outubro / 2026
+
+Site & Motor Direto
+
+INEXISTENTE
+
+100% dependente de OTA e WhatsApp manual
+
+Comissão para OTAs
+
+15% a 22%
+
+Vazamento massivo da margem líquida
+
+Tráfego Pago Ativo
+
+R$ 0,00 / Mês
+
+Zero anúncios rodando na Meta e Google
+
+1
+
+Auditoria de Websites e E-Commerce
+
+        1.1. Existência de Site Oficial & Domínio
+
+Gargalo Crítico
+
+Diagnóstico:
+ A Pousada Eliiy Zita Pedro 
+não possui nenhum website oficial próprio ativo
+ (domínios como 
+pousadazitapedro.com.br
+ ou 
+eliiyzitapedro.com.br
+ inexistem). A presença na internet é integralmente terceirizada em diretórios turísticos locais (
+Ubatuba On
+, 
+Naturam
+) e na plataforma intermediária Booking.com.
+
+        1.2. Motor de Reserva Direto & E-commerce Hoteleiro
+
+Perda de Receita
+
+Diagnóstico:
+ Não existe sistema de checkout automatizado ou motor de reservas diretas. As vendas dependem de dois fluxos altamente prejudiciais:
+
+Canal WhatsApp Manual (wa.me/5512992323656):
+ O lead precisa aguardar atendimento humano. Se a resposta demorar mais de 10 minutos (muito comum na rotina operacional da recepção), o hóspede fecha com o concorrente.
+
+Canal Booking.com:
+ A cada reserva intermediada, a pousada paga entre 
+15% e 22% de comissão
+ sobre o valor bruto da estadia. Em R$ 50.000,00 faturados, até 
+R$ 11.000,00 são entregues à plataforma
+.
+
+        1.3. SEO Orgânico & Visibilidade Google
+
+Invisível em Buscas Amplas
+
+Em buscas pelo nome exato ("Pousada Zita Pedro"), o Google exibe a ficha de mapas e links de terceiros. Porém, em buscas genéricas de alto volume — como 
+"pousadas Praia do Ubatumirim"
+ ou 
+"pousada pé na areia norte de ubatuba"
+ —, 
+a pousada é invisível
+, sendo superada por concorrentes e agregadores.
+
+Ausência de Rastreamento:
+ Sem site próprio, a pousada não possui 
+Meta Pixel
+, 
+API de Conversões
+ nem 
+Google Analytics 4 (GA4)
+. Todo visitante que pesquisa a pousada é perdido sem possibilidade de remarketing.
+
+2
+
+Google Meu Negócio (GBP) & SEO Local
+
+        2.1. Perfil no Google Maps & Reputação
+
+Nota Média: 4.3 a 4.5 ★
+
+O perfil está ativo e geolocalizado na 
+Rua Maria José de Jesus, 3005/3006 - Praia do Ubatumirim, Ubatuba/SP
+. A reputação é positiva, com elogios espontâneos à hospitalidade acolhedora, ao café da manhã caseiro e ao ambiente familiar tranquilo pertinho do mar.
+
+        2.2. Inconsistência de Marca (NAP) e Gargalos de Engajamento
+
+Oportunidade de Melhoria
+
+Inconsistência de Nomenclatura (NAP):
+ Há registros com nomes distintos (
+"Pousada Eliiy Zita Pedro"
+, 
+"Pousada Zita Pedro"
+ e 
+"Chalés Zita"
+), o que fragmenta a autoridade de relevância do algoritmo do Google Maps.
+
+Falta de Respostas Estruturadas:
+ As avaliações não recebem respostas estratégicas com palavras-chave de SEO Local (ex: citar 
+"praia do ubatumirim"
+, 
+"chalé pé na areia"
+ nas respostas).
+
+Google Posts Inativos:
+ Não utilizam publicações periódicas para promover pacotes de feriados prolongados, alta temporada e o cardápio do restaurante.
+
+Link de Destino:
+ O botão de website do perfil direciona para WhatsApp cru ou diretórios locais, perdendo a oportunidade de fechar reservas diretas.
+
+3
+
+Redes Sociais (Instagram & Facebook)
+
+        3.1. Perfil Oficial no Instagram (@pousadaeliiyzitapedro)
+
+Canal Ativo
+
+A pousada mantém o perfil 
+@pousadaeliiyzitapedro
+ focado na divulgação das belezas naturais da Praia do Ubatumirim e do dia a dia da hospedagem.
+
+Identidade Visual:
+ Amadora e descentralizada. Não possui manual de identidade visual, logotipo profissional vetorizado nem paleta de cores uniforme.
+
+Destaques do Instagram:
+ Desorganizados e sem capas padronizadas. Falta a trilha essencial de conversão do turista: 
+[Quartos & Tarifas]
+, 
+[Praia do Ubatumirim]
+, 
+[Restaurante & Bar]
+, 
+[Pet Friendly]
+, 
+[Como Chegar]
+ e 
+[Depoimentos]
+.
+
+Produção Audiovisual:
+ Predomínio de fotos estáticas ou vídeos de celular sem roteiro, ganchos visuais ou edição dinâmica. A beleza natural intocada do Ubatumirim (mar calmo, rio e montanhas) é um ímã orgânico no formato 
+Reels
+ que está sendo subutilizado.
+
+Link na Bio (Ponto de Fuga):
+ Utiliza link cru de WhatsApp (
+wa.me/5512992323656
+) sem página de links inteligentes, sem rastreamento de parâmetros UTM e sem apresentação de catálogo antes da conversa.
+
+4
+
+Espionagem de Tráfego Pago (Meta Ads & Google Ads)
+
+        4.1. Meta Ads (Biblioteca de Anúncios Facebook & Instagram)
+
+Zero Anúncios Rodando
+
+A verificação na 
+Biblioteca de Anúncios da Meta
+ (Meta Ad Library) confirmou que a Pousada Eliiy Zita Pedro 
+não possui nenhum anúncio ativo
+ no momento.
+
+Consequência Direta:
+ A pousada deixa de atingir ativamente mais de 
+20 milhões de potenciais turistas
+ nos grandes polos emissores (Grande São Paulo, Vale do Paraíba, Campinas e Sul de Minas) na quinta e sexta-feira, momento exato em que o público decide viagens de fim de semana.
+
+        4.2. Google Ads & Google Hotel Ads
+
+Ausente no Fundo de Funil
+
+A pousada não compra palavras-chave de intenção imediata (como 
+"pousada praia do ubatumirim ubatuba"
+) nem participa do comparador oficial do 
+Google Hotel Ads
+ com link próprio. O Booking.com domina os anúncios de pesquisa e lucra comissões sobre as buscas do cliente.
+
+5
+
+Diagnóstico Comercial & Matriz SWOT
+
+✔ FORÇAS (Internas)
+
+Localização pé na areia / a poucos metros da Praia do Ubatumirim.
+
+Estrutura completa: piscina, quartos com varanda e restaurante próprio.
+
+Atendimento familiar acolhedor com excelentes notas de hospitalidade.
+
+Praia de mar calmo, ideal para famílias com crianças e descanso.
+
+✖ FRAQUEZAS (Internas)
+
+Inexistência de site e checkout direto de reservas.
+
+Dependência excessiva de comissões de OTAs (15% a 22%).
+
+Atendimento manual no WhatsApp sem catálogo ou automação.
+
+Ausência total de Pixel e rastreamento de dados de clientes (Zero CRM).
+
+↗ OPORTUNIDADES (Externas)
+
+Crescimento da procura por praias rústicas e calmas no Norte de Ubatuba.
+
+Recuperação imediata de 20% de margem líquida com canal direto.
+
+Campanhas geolocalizadas nos polos emissores (SP Capital, SJC, Taubaté).
+
+Posicionamento como a pousada referência da Praia do Ubatumirim.
+
+⚠ AMEAÇAS (Externas)
+
+Concorrência avançada de pousadas e ecolodges vizinhos com marketing ativo.
+
+Queda acentuada de ocupação e faturamento na baixa temporada.
+
+Aumento progressivo das taxas de comissão cobradas pelas OTAs.
+
+Perda de clientes imediatistas para pousadas com reserva instantânea online.
+
+★
+
+Plano de Ação Estratégico • Proposta Off Data
+
+        Pilar 1: Desenvolvimento de Site de Alta Performance + Motor de Reservas Direto
+
+Tecnologia & Vendas
+
+Desenvolvimento de Landing Page e Web App institucional mobile-first, ultra veloz, com fotos profissionais e certificado de segurança SSL.
+
+Motor de Reservas Direto:
+ Calendário dinâmico onde o hóspede escolhe as datas, vê as fotos dos quartos e fecha a estadia instantaneamente com PIX ou Cartão de Crédito.
+
+Economia Imediata:
+ 100% da receita entra na conta bancária da pousada, eliminando as taxas de 20% das OTAs.
+
+Instalação de Tags de Rastreamento:
+ Meta Pixel com API de Conversões (CAPI) e Google Analytics 4 (GA4).
+
+        Pilar 2: Gestão de Tráfego Pago de Alta Performance (Meta Ads & Google Ads)
+
+Atração & Escala
+
+Implementação de funil contínuo de tráfego pago focado em transformar internautas em hóspedes confirmados:
+
+Segmentação Geográfica Cirúrgica:
+ Campanhas no Instagram/Facebook focadas em públicos de alto poder aquisitivo na Grande São Paulo, Vale do Paraíba (SJC, Taubaté, Jacareí), Campinas e Sul de Minas.
+
+Campanhas de Fim de Semana & Feriados:
+ Anúncios veiculados de quarta a sábado com ganchos emocionais focados no mar calmo e na natureza do Ubatumirim.
+
+Campanha de Remarketing Contínuo:
+ Impacto automático sobre qualquer usuário que navegou no perfil ou no site nos últimos 30 dias.
+
+Google Search Ads:
+ Compra de termos de fundo de funil e blindagem do nome da marca para evitar interceptação de concorrentes.
+
+        Pilar 3: Rebranding, Social Media 360 & Otimização do Google Meu Negócio
+
+Autoridade & Conversão
+
+Elevação do padrão visual e posicionamento da pousada em todas as plataformas:
+
+Identidade Visual Unificada:
+ Padronização do nome oficial da pousada, criação de logotipo institucional vetorizado e paleta de cores caiçara-premium.
+
+Reestruturação dos Destaques do Instagram:
+ Criação de capas padronizadas e organização dos pilares: Quartos, Praia, Restaurante, Tarifas, Localização e Depoimentos.
+
+Link Inteligente na Bio:
+ Página própria de direcionamento para o Motor de Reservas Direto, WhatsApp pré-formatado e cardápio.
+
+Otimização Avançada do Google Maps:
+ Padronização NAP, rotina de coleta de avaliações via QR Code e postagens semanais no feed do Google Meu Negócio.
+
+O PITCH DE FECHAMENTO COMERCIAL DA OFF DATA
+
+        "Hoje, a Pousada Eliiy Zita Pedro possui um dos produtos mais desejados do litoral de Ubatuba: tranquilidade pé na areia em um paraíso preservado. Porém, por não possuir um site com motor direto e não investir em tráfego pago, vocês estão deixando milhares de reais na mesa todo mês em comissões para o Booking e sofrendo na baixa temporada.
+
+        A parceria com a Off Data se paga logo nas primeiras reservas diretas geradas pelo site sem a comissão de 20% das OTAs. Não se trata de custo, mas do investimento de maior retorno sobre capital que a pousada pode fazer para se tornar dona do próprio faturamento."
+
+OFF DATA • MARKETING & DATA SCIENCE
+
+Especialistas em Tráfego, Automação e Soluções Digitais para Hotelaria
+
+Status do Relatório:
+ Aprovado para Apresentação Comercial
+
+Ubatuba / SP • Outubro 2026
+

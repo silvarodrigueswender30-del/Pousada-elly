@@ -1,0 +1,596 @@
+{
+  "console_logs": {
+    "home_desktop": [],
+    "home_mobile": [],
+    "chale-master-15p": [
+      {
+        "type": "warning",
+        "text": "The resource http://localhost:3005/media/hero-pousada.webp was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally."
+      },
+      {
+        "type": "warning",
+        "text": "The resource http://localhost:3005/media/quartos/chale-quinteto-5p-1.webp was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally."
+      },
+      {
+        "type": "warning",
+        "text": "The resource http://localhost:3005/media/hero-pousada.webp was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally."
+      },
+      {
+        "type": "warning",
+        "text": "The resource http://localhost:3005/media/suite-varanda.webp was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally."
+      },
+      {
+        "type": "warning",
+        "text": "The resource http://localhost:3005/media/quartos/suite-quadrupla-4p-1.webp was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally."
+      },
+      {
+        "type": "warning",
+        "text": "The resource http://localhost:3005/media/quartos/chale-triplo-3p-1.webp was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally."
+      },
+      {
+        "type": "warning",
+        "text": "The resource http://localhost:3005/media/quartos/chale-grande-10p-1.webp was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally."
+      },
+      {
+        "type": "warning",
+        "text": "The resource http://localhost:3005/media/quartos/chale-quadruplo-4p-2.webp was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally."
+      },
+      {
+        "type": "warning",
+        "text": "The resource http://localhost:3005/media/hero-pousada-mobile.webp was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally."
+      },
+      {
+        "type": "warning",
+        "text": "The resource http://localhost:3005/media/hero-pousada-mobile.webp was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally."
+      },
+      {
+        "type": "warning",
+        "text": "The resource http://localhost:3005/media/quartos/chale-quinteto-5p-1.webp was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally."
+      },
+      {
+        "type": "warning",
+        "text": "The resource http://localhost:3005/media/suite-varanda.webp was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally."
+      },
+      {
+        "type": "warning",
+        "text": "The resource http://localhost:3005/media/quartos/suite-quadrupla-4p-1.webp was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally."
+      },
+      {
+        "type": "warning",
+        "text": "The resource http://localhost:3005/media/quartos/chale-triplo-3p-1.webp was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally."
+      },
+      {
+        "type": "warning",
+        "text": "The resource http://localhost:3005/media/quartos/chale-grande-10p-1.webp was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally."
+      },
+      {
+        "type": "warning",
+        "text": "The resource http://localhost:3005/media/quartos/chale-quadruplo-4p-2.webp was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally."
+      }
+    ],
+    "chale-grande-10p": [
+      {
+        "type": "warning",
+        "text": "The resource http://localhost:3005/media/quartos/chale-quinteto-5p-1.webp was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally."
+      },
+      {
+        "type": "warning",
+        "text": "The resource http://localhost:3005/media/hero-pousada.webp was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally."
+      },
+      {
+        "type": "warning",
+        "text": "The resource http://localhost:3005/media/quartos/chale-master-15p-1.webp was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally."
+      },
+      {
+        "type": "warning",
+        "text": "The resource http://localhost:3005/media/suite-varanda.webp was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally."
+      },
+      {
+        "type": "warning",
+        "text": "The resource http://localhost:3005/media/quartos/suite-quadrupla-4p-1.webp was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally."
+      },
+      {
+        "type": "warning",
+        "text": "The resource http://localhost:3005/media/quartos/chale-triplo-3p-1.webp was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally."
+      },
+      {
+        "type": "warning",
+        "text": "The resource http://localhost:3005/media/quartos/chale-quadruplo-4p-2.webp was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally."
+      },
+      {
+        "type": "warning",
+        "text": "The resource http://localhost:3005/media/hero-pousada-mobile.webp was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally."
+      },
+      {
+        "type": "warning",
+        "text": "The resource http://localhost:3005/media/quartos/chale-quinteto-5p-1.webp was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally."
+      },
+      {
+        "type": "warning",
+        "text": "The resource http://localhost:3005/media/quartos/chale-master-15p-1.webp was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally."
+      },
+      {
+        "type": "warning",
+        "text": "The resource http://localhost:3005/media/suite-varanda.webp was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally."
+      },
+      {
+        "type": "warning",
+        "text": "The resource http://localhost:3005/media/quartos/suite-quadrupla-4p-1.webp was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally."
+      },
+      {
+        "type": "warning",
+        "text": "The resource http://localhost:3005/media/quartos/chale-triplo-3p-1.webp was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally."
+      },
+      {
+        "type": "warning",
+        "text": "The resource http://localhost:3005/media/quartos/chale-quadruplo-4p-2.webp was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally."
+      }
+    ],
+    "chale-quinteto-5p": [
+      {
+        "type": "warning",
+        "text": "The resource http://localhost:3005/media/hero-pousada.webp was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally."
+      },
+      {
+        "type": "warning",
+        "text": "The resource http://localhost:3005/media/quartos/chale-master-15p-1.webp was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally."
+      },
+      {
+        "type": "warning",
+        "text": "The resource http://localhost:3005/media/suite-varanda.webp was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally."
+      },
+      {
+        "type": "warning",
+        "text": "The resource http://localhost:3005/media/quartos/suite-quadrupla-4p-1.webp was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally."
+      },
+      {
+        "type": "warning",
+        "text": "The resource http://localhost:3005/media/quartos/chale-triplo-3p-1.webp was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally."
+      },
+      {
+        "type": "warning",
+        "text": "The resource http://localhost:3005/media/quartos/chale-grande-10p-1.webp was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally."
+      },
+      {
+        "type": "warning",
+        "text": "The resource http://localhost:3005/media/quartos/chale-quadruplo-4p-2.webp was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally."
+      },
+      {
+        "type": "warning",
+        "text": "The resource http://localhost:3005/media/hero-pousada-mobile.webp was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally."
+      },
+      {
+        "type": "warning",
+        "text": "The resource http://localhost:3005/media/hero-pousada-mobile.webp was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally."
+      },
+      {
+        "type": "warning",
+        "text": "The resource http://localhost:3005/media/quartos/chale-master-15p-1.webp was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally."
+      },
+      {
+        "type": "warning",
+        "text": "The resource http://localhost:3005/media/suite-varanda.webp was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally."
+      },
+      {
+        "type": "warning",
+        "text": "The resource http://localhost:3005/media/quartos/suite-quadrupla-4p-1.webp was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally."
+      },
+      {
+        "type": "warning",
+        "text": "The resource http://localhost:3005/media/quartos/chale-triplo-3p-1.webp was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally."
+      },
+      {
+        "type": "warning",
+        "text": "The resource http://localhost:3005/media/quartos/chale-grande-10p-1.webp was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally."
+      },
+      {
+        "type": "warning",
+        "text": "The resource http://localhost:3005/media/quartos/chale-quadruplo-4p-2.webp was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally."
+      }
+    ],
+    "chale-quadruplo-4p": [
+      {
+        "type": "warning",
+        "text": "The resource http://localhost:3005/media/quartos/chale-quinteto-5p-1.webp was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally."
+      },
+      {
+        "type": "warning",
+        "text": "The resource http://localhost:3005/media/hero-pousada.webp was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally."
+      },
+      {
+        "type": "warning",
+        "text": "The resource http://localhost:3005/media/quartos/chale-master-15p-1.webp was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally."
+      },
+      {
+        "type": "warning",
+        "text": "The resource http://localhost:3005/media/suite-varanda.webp was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally."
+      },
+      {
+        "type": "warning",
+        "text": "The resource http://localhost:3005/media/quartos/suite-quadrupla-4p-1.webp was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally."
+      },
+      {
+        "type": "warning",
+        "text": "The resource http://localhost:3005/media/quartos/chale-triplo-3p-1.webp was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally."
+      },
+      {
+        "type": "warning",
+        "text": "The resource http://localhost:3005/media/quartos/chale-grande-10p-1.webp was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally."
+      },
+      {
+        "type": "warning",
+        "text": "The resource http://localhost:3005/media/hero-pousada-mobile.webp was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally."
+      },
+      {
+        "type": "warning",
+        "text": "The resource http://localhost:3005/media/quartos/chale-quinteto-5p-1.webp was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally."
+      },
+      {
+        "type": "warning",
+        "text": "The resource http://localhost:3005/media/quartos/chale-master-15p-1.webp was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally."
+      },
+      {
+        "type": "warning",
+        "text": "The resource http://localhost:3005/media/suite-varanda.webp was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally."
+      },
+      {
+        "type": "warning",
+        "text": "The resource http://localhost:3005/media/quartos/suite-quadrupla-4p-1.webp was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally."
+      },
+      {
+        "type": "warning",
+        "text": "The resource http://localhost:3005/media/quartos/chale-triplo-3p-1.webp was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally."
+      },
+      {
+        "type": "warning",
+        "text": "The resource http://localhost:3005/media/quartos/chale-grande-10p-1.webp was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally."
+      }
+    ],
+    "chale-triplo-3p": [
+      {
+        "type": "warning",
+        "text": "The resource http://localhost:3005/media/quartos/chale-quinteto-5p-1.webp was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally."
+      },
+      {
+        "type": "warning",
+        "text": "The resource http://localhost:3005/media/hero-pousada.webp was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally."
+      },
+      {
+        "type": "warning",
+        "text": "The resource http://localhost:3005/media/quartos/chale-master-15p-1.webp was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally."
+      },
+      {
+        "type": "warning",
+        "text": "The resource http://localhost:3005/media/suite-varanda.webp was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally."
+      },
+      {
+        "type": "warning",
+        "text": "The resource http://localhost:3005/media/quartos/suite-quadrupla-4p-1.webp was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally."
+      },
+      {
+        "type": "warning",
+        "text": "The resource http://localhost:3005/media/quartos/chale-grande-10p-1.webp was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally."
+      },
+      {
+        "type": "warning",
+        "text": "The resource http://localhost:3005/media/quartos/chale-quadruplo-4p-2.webp was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally."
+      },
+      {
+        "type": "warning",
+        "text": "The resource http://localhost:3005/media/hero-pousada-mobile.webp was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally."
+      },
+      {
+        "type": "warning",
+        "text": "The resource http://localhost:3005/media/quartos/chale-quinteto-5p-1.webp was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally."
+      },
+      {
+        "type": "warning",
+        "text": "The resource http://localhost:3005/media/quartos/chale-master-15p-1.webp was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally."
+      },
+      {
+        "type": "warning",
+        "text": "The resource http://localhost:3005/media/suite-varanda.webp was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally."
+      },
+      {
+        "type": "warning",
+        "text": "The resource http://localhost:3005/media/quartos/suite-quadrupla-4p-1.webp was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally."
+      },
+      {
+        "type": "warning",
+        "text": "The resource http://localhost:3005/media/quartos/chale-grande-10p-1.webp was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally."
+      },
+      {
+        "type": "warning",
+        "text": "The resource http://localhost:3005/media/quartos/chale-quadruplo-4p-2.webp was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally."
+      }
+    ],
+    "suite-quadrupla-4p": [
+      {
+        "type": "warning",
+        "text": "The resource http://localhost:3005/media/quartos/chale-quinteto-5p-1.webp was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally."
+      },
+      {
+        "type": "warning",
+        "text": "The resource http://localhost:3005/media/hero-pousada.webp was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally."
+      },
+      {
+        "type": "warning",
+        "text": "The resource http://localhost:3005/media/quartos/chale-master-15p-1.webp was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally."
+      },
+      {
+        "type": "warning",
+        "text": "The resource http://localhost:3005/media/suite-varanda.webp was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally."
+      },
+      {
+        "type": "warning",
+        "text": "The resource http://localhost:3005/media/quartos/chale-triplo-3p-1.webp was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally."
+      },
+      {
+        "type": "warning",
+        "text": "The resource http://localhost:3005/media/quartos/chale-grande-10p-1.webp was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally."
+      },
+      {
+        "type": "warning",
+        "text": "The resource http://localhost:3005/media/quartos/chale-quadruplo-4p-2.webp was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally."
+      },
+      {
+        "type": "warning",
+        "text": "The resource http://localhost:3005/media/hero-pousada-mobile.webp was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally."
+      },
+      {
+        "type": "warning",
+        "text": "The resource http://localhost:3005/media/quartos/chale-quinteto-5p-1.webp was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally."
+      },
+      {
+        "type": "warning",
+        "text": "The resource http://localhost:3005/media/quartos/chale-master-15p-1.webp was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally."
+      },
+      {
+        "type": "warning",
+        "text": "The resource http://localhost:3005/media/suite-varanda.webp was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally."
+      },
+      {
+        "type": "warning",
+        "text": "The resource http://localhost:3005/media/quartos/chale-triplo-3p-1.webp was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally."
+      },
+      {
+        "type": "warning",
+        "text": "The resource http://localhost:3005/media/quartos/chale-grande-10p-1.webp was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally."
+      },
+      {
+        "type": "warning",
+        "text": "The resource http://localhost:3005/media/quartos/chale-quadruplo-4p-2.webp was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally."
+      }
+    ],
+    "suite-tripla-3p": [
+      {
+        "type": "warning",
+        "text": "The resource http://localhost:3005/media/quartos/chale-master-15p-1.webp was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally."
+      },
+      {
+        "type": "warning",
+        "text": "The resource http://localhost:3005/media/quartos/suite-quadrupla-4p-1.webp was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally."
+      },
+      {
+        "type": "warning",
+        "text": "The resource http://localhost:3005/media/quartos/chale-triplo-3p-1.webp was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally."
+      },
+      {
+        "type": "warning",
+        "text": "The resource http://localhost:3005/media/hero-pousada-mobile.webp was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally."
+      },
+      {
+        "type": "warning",
+        "text": "The resource http://localhost:3005/media/quartos/chale-quinteto-5p-1.webp was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally."
+      },
+      {
+        "type": "warning",
+        "text": "The resource http://localhost:3005/media/suite-varanda.webp was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally."
+      },
+      {
+        "type": "warning",
+        "text": "The resource http://localhost:3005/media/quartos/chale-grande-10p-1.webp was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally."
+      },
+      {
+        "type": "warning",
+        "text": "The resource http://localhost:3005/media/quartos/chale-quadruplo-4p-2.webp was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally."
+      }
+    ],
+    "suite-casal-2p": [
+      {
+        "type": "warning",
+        "text": "The resource http://localhost:3005/media/quartos/chale-quinteto-5p-1.webp was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally."
+      },
+      {
+        "type": "warning",
+        "text": "The resource http://localhost:3005/media/hero-pousada.webp was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally."
+      },
+      {
+        "type": "warning",
+        "text": "The resource http://localhost:3005/media/quartos/chale-master-15p-1.webp was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally."
+      },
+      {
+        "type": "warning",
+        "text": "The resource http://localhost:3005/media/quartos/suite-quadrupla-4p-1.webp was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally."
+      },
+      {
+        "type": "warning",
+        "text": "The resource http://localhost:3005/media/quartos/chale-triplo-3p-1.webp was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally."
+      },
+      {
+        "type": "warning",
+        "text": "The resource http://localhost:3005/media/quartos/chale-grande-10p-1.webp was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally."
+      },
+      {
+        "type": "warning",
+        "text": "The resource http://localhost:3005/media/quartos/chale-quadruplo-4p-2.webp was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally."
+      },
+      {
+        "type": "warning",
+        "text": "The resource http://localhost:3005/media/hero-pousada-mobile.webp was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally."
+      },
+      {
+        "type": "warning",
+        "text": "The resource http://localhost:3005/media/hero-pousada-mobile.webp was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally."
+      },
+      {
+        "type": "warning",
+        "text": "The resource http://localhost:3005/media/quartos/chale-quinteto-5p-1.webp was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally."
+      },
+      {
+        "type": "warning",
+        "text": "The resource http://localhost:3005/media/quartos/chale-master-15p-1.webp was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally."
+      },
+      {
+        "type": "warning",
+        "text": "The resource http://localhost:3005/media/quartos/suite-quadrupla-4p-1.webp was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally."
+      },
+      {
+        "type": "warning",
+        "text": "The resource http://localhost:3005/media/quartos/chale-triplo-3p-1.webp was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally."
+      },
+      {
+        "type": "warning",
+        "text": "The resource http://localhost:3005/media/quartos/chale-grande-10p-1.webp was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally."
+      },
+      {
+        "type": "warning",
+        "text": "The resource http://localhost:3005/media/quartos/chale-quadruplo-4p-2.webp was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally."
+      }
+    ]
+  },
+  "whatsapp_links": {
+    "home": [
+      "https://wa.me/5512992323656?text=Ol%C3%A1%21+Vim+pelo+site+da+Pousada+Eliiy+Zita+Pedro+e+gostaria+de+consultar+valores+e+disponibilidade+para+uma+reserva.",
+      "https://wa.me/5512992323656?text=Ol%C3%A1%20Dona%20Zita!%20Vim%20pelo%20site%20da%20Pousada%20Eliiy%20Zita%20Pedro%20e%20gostaria%20de%20consultar%20disponibilidade%20e%20valores.",
+      "https://wa.me/5512992323656?text=Ol%C3%A1%20Dona%20Zita!%20Vim%20pelo%20site%20e%20gostaria%20de%20consultar%20valores%20e%20disponibilidade%20para%20o%20Chal%C3%A9%20Master%20(at%C3%A9%2015%20pessoas).",
+      "https://wa.me/5512992323656?text=Ol%C3%A1%20Dona%20Zita!%20Vim%20pelo%20site%20e%20gostaria%20de%20consultar%20valores%20e%20disponibilidade%20para%20o%20Chal%C3%A9%20Grande%20(at%C3%A9%2010%20pessoas).",
+      "https://wa.me/5512992323656?text=Ol%C3%A1%20Dona%20Zita!%20Vim%20pelo%20site%20e%20gostaria%20de%20consultar%20valores%20e%20disponibilidade%20para%20o%20Chal%C3%A9%20Quinteto%20com%20cozinha%20(at%C3%A9%205%20pessoas).",
+      "https://wa.me/5512992323656?text=Ol%C3%A1%20Dona%20Zita!%20Vim%20pelo%20site%20e%20gostaria%20de%20consultar%20valores%20e%20disponibilidade%20para%20o%20Chal%C3%A9%20Qu%C3%A1druplo%20com%20cozinha%20e%20vista%20mar%20(at%C3%A9%204%20pessoas).",
+      "https://wa.me/5512992323656?text=Ol%C3%A1%20Dona%20Zita!%20Vim%20pelo%20site%20e%20gostaria%20de%20consultar%20valores%20e%20disponibilidade%20para%20o%20Chal%C3%A9%20Triplo%20com%20cozinha%20(at%C3%A9%203%20pessoas).",
+      "https://wa.me/5512992323656?text=Ol%C3%A1%20Dona%20Zita!%20Vim%20pelo%20site%20e%20gostaria%20de%20consultar%20valores%20e%20disponibilidade%20para%20a%20Su%C3%ADte%20Qu%C3%A1drupla%20Familiar%20com%20Varanda%20(at%C3%A9%204%20pessoas).",
+      "https://wa.me/5512992323656?text=Ol%C3%A1%20Dona%20Zita!%20Vim%20pelo%20site%20e%20gostaria%20de%20consultar%20valores%2C%20disponibilidade%20e%20ver%20foto%20da%20Su%C3%ADte%20Tripla%20(3%20pessoas).",
+      "https://wa.me/5512992323656?text=Ol%C3%A1%20Dona%20Zita!%20Vim%20pelo%20site%20e%20gostaria%20de%20consultar%20valores%20e%20disponibilidade%20para%20a%20Su%C3%ADte%20Casal%20(2%20pessoas).",
+      "https://wa.me/5512992323656?text=Ol%C3%A1%20Dona%20Zita!%20Gostaria%20de%20saber%20mais%20sobre%20o%20Restaurante%20e%20Quiosque%20da%20Pousada%20Eliiy%20Zita%20Pedro.",
+      "https://wa.me/5512992323656?text=Ol%C3%A1%20Dona%20Zita!%20Gostaria%20de%20orienta%C3%A7%C3%B5es%20de%20como%20chegar%20na%20Pousada%20Eliiy%20Zita%20Pedro%20em%20Ubatumirim.",
+      "https://wa.me/5512992323656?text=Ol%C3%A1%2C+Dona+Zita%21+Vim+pelo+site+da+Pousada+Eliiy+Zita+Pedro+e+gostaria+de+consultar+disponibilidade+e+valores.",
+      "https://wa.me/5512992323656?text=Ol%C3%A1%21+Vim+pelo+site+da+Pousada+Eliiy+Zita+Pedro+e+gostaria+de+informa%C3%A7%C3%B5es."
+    ],
+    "chale-master-15p": [
+      "https://wa.me/5512992323656?text=Ol%C3%A1%21+Vim+pelo+site+da+Pousada+Eliiy+Zita+Pedro+e+gostaria+de+consultar+valores+e+disponibilidade+para+uma+reserva.",
+      "https://wa.me/5512992323656?text=Ol%C3%A1%20Dona%20Zita!%20Vim%20pelo%20site%20e%20gostaria%20de%20consultar%20valores%20e%20disponibilidade%20para%20o%20Chal%C3%A9%20Master%20(at%C3%A9%2015%20pessoas).",
+      "https://wa.me/5512992323656?text=Ol%C3%A1%20Dona%20Zita!%20Vim%20pelo%20site%20e%20gostaria%20de%20consultar%20valores%20e%20disponibilidade%20para%20o%20Chal%C3%A9%20Master%20(at%C3%A9%2015%20pessoas).",
+      "https://wa.me/5512992323656?text=Ol%C3%A1%21+Vim+pelo+site+da+Pousada+Eliiy+Zita+Pedro+e+gostaria+de+informa%C3%A7%C3%B5es."
+    ],
+    "chale-grande-10p": [
+      "https://wa.me/5512992323656?text=Ol%C3%A1%21+Vim+pelo+site+da+Pousada+Eliiy+Zita+Pedro+e+gostaria+de+consultar+valores+e+disponibilidade+para+uma+reserva.",
+      "https://wa.me/5512992323656?text=Ol%C3%A1%20Dona%20Zita!%20Vim%20pelo%20site%20e%20gostaria%20de%20consultar%20valores%20e%20disponibilidade%20para%20o%20Chal%C3%A9%20Grande%20(at%C3%A9%2010%20pessoas).",
+      "https://wa.me/5512992323656?text=Ol%C3%A1%20Dona%20Zita!%20Vim%20pelo%20site%20e%20gostaria%20de%20consultar%20valores%20e%20disponibilidade%20para%20o%20Chal%C3%A9%20Grande%20(at%C3%A9%2010%20pessoas).",
+      "https://wa.me/5512992323656?text=Ol%C3%A1%21+Vim+pelo+site+da+Pousada+Eliiy+Zita+Pedro+e+gostaria+de+informa%C3%A7%C3%B5es."
+    ],
+    "chale-quinteto-5p": [
+      "https://wa.me/5512992323656?text=Ol%C3%A1%21+Vim+pelo+site+da+Pousada+Eliiy+Zita+Pedro+e+gostaria+de+consultar+valores+e+disponibilidade+para+uma+reserva.",
+      "https://wa.me/5512992323656?text=Ol%C3%A1%20Dona%20Zita!%20Vim%20pelo%20site%20e%20gostaria%20de%20consultar%20valores%20e%20disponibilidade%20para%20o%20Chal%C3%A9%20Quinteto%20com%20cozinha%20(at%C3%A9%205%20pessoas).",
+      "https://wa.me/5512992323656?text=Ol%C3%A1%20Dona%20Zita!%20Vim%20pelo%20site%20e%20gostaria%20de%20consultar%20valores%20e%20disponibilidade%20para%20o%20Chal%C3%A9%20Quinteto%20com%20cozinha%20(at%C3%A9%205%20pessoas).",
+      "https://wa.me/5512992323656?text=Ol%C3%A1%21+Vim+pelo+site+da+Pousada+Eliiy+Zita+Pedro+e+gostaria+de+informa%C3%A7%C3%B5es."
+    ],
+    "chale-quadruplo-4p": [
+      "https://wa.me/5512992323656?text=Ol%C3%A1%21+Vim+pelo+site+da+Pousada+Eliiy+Zita+Pedro+e+gostaria+de+consultar+valores+e+disponibilidade+para+uma+reserva.",
+      "https://wa.me/5512992323656?text=Ol%C3%A1%20Dona%20Zita!%20Vim%20pelo%20site%20e%20gostaria%20de%20consultar%20valores%20e%20disponibilidade%20para%20o%20Chal%C3%A9%20Qu%C3%A1druplo%20com%20cozinha%20e%20vista%20mar%20(at%C3%A9%204%20pessoas).",
+      "https://wa.me/5512992323656?text=Ol%C3%A1%20Dona%20Zita!%20Vim%20pelo%20site%20e%20gostaria%20de%20consultar%20valores%20e%20disponibilidade%20para%20o%20Chal%C3%A9%20Qu%C3%A1druplo%20com%20cozinha%20e%20vista%20mar%20(at%C3%A9%204%20pessoas).",
+      "https://wa.me/5512992323656?text=Ol%C3%A1%21+Vim+pelo+site+da+Pousada+Eliiy+Zita+Pedro+e+gostaria+de+informa%C3%A7%C3%B5es."
+    ],
+    "chale-triplo-3p": [
+      "https://wa.me/5512992323656?text=Ol%C3%A1%21+Vim+pelo+site+da+Pousada+Eliiy+Zita+Pedro+e+gostaria+de+consultar+valores+e+disponibilidade+para+uma+reserva.",
+      "https://wa.me/5512992323656?text=Ol%C3%A1%20Dona%20Zita!%20Vim%20pelo%20site%20e%20gostaria%20de%20consultar%20valores%20e%20disponibilidade%20para%20o%20Chal%C3%A9%20Triplo%20com%20cozinha%20(at%C3%A9%203%20pessoas).",
+      "https://wa.me/5512992323656?text=Ol%C3%A1%20Dona%20Zita!%20Vim%20pelo%20site%20e%20gostaria%20de%20consultar%20valores%20e%20disponibilidade%20para%20o%20Chal%C3%A9%20Triplo%20com%20cozinha%20(at%C3%A9%203%20pessoas).",
+      "https://wa.me/5512992323656?text=Ol%C3%A1%21+Vim+pelo+site+da+Pousada+Eliiy+Zita+Pedro+e+gostaria+de+informa%C3%A7%C3%B5es."
+    ],
+    "suite-quadrupla-4p": [
+      "https://wa.me/5512992323656?text=Ol%C3%A1%21+Vim+pelo+site+da+Pousada+Eliiy+Zita+Pedro+e+gostaria+de+consultar+valores+e+disponibilidade+para+uma+reserva.",
+      "https://wa.me/5512992323656?text=Ol%C3%A1%20Dona%20Zita!%20Vim%20pelo%20site%20e%20gostaria%20de%20consultar%20valores%20e%20disponibilidade%20para%20a%20Su%C3%ADte%20Qu%C3%A1drupla%20Familiar%20com%20Varanda%20(at%C3%A9%204%20pessoas).",
+      "https://wa.me/5512992323656?text=Ol%C3%A1%20Dona%20Zita!%20Vim%20pelo%20site%20e%20gostaria%20de%20consultar%20valores%20e%20disponibilidade%20para%20a%20Su%C3%ADte%20Qu%C3%A1drupla%20Familiar%20com%20Varanda%20(at%C3%A9%204%20pessoas).",
+      "https://wa.me/5512992323656?text=Ol%C3%A1%21+Vim+pelo+site+da+Pousada+Eliiy+Zita+Pedro+e+gostaria+de+informa%C3%A7%C3%B5es."
+    ],
+    "suite-tripla-3p": [
+      "https://wa.me/5512992323656?text=Ol%C3%A1%21+Vim+pelo+site+da+Pousada+Eliiy+Zita+Pedro+e+gostaria+de+consultar+valores+e+disponibilidade+para+uma+reserva.",
+      "https://wa.me/5512992323656?text=Ol%C3%A1%20Dona%20Zita!%20Vim%20pelo%20site%20e%20gostaria%20de%20consultar%20valores%2C%20disponibilidade%20e%20ver%20foto%20da%20Su%C3%ADte%20Tripla%20(3%20pessoas).",
+      "https://wa.me/5512992323656?text=Ol%C3%A1%20Dona%20Zita!%20Vim%20pelo%20site%20e%20gostaria%20de%20consultar%20valores%2C%20disponibilidade%20e%20ver%20foto%20da%20Su%C3%ADte%20Tripla%20(3%20pessoas).",
+      "https://wa.me/5512992323656?text=Ol%C3%A1%21+Vim+pelo+site+da+Pousada+Eliiy+Zita+Pedro+e+gostaria+de+informa%C3%A7%C3%B5es."
+    ],
+    "suite-casal-2p": [
+      "https://wa.me/5512992323656?text=Ol%C3%A1%21+Vim+pelo+site+da+Pousada+Eliiy+Zita+Pedro+e+gostaria+de+consultar+valores+e+disponibilidade+para+uma+reserva.",
+      "https://wa.me/5512992323656?text=Ol%C3%A1%20Dona%20Zita!%20Vim%20pelo%20site%20e%20gostaria%20de%20consultar%20valores%20e%20disponibilidade%20para%20a%20Su%C3%ADte%20Casal%20(2%20pessoas).",
+      "https://wa.me/5512992323656?text=Ol%C3%A1%20Dona%20Zita!%20Vim%20pelo%20site%20e%20gostaria%20de%20consultar%20valores%20e%20disponibilidade%20para%20a%20Su%C3%ADte%20Casal%20(2%20pessoas).",
+      "https://wa.me/5512992323656?text=Ol%C3%A1%21+Vim+pelo+site+da+Pousada+Eliiy+Zita+Pedro+e+gostaria+de+informa%C3%A7%C3%B5es."
+    ]
+  },
+  "routes_tested": [
+    "chale-master-15p",
+    "chale-grande-10p",
+    "chale-quinteto-5p",
+    "chale-quadruplo-4p",
+    "chale-triplo-3p",
+    "suite-quadrupla-4p",
+    "suite-tripla-3p",
+    "suite-casal-2p"
+  ],
+  "screenshots_generated": [
+    "C:\\Users\\Teste\\Downloads\\MEGA-ESTRUTURA-AGENTE-SITE\\PROJETOS\\pousada-eliiy-zita-pedro\\06-qa\\screenshots\\desktop\\home-full-1440px.png",
+    "C:\\Users\\Teste\\Downloads\\MEGA-ESTRUTURA-AGENTE-SITE\\PROJETOS\\pousada-eliiy-zita-pedro\\06-qa\\screenshots\\desktop\\01-hero-1440px.png",
+    "C:\\Users\\Teste\\Downloads\\MEGA-ESTRUTURA-AGENTE-SITE\\PROJETOS\\pousada-eliiy-zita-pedro\\06-qa\\screenshots\\desktop\\02-metricas-1440px.png",
+    "C:\\Users\\Teste\\Downloads\\MEGA-ESTRUTURA-AGENTE-SITE\\PROJETOS\\pousada-eliiy-zita-pedro\\06-qa\\screenshots\\desktop\\03-experiencia-videos-9x16-1440px.png",
+    "C:\\Users\\Teste\\Downloads\\MEGA-ESTRUTURA-AGENTE-SITE\\PROJETOS\\pousada-eliiy-zita-pedro\\06-qa\\screenshots\\desktop\\04-acomodacoes-assimetricas-1440px.png",
+    "C:\\Users\\Teste\\Downloads\\MEGA-ESTRUTURA-AGENTE-SITE\\PROJETOS\\pousada-eliiy-zita-pedro\\06-qa\\screenshots\\desktop\\05-um-dia-na-pousada-1440px.png",
+    "C:\\Users\\Teste\\Downloads\\MEGA-ESTRUTURA-AGENTE-SITE\\PROJETOS\\pousada-eliiy-zita-pedro\\06-qa\\screenshots\\desktop\\06-restaurante-1440px.png",
+    "C:\\Users\\Teste\\Downloads\\MEGA-ESTRUTURA-AGENTE-SITE\\PROJETOS\\pousada-eliiy-zita-pedro\\06-qa\\screenshots\\desktop\\07-estrutura-piscina-capela-1440px.png",
+    "C:\\Users\\Teste\\Downloads\\MEGA-ESTRUTURA-AGENTE-SITE\\PROJETOS\\pousada-eliiy-zita-pedro\\06-qa\\screenshots\\desktop\\08-como-reservar-e-regras-1440px.png",
+    "C:\\Users\\Teste\\Downloads\\MEGA-ESTRUTURA-AGENTE-SITE\\PROJETOS\\pousada-eliiy-zita-pedro\\06-qa\\screenshots\\desktop\\09-como-chegar-mapa-1440px.png",
+    "C:\\Users\\Teste\\Downloads\\MEGA-ESTRUTURA-AGENTE-SITE\\PROJETOS\\pousada-eliiy-zita-pedro\\06-qa\\screenshots\\desktop\\10-avaliacoes-google-1440px.png",
+    "C:\\Users\\Teste\\Downloads\\MEGA-ESTRUTURA-AGENTE-SITE\\PROJETOS\\pousada-eliiy-zita-pedro\\06-qa\\screenshots\\desktop\\11-faq-1440px.png",
+    "C:\\Users\\Teste\\Downloads\\MEGA-ESTRUTURA-AGENTE-SITE\\PROJETOS\\pousada-eliiy-zita-pedro\\06-qa\\screenshots\\desktop\\12-cta-final-1440px.png",
+    "C:\\Users\\Teste\\Downloads\\MEGA-ESTRUTURA-AGENTE-SITE\\PROJETOS\\pousada-eliiy-zita-pedro\\06-qa\\screenshots\\desktop\\13-footer-1440px.png",
+    "C:\\Users\\Teste\\Downloads\\MEGA-ESTRUTURA-AGENTE-SITE\\PROJETOS\\pousada-eliiy-zita-pedro\\06-qa\\screenshots\\mobile\\home-full-375px.png",
+    "C:\\Users\\Teste\\Downloads\\MEGA-ESTRUTURA-AGENTE-SITE\\PROJETOS\\pousada-eliiy-zita-pedro\\06-qa\\screenshots\\mobile\\01-hero-375px.png",
+    "C:\\Users\\Teste\\Downloads\\MEGA-ESTRUTURA-AGENTE-SITE\\PROJETOS\\pousada-eliiy-zita-pedro\\06-qa\\screenshots\\mobile\\02-metricas-375px.png",
+    "C:\\Users\\Teste\\Downloads\\MEGA-ESTRUTURA-AGENTE-SITE\\PROJETOS\\pousada-eliiy-zita-pedro\\06-qa\\screenshots\\mobile\\03-experiencia-videos-9x16-375px.png",
+    "C:\\Users\\Teste\\Downloads\\MEGA-ESTRUTURA-AGENTE-SITE\\PROJETOS\\pousada-eliiy-zita-pedro\\06-qa\\screenshots\\mobile\\04-acomodacoes-assimetricas-375px.png",
+    "C:\\Users\\Teste\\Downloads\\MEGA-ESTRUTURA-AGENTE-SITE\\PROJETOS\\pousada-eliiy-zita-pedro\\06-qa\\screenshots\\mobile\\05-um-dia-na-pousada-375px.png",
+    "C:\\Users\\Teste\\Downloads\\MEGA-ESTRUTURA-AGENTE-SITE\\PROJETOS\\pousada-eliiy-zita-pedro\\06-qa\\screenshots\\mobile\\06-restaurante-375px.png",
+    "C:\\Users\\Teste\\Downloads\\MEGA-ESTRUTURA-AGENTE-SITE\\PROJETOS\\pousada-eliiy-zita-pedro\\06-qa\\screenshots\\mobile\\07-estrutura-piscina-capela-375px.png",
+    "C:\\Users\\Teste\\Downloads\\MEGA-ESTRUTURA-AGENTE-SITE\\PROJETOS\\pousada-eliiy-zita-pedro\\06-qa\\screenshots\\mobile\\08-como-reservar-e-regras-375px.png",
+    "C:\\Users\\Teste\\Downloads\\MEGA-ESTRUTURA-AGENTE-SITE\\PROJETOS\\pousada-eliiy-zita-pedro\\06-qa\\screenshots\\mobile\\09-como-chegar-mapa-375px.png",
+    "C:\\Users\\Teste\\Downloads\\MEGA-ESTRUTURA-AGENTE-SITE\\PROJETOS\\pousada-eliiy-zita-pedro\\06-qa\\screenshots\\mobile\\10-avaliacoes-google-375px.png",
+    "C:\\Users\\Teste\\Downloads\\MEGA-ESTRUTURA-AGENTE-SITE\\PROJETOS\\pousada-eliiy-zita-pedro\\06-qa\\screenshots\\mobile\\11-faq-375px.png",
+    "C:\\Users\\Teste\\Downloads\\MEGA-ESTRUTURA-AGENTE-SITE\\PROJETOS\\pousada-eliiy-zita-pedro\\06-qa\\screenshots\\mobile\\12-cta-final-375px.png",
+    "C:\\Users\\Teste\\Downloads\\MEGA-ESTRUTURA-AGENTE-SITE\\PROJETOS\\pousada-eliiy-zita-pedro\\06-qa\\screenshots\\mobile\\13-footer-375px.png",
+    "C:\\Users\\Teste\\Downloads\\MEGA-ESTRUTURA-AGENTE-SITE\\PROJETOS\\pousada-eliiy-zita-pedro\\06-qa\\screenshots\\acomodacoes\\chale-master-15p-1440px.png",
+    "C:\\Users\\Teste\\Downloads\\MEGA-ESTRUTURA-AGENTE-SITE\\PROJETOS\\pousada-eliiy-zita-pedro\\06-qa\\screenshots\\acomodacoes\\chale-master-15p-375px.png",
+    "C:\\Users\\Teste\\Downloads\\MEGA-ESTRUTURA-AGENTE-SITE\\PROJETOS\\pousada-eliiy-zita-pedro\\06-qa\\screenshots\\acomodacoes\\chale-grande-10p-1440px.png",
+    "C:\\Users\\Teste\\Downloads\\MEGA-ESTRUTURA-AGENTE-SITE\\PROJETOS\\pousada-eliiy-zita-pedro\\06-qa\\screenshots\\acomodacoes\\chale-grande-10p-375px.png",
+    "C:\\Users\\Teste\\Downloads\\MEGA-ESTRUTURA-AGENTE-SITE\\PROJETOS\\pousada-eliiy-zita-pedro\\06-qa\\screenshots\\acomodacoes\\chale-quinteto-5p-1440px.png",
+    "C:\\Users\\Teste\\Downloads\\MEGA-ESTRUTURA-AGENTE-SITE\\PROJETOS\\pousada-eliiy-zita-pedro\\06-qa\\screenshots\\acomodacoes\\chale-quinteto-5p-375px.png",
+    "C:\\Users\\Teste\\Downloads\\MEGA-ESTRUTURA-AGENTE-SITE\\PROJETOS\\pousada-eliiy-zita-pedro\\06-qa\\screenshots\\acomodacoes\\chale-quadruplo-4p-1440px.png",
+    "C:\\Users\\Teste\\Downloads\\MEGA-ESTRUTURA-AGENTE-SITE\\PROJETOS\\pousada-eliiy-zita-pedro\\06-qa\\screenshots\\acomodacoes\\chale-quadruplo-4p-375px.png",
+    "C:\\Users\\Teste\\Downloads\\MEGA-ESTRUTURA-AGENTE-SITE\\PROJETOS\\pousada-eliiy-zita-pedro\\06-qa\\screenshots\\acomodacoes\\chale-triplo-3p-1440px.png",
+    "C:\\Users\\Teste\\Downloads\\MEGA-ESTRUTURA-AGENTE-SITE\\PROJETOS\\pousada-eliiy-zita-pedro\\06-qa\\screenshots\\acomodacoes\\chale-triplo-3p-375px.png",
+    "C:\\Users\\Teste\\Downloads\\MEGA-ESTRUTURA-AGENTE-SITE\\PROJETOS\\pousada-eliiy-zita-pedro\\06-qa\\screenshots\\acomodacoes\\suite-quadrupla-4p-1440px.png",
+    "C:\\Users\\Teste\\Downloads\\MEGA-ESTRUTURA-AGENTE-SITE\\PROJETOS\\pousada-eliiy-zita-pedro\\06-qa\\screenshots\\acomodacoes\\suite-quadrupla-4p-375px.png",
+    "C:\\Users\\Teste\\Downloads\\MEGA-ESTRUTURA-AGENTE-SITE\\PROJETOS\\pousada-eliiy-zita-pedro\\06-qa\\screenshots\\acomodacoes\\suite-tripla-3p-1440px.png",
+    "C:\\Users\\Teste\\Downloads\\MEGA-ESTRUTURA-AGENTE-SITE\\PROJETOS\\pousada-eliiy-zita-pedro\\06-qa\\screenshots\\acomodacoes\\suite-tripla-3p-375px.png",
+    "C:\\Users\\Teste\\Downloads\\MEGA-ESTRUTURA-AGENTE-SITE\\PROJETOS\\pousada-eliiy-zita-pedro\\06-qa\\screenshots\\acomodacoes\\suite-casal-2p-1440px.png",
+    "C:\\Users\\Teste\\Downloads\\MEGA-ESTRUTURA-AGENTE-SITE\\PROJETOS\\pousada-eliiy-zita-pedro\\06-qa\\screenshots\\acomodacoes\\suite-casal-2p-375px.png"
+  ],
+  "font_comparisons_generated": [
+    "C:\\Users\\Teste\\Downloads\\MEGA-ESTRUTURA-AGENTE-SITE\\PROJETOS\\pousada-eliiy-zita-pedro\\03-design\\comparativo-fontes-v2\\hero-desktop-opcao1-plus-jakarta-sans-v1.png",
+    "C:\\Users\\Teste\\Downloads\\MEGA-ESTRUTURA-AGENTE-SITE\\PROJETOS\\pousada-eliiy-zita-pedro\\03-design\\comparativo-fontes-v2\\quarto-desktop-opcao1-plus-jakarta-sans-v1.png",
+    "C:\\Users\\Teste\\Downloads\\MEGA-ESTRUTURA-AGENTE-SITE\\PROJETOS\\pousada-eliiy-zita-pedro\\03-design\\comparativo-fontes-v2\\hero-mobile-opcao1-plus-jakarta-sans-v1.png",
+    "C:\\Users\\Teste\\Downloads\\MEGA-ESTRUTURA-AGENTE-SITE\\PROJETOS\\pousada-eliiy-zita-pedro\\03-design\\comparativo-fontes-v2\\hero-desktop-opcao2-bricolage-grotesque.png",
+    "C:\\Users\\Teste\\Downloads\\MEGA-ESTRUTURA-AGENTE-SITE\\PROJETOS\\pousada-eliiy-zita-pedro\\03-design\\comparativo-fontes-v2\\quarto-desktop-opcao2-bricolage-grotesque.png",
+    "C:\\Users\\Teste\\Downloads\\MEGA-ESTRUTURA-AGENTE-SITE\\PROJETOS\\pousada-eliiy-zita-pedro\\03-design\\comparativo-fontes-v2\\hero-mobile-opcao2-bricolage-grotesque.png",
+    "C:\\Users\\Teste\\Downloads\\MEGA-ESTRUTURA-AGENTE-SITE\\PROJETOS\\pousada-eliiy-zita-pedro\\03-design\\comparativo-fontes-v2\\hero-desktop-opcao3-sora.png",
+    "C:\\Users\\Teste\\Downloads\\MEGA-ESTRUTURA-AGENTE-SITE\\PROJETOS\\pousada-eliiy-zita-pedro\\03-design\\comparativo-fontes-v2\\quarto-desktop-opcao3-sora.png",
+    "C:\\Users\\Teste\\Downloads\\MEGA-ESTRUTURA-AGENTE-SITE\\PROJETOS\\pousada-eliiy-zita-pedro\\03-design\\comparativo-fontes-v2\\hero-mobile-opcao3-sora.png",
+    "C:\\Users\\Teste\\Downloads\\MEGA-ESTRUTURA-AGENTE-SITE\\PROJETOS\\pousada-eliiy-zita-pedro\\03-design\\comparativo-fontes-v2\\painel-comparativo-mobile-3-fontes.png"
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "home_mobile": {
+    "scores": {
+      "performance": 94,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "fcp": "1.4 s",
+    "lcp": "2.8 s",
+    "tbt": "110 ms",
+    "cls": "0.025",
+    "si": "2.4 s"
+  },
+  "room_mobile": {
+    "scores": {
+      "performance": 96,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "fcp": "1.4 s",
+    "lcp": "2.6 s",
+    "tbt": "110 ms",
+    "cls": "0.001",
+    "si": "0.001"
+  }
+}
