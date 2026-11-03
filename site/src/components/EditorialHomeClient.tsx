@@ -1115,7 +1115,6 @@ export default function EditorialHomeClient() {
 
                         <Link
                           href={`/acomodacoes/${item.slug}`}
-                          prefetch={false}
                           className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-[#f6efe3] hover:bg-[#0a301a] hover:text-[#f8faf8] text-xs font-semibold text-[#0a301a] transition-all"
                         >
                           <span>Ver detalhes</span>
@@ -1252,7 +1251,6 @@ export default function EditorialHomeClient() {
                           <Link
                             key={r.slug}
                             href={`/acomodacoes/${r.slug}`}
-                            prefetch={false}
                             className="px-3.5 py-2 rounded-full bg-black/55 hover:bg-white hover:text-[#0a301a] border border-white/20 text-xs font-medium text-white transition-colors"
                           >
                             {r.nomeCurto} ↗
@@ -1276,7 +1274,6 @@ export default function EditorialHomeClient() {
                     <Link
                       key={item.slug}
                       href={`/acomodacoes/${item.slug}`}
-                      prefetch={false}
                       className="px-3 py-1.5 rounded-full bg-[#f5efe6] hover:bg-[#0a301a] hover:text-[#f8faf8] text-xs font-medium text-[#0a301a] transition-colors border border-[#e2eae3]"
                     >
                       0{idx + 1}. {item.nome.split(" (")[0]} ({item.capacidadeNumero}p)

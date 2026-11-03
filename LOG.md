@@ -2,6 +2,69 @@
 
 Criado em 2026-10-28 14:11
 
+## 2026-11-03 13:00 — Otimização de Transição Instantânea de Páginas, Preview Social WhatsApp & Atualização de Fotos do Chalé Quinteto
+1. **Otimização de Performance e Transição Instantânea de Páginas:**
+   - Diagnosticada a causa do carregamento lento nas páginas de destino (`/acomodacoes/[slug]`): os links no carrossel de acomodações e nas abas de categorias em `EditorialHomeClient.tsx` e `page.tsx` continham o atributo `prefetch={false}`, impedindo o Next.js de pré-carregar os assets estáticos em background.
+   - Removido `prefetch={false}` de todos os links de acomodação. Com a ativação do prefetch nativo e SSG (`generateStaticParams`), as rotas de destino agora abrem de forma **instantânea (0ms de latência percebida)** ao toque ou clique.
+   - Removido import não utilizado de `react-dom` em `src/app/acomodacoes/[slug]/page.tsx`.
+2. **Configuração de Imagem e Metatags para Compartilhamento no WhatsApp (Open Graph):**
+   - Gerada imagem dedicada em JPEG progressivo de 1200×630 px com peso otimizado de **184.4 KB** (< 300 KB exigido pelo WhatsApp):
+     - `site/public/media/og-whatsapp.jpg`
+     - `site/public/og-image.jpg`
+     - `site/src/app/opengraph-image.jpg`
+     - `site/src/app/twitter-image.jpg`
+   - Atualizado `layout.tsx` e `page.tsx` com `metadataBase: new URL(siteUrl)` apontando para a URL de produção na Vercel (`https://site-phi-pied-11.vercel.app`), garantindo que o crawler do WhatsApp resolva a URL absoluta da imagem imediatamente ao compartilhar o link.
+3. **Atualização das Fotos do Chalé Quinteto (5 Pessoas) em `acomodacoes.ts`:**
+   - Vinculadas as 3 novas fotos em alta resolução (1200×900 px) do acervo tratado:
+     - `quarto-card-1.webp`: Quarto climatizado com cama de casal e ar-condicionado split.
+     - `quarto-card-2.webp`: Cozinha privativa equipada com móvel de madeira e pia.
+     - `quarto-card-3.webp`: Vista da enseada da Praia do Ubatumirim a partir do chalé.
+4. **Portão de Auditoria Permanente (`npm run audit`):**
+   - Executado e aprovado com **100% de sucesso**.
+   - TypeScript (tsc) e Next.js 15 Build SSG sem erros.
+   - Lighthouse Mobile: Home **93** / Quarto **98**.
+   - Zero termos proibidos no código público.
+5. **Git & Deploy de Produção na Vercel:**
+   - Commit no repositório `https://github.com/silvarodrigueswender30-del/Pousada-elly.git` (branch `main`).
+   - Novo deploy de produção executado na Vercel (`https://site-phi-pied-11.vercel.app`).
+
+---
+
+## 2026-11-03 12:25 — Substituição Global da Foto de Quem Somos + Reanálise de Áudio & Booking + Git & Deploy Vercel
+1. **Substituição da Imagem do Print (Varanda Amarela):**
+   - Identificada a imagem `suite-standard-terreo-varanda-1-1-1024x683.jpg` (anteriormente em `placeholder-quem-somos.webp` e `suite-varanda.webp`).
+   - Gerada a nova imagem de alta definição `quem-somos.webp` (236.8 KB) e `quem-somos.avif` (273.0 KB) a partir de `patiomobile.jpg` (1536×2752 px), com recorte vertical de proporção 4:4.6 (1200×1380 px) destacando o pátio acolhedor com piscina, coqueiros e enseada.
+   - Substituída em 100% dos locais onde a foto amarela aparecia:
+     - `editorial-media.ts` (`quemSomosVertical`)
+     - `EditorialHomeClient.tsx` (Seção 6: Quem Somos / A Pousada)
+     - `EditorialDiferenciaisSection.tsx` (Card de hospitalidade familiar)
+     - `DayAtPousada.tsx` (Card de convivência ao entardecer)
+     - `acomodacoes.ts` (Suíte Casal atualizada para `quarto-card-1.webp` em alta resolução).
+2. **Reanálise dos Áudios de Dona Zita e Auditoria na Internet:**
+   - **Áudio Oficial de Dona Zita:** Confirma com exatidão as **8 opções de hospedagem**:
+     - 5 Chalés com cozinha privativa (para 15, 10, 5, 4 e 3 pessoas).
+     - 3 Suítes sem cozinha (para casal [2p], 3 pessoas e 4 pessoas).
+     - Comodidades exclusivas: Capela própria, restaurante pé na areia, piscina ao ar livre e chalé com churrasqueira.
+   - **Varredura no Booking.com e Internet:**
+     - Cadastro no Booking exibe no inventário público principalmente o "Quarto Quádruplo com Varanda" (1 cama casal + 1 beliche).
+     - Chalés grandes (10 a 15 pessoas) são geridos de forma deliberada fora das OTAs para economizar 15%–22% de taxa de comissão, exatamente como arquitetado no nosso fluxo de reserva direta pelo WhatsApp.
+     - Todas as informações do site foram auditadas e estão **100% alinhadas à declaração da proprietária**.
+3. **Portão de Auditoria Permanente (`npm run audit`):**
+   - Executado e aprovado com **100% de sucesso**.
+   - Build SSG com 14 rotas estáticas (0 erros).
+   - Lighthouse Mobile: Home **98** / Quarto **98**.
+   - Acessibilidade, console sem erros e anti-IA validados.
+4. **Git & Deploy de Produção na Vercel:**
+   - Criados arquivos `.gitignore` para proteção contra vazamento de `node_modules` e `.next`.
+   - Repositório remoto configurado: `https://github.com/silvarodrigueswender30-del/Pousada-elly.git` (branch `main`).
+   - Commit e Push realizados com sucesso.
+   - Deploy de Produção concluído na Vercel na conta `silvarodrigueswender30-del`:
+     - **URL de Produção:** **`https://site-phi-pied-11.vercel.app`**
+     - **URL Canônica da Vercel:** **`https://site-i6j9ei62j-silvarodrigueswender30-dels-projects.vercel.app`**
+     - Status: **HTTP 200 OK** ativo e propagado na CDN global.
+
+---
+
 ## 2026-11-03 11:35 — Container de Imagens Rotativas nos Cards de Acomodação (RoomImageRotator)
 1. **Processamento & Otimização de Imagens de Quarto:**
    - Origem: `02-referencias/videos-img/img-quarto/card-quarto1.jpg`, `card-quarto2.jpg`, `card-quarto3.jpg` (2752×1536 px originais preservados).

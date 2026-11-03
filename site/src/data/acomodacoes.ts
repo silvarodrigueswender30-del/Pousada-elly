@@ -233,19 +233,19 @@ export const acomodacoes: Acomodacao[] = [
     ],
     fotos: [
       {
-        url: "/media/quartos/chale-quinteto-5p-1.webp",
-        alt: "Cozinha privativa do Chalé Quinteto com mesa de madeira, bancos, pia e geladeira duplex",
-        origem: "Frame real extraído de v17 (3.0s) — exclusivo desta acomodação"
+        url: "/media/quartos/quarto-card-1.webp",
+        alt: "Quarto familiar climatizado do Chalé Quinteto com cama de casal e ar-condicionado split",
+        origem: "Foto tratada em alta definição (1200x900) — acervo da pousada"
       },
       {
-        url: "/media/quartos/chale-quinteto-5p-2.webp",
-        alt: "Quarto do Chalé Quinteto com cama de casal, ar-condicionado split na parede e janela para o jardim",
-        origem: "Frame real extraído de v17 (27.0s) — exclusivo desta acomodação"
+        url: "/media/quartos/quarto-card-2.webp",
+        alt: "Cozinha privativa equipada com móvel rústico de madeira, pia e armários",
+        origem: "Foto tratada em alta definição (1200x900) — acervo da pousada"
       },
       {
-        url: "/media/quartos/chale-quinteto-5p-3.webp",
-        alt: "Banheiro privativo do Chalé Quinteto com box blindex e piso cerâmico",
-        origem: "Frame real extraído de v17 (45.0s) — exclusivo desta acomodação"
+        url: "/media/quartos/quarto-card-3.webp",
+        alt: "Vista da enseada da Praia do Ubatumirim a partir da área do chalé",
+        origem: "Foto tratada em alta definição (1200x900) — acervo da pousada"
       }
     ],
     videoCard: {

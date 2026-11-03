@@ -1,5 +1,4 @@
 import { notFound } from "next/navigation";
-import ReactDOM from "react-dom";
 import Link from "next/link";
 import type { Metadata } from "next";
 import { acomodacoes } from "@/data/acomodacoes";
@@ -21,13 +20,21 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const item = acomodacoes.find((a) => a.slug === slug);
   if (!item) return {};
 
+  const imageUrl = item.fotos[0]?.url || "/media/og-whatsapp.jpg";
+
   return {
     title: `${item.nome} | Pousada Eliiy Zita Pedro`,
     description: item.descricaoCurta,
     openGraph: {
       title: `${item.nome} | Pousada Eliiy Zita Pedro`,
       description: item.descricaoCurta,
-      images: [{ url: item.fotos[0]?.url || "/media/editorial/hero-crepusculo.webp" }],
+      images: [{ url: imageUrl }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${item.nome} | Pousada Eliiy Zita Pedro`,
+      description: item.descricaoCurta,
+      images: [imageUrl],
     },
   };
 }
@@ -373,7 +380,6 @@ export default async function AcomodacaoPage({ params }: Props) {
                 <Link
                   key={outra.slug}
                   href={`/acomodacoes/${outra.slug}`}
-                  prefetch={false}
                   className="rounded-2xl bg-white/10 hover:bg-[#f8faf8] hover:text-[#0a301a] p-4 transition-all border border-white/15 flex flex-col justify-between"
                 >
                   <span className="text-[11px] font-mono opacity-85">
