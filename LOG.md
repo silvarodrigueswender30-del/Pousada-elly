@@ -2,6 +2,27 @@
 
 Criado em 2026-10-28 14:11
 
+## 2026-11-03 13:40 — Implementação de Botões no Carrossel Desktop, Nova Seção da Capela, Otimização de Copy & SEO
+1. **Botões de Navegação Desktop no Carrossel de Acomodações (UX):**
+   - Atendendo às marcações visuais enviadas pelo usuário, foram inseridos botões circulares flutuantes nas laterais do carrossel (`‹` e `›`) em desktop (`md:flex`), com elevação suave, sombras (`shadow-xl`) e estados desabilitados quando no início/fim da rolagem.
+   - Adicionados controles compactos complementares no cabeçalho ao lado do contador `08 ACOMODAÇÕES`.
+   - Implementado scroll suave calculado pelo tamanho real de cada card (`cardWidth + 20px`), além de sincronização ao clicar nos botões de categoria rápida.
+2. **Nova Seção Exclusiva da Capela (`EditorialCapelaSection.tsx`):**
+   - Imagem de alta definição `Editing_photo_of_beach_chapel_d3db57ae_2K.jpg` otimizada em WebP (236 KB), Mobile (57 KB) e AVIF (284 KB) em `site/public/media/capela-praia.*`.
+   - Seção construída com design editorial pé na areia com 3 pilares de valor: Renovação de Votos & Bodas em Família, Espiritualidade & Recanto de Silêncio e Estrutura Integrada (Hospedagem + Restaurante).
+   - Botão de contato exclusivo para o WhatsApp com mensagem temática pré-formatada para celebrações e visitas.
+   - Adicionado atalho no Navbar desktop e menu mobile (`A Capela`), no Rodapé (`EditorialFooter.tsx`) e no Drawer de Reserva (`EditorialReservaDrawer.tsx`).
+3. **Raio-X de Copywriting & SEO Focado no Google:**
+   - Pesquisa de skills no ecossistema (`coreyhaines31/marketingskills@seo-audit` e `@copywriting`, `agricidaniel/claude-seo@seo-local`).
+   - Copywriting aprimorado com tom caiçara acolhedor e persuasivo: foco no mar calmo sem ondas (ideal para crianças e idosos), chalés com cozinha para economia familiar e reserva direta com até 20% de economia sem taxas de OTA.
+   - Metatags de SEO no `layout.tsx` expandidas com palavras-chave de intenção de busca local no Google.
+4. **Portão de Auditoria Automática (`npm run audit`):**
+   - 100% de aprovação.
+   - **Lighthouse Mobile: Home 98 / Quarto 98**.
+   - Build SSG gerado sem erros, zero termos proibidos no código público.
+
+---
+
 ## 2026-11-03 13:00 — Otimização de Transição Instantânea de Páginas, Preview Social WhatsApp & Atualização de Fotos do Chalé Quinteto
 1. **Otimização de Performance e Transição Instantânea de Páginas:**
    - Diagnosticada a causa do carregamento lento nas páginas de destino (`/acomodacoes/[slug]`): os links no carrossel de acomodações e nas abas de categorias em `EditorialHomeClient.tsx` e `page.tsx` continham o atributo `prefetch={false}`, impedindo o Next.js de pré-carregar os assets estáticos em background.

@@ -38,7 +38,11 @@ export const metadata: Metadata = {
     "pousada zita pedro",
     "pousada pe na areia ubatuba",
     "chale com cozinha ubatumirim",
+    "chale para 15 pessoas ubatuba",
     "praia do ubatumirim",
+    "pousada com capela ubatuba",
+    "pousada mar calmo criancas ubatuba",
+    "reserva direta pousada ubatuba",
   ],
   authors: [{ name: "Pousada e Restaurante Eliiy Zita Pedro" }],
   openGraph: {

@@ -77,6 +77,11 @@ export function EditorialFooter() {
                 </Link>
               </li>
               <li>
+                <Link href="/#capela" className="hover:text-[#f29b2f] transition-colors">
+                  A Capela & Celebrações
+                </Link>
+              </li>
+              <li>
                 <Link href="/#mapa-ubatumirim" className="hover:text-[#f29b2f] transition-colors">
                   Localização & Como Chegar
                 </Link>

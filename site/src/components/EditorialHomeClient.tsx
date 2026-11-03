@@ -16,6 +16,7 @@ import EditorialReservaDrawer from "./EditorialReservaDrawer";
 import { EditorialLocationMap } from "./EditorialLocationMap";
 import { EditorialFooter } from "./EditorialFooter";
 import EditorialDiferenciaisSection from "./EditorialDiferenciaisSection";
+import { EditorialCapelaSection } from "./EditorialCapelaSection";
 import { RoomImageRotator, ROOM_CARD_IMAGES } from "./RoomImageRotator";
 
 export default function EditorialHomeClient() {
@@ -64,6 +65,26 @@ export default function EditorialHomeClient() {
     legenda: string;
   } | null>(null);
 
+  // Carrossel de Acomodações Desktop Navigation (UX com botões laterais)
+  const acomodacoesCarouselRef = useRef<HTMLDivElement | null>(null);
+  const [canScrollCarouselLeft, setCanScrollCarouselLeft] = useState(false);
+  const [canScrollCarouselRight, setCanScrollCarouselRight] = useState(true);
+
+  const checkCarouselScroll = () => {
+    const el = acomodacoesCarouselRef.current;
+    if (!el) return;
+    setCanScrollCarouselLeft(el.scrollLeft > 20);
+    setCanScrollCarouselRight(el.scrollLeft < el.scrollWidth - el.clientWidth - 20);
+  };
+
+  const scrollCarousel = (direction: "left" | "right") => {
+    const el = acomodacoesCarouselRef.current;
+    if (!el) return;
+    const card = el.querySelector<HTMLElement>(".snap-start");
+    const step = (card?.offsetWidth || 330) + 20;
+    el.scrollBy({ left: direction === "left" ? -step : step, behavior: "smooth" });
+  };
+
   // Central Compass Radial Burst state (Seção 5: sec_23 -> sec_26)
   const bussolaRef = useRef<HTMLDivElement | null>(null);
   const [bussolaExpanded, setBussolaExpanded] = useState(false);
@@ -104,8 +125,14 @@ export default function EditorialHomeClient() {
     updateViewport();
     const mq = window.matchMedia("(prefers-reduced-motion: reduce)");
     setReducedMotion(mq.matches);
-    window.addEventListener("resize", updateViewport, { passive: true });
-    const t = setTimeout(() => setShowPreloader(false), 3050);
+    window.addEventListener("resize", () => {
+      updateViewport();
+      checkCarouselScroll();
+    }, { passive: true });
+    const t = setTimeout(() => {
+      setShowPreloader(false);
+      checkCarouselScroll();
+    }, 3050);
     return () => {
       window.removeEventListener("resize", updateViewport);
       clearTimeout(t);
@@ -431,8 +458,14 @@ export default function EditorialHomeClient() {
               >
                 Início
               </a>
+              <a href="#acomodacoes" className="hover:text-[#f29b2f] transition-colors">
+                O que oferecemos
+              </a>
               <a href="#diferenciais" className="hover:text-[#f29b2f] transition-colors">
                 Diferenciais
+              </a>
+              <a href="#capela" className="hover:text-[#f29b2f] transition-colors font-semibold text-[#f29b2f]">
+                A Capela
               </a>
               <a href="#quem-somos" className="hover:text-[#f29b2f] transition-colors">
                 Quem somos
@@ -440,14 +473,8 @@ export default function EditorialHomeClient() {
               <a href="#visita" className="hover:text-[#f29b2f] transition-colors">
                 Visite Ubatumirim
               </a>
-              <a href="#acomodacoes" className="hover:text-[#f29b2f] transition-colors">
-                O que oferecemos
-              </a>
               <a href="#faq" className="hover:text-[#f29b2f] transition-colors">
                 Dúvidas frequentes
-              </a>
-              <a href="#showcase" className="hover:text-[#f29b2f] transition-colors">
-                Nossa estrutura
               </a>
               <a href="#contato-final" className="hover:text-[#f29b2f] transition-colors">
                 Contato
@@ -489,7 +516,10 @@ export default function EditorialHomeClient() {
                 A Enseada do Ubatumirim
               </a>
               <a href="#acomodacoes" onClick={() => setMobileMenuOpen(false)} className="hover:text-[#f29b2f] transition-colors">
-                O que oferecemos (8 Chalés)
+                O que oferecemos (8 Acomodações)
+              </a>
+              <a href="#capela" onClick={() => setMobileMenuOpen(false)} className="hover:text-[#f29b2f] transition-colors font-medium text-[#f29b2f]">
+                A Capela & Celebrações
               </a>
               <a href="#diferenciais" onClick={() => setMobileMenuOpen(false)} className="hover:text-[#f29b2f] transition-colors">
                 Diferenciais Dona Zita
@@ -1032,9 +1062,34 @@ export default function EditorialHomeClient() {
                 <span className="text-xs font-mono uppercase tracking-[0.2em] text-[#157d40] font-semibold block mb-1">
                   • NOSSAS 8 ACOMODAÇÕES PÉ NA AREIA
                 </span>
-                <p className="text-sm text-[#4a5c50]">
-                  Role horizontalmente para explorar as opções de chalés privativos e suítes:
-                </p>
+                <div className="flex flex-wrap items-center gap-3">
+                  <p className="text-sm text-[#4a5c50]">
+                    Role horizontalmente ou use as setas para explorar as opções:
+                  </p>
+                  <div className="hidden md:inline-flex items-center gap-1.5 bg-white/90 backdrop-blur-sm rounded-full p-1 border border-[#e2eae3] shadow-sm">
+                    <button
+                      type="button"
+                      onClick={() => scrollCarousel("left")}
+                      disabled={!canScrollCarouselLeft}
+                      aria-label="Rolar para opções anteriores"
+                      className="w-7 h-7 rounded-full flex items-center justify-center text-xs font-bold transition-all disabled:opacity-30 disabled:cursor-not-allowed hover:bg-[#0a301a] hover:text-white"
+                    >
+                      ←
+                    </button>
+                    <span className="text-[10px] font-mono text-[#4a5c50] px-1.5 font-semibold">
+                      08 ACOMODAÇÕES
+                    </span>
+                    <button
+                      type="button"
+                      onClick={() => scrollCarousel("right")}
+                      disabled={!canScrollCarouselRight}
+                      aria-label="Rolar para próximas opções"
+                      className="w-7 h-7 rounded-full flex items-center justify-center text-xs font-bold transition-all disabled:opacity-30 disabled:cursor-not-allowed hover:bg-[#f29b2f] hover:text-[#0a301a]"
+                    >
+                      →
+                    </button>
+                  </div>
+                </div>
               </div>
 
               {/* Botões de atalho de categoria rápida */}
@@ -1046,6 +1101,16 @@ export default function EditorialHomeClient() {
                     onClick={() => {
                       setManualCatLockUntil(Date.now() + 4000);
                       setActiveCatIdx(i);
+                      const targetIdx = acomodacoes.findIndex((a) => a.slug === c.slugPrincipal);
+                      if (targetIdx !== -1 && acomodacoesCarouselRef.current) {
+                        const targetCard = acomodacoesCarouselRef.current.children[targetIdx] as HTMLElement;
+                        if (targetCard) {
+                          acomodacoesCarouselRef.current.scrollTo({
+                            left: targetCard.offsetLeft - 20,
+                            behavior: "smooth",
+                          });
+                        }
+                      }
                     }}
                     className={`px-3 py-1.5 rounded-full text-xs font-medium transition-all cursor-pointer ${
                       i === activeCatIdx
@@ -1059,8 +1124,43 @@ export default function EditorialHomeClient() {
               </div>
             </div>
 
-            {/* Carrossel Horizontal Estilo Print 1 com Efeito Foco/Perspectiva */}
-            <div className="mb-12 flex gap-5 overflow-x-auto pb-6 pt-2 snap-x snap-mandatory scrollbar-none">
+            {/* Carrossel Horizontal Estilo Print 1 com Efeito Foco/Perspectiva e Botões Flutuantes Desktop */}
+            <div className="relative group/carousel mb-12">
+              {/* Botão Flutuante Esquerdo (Desktop - conforme marcado na imagem) */}
+              <button
+                type="button"
+                onClick={() => scrollCarousel("left")}
+                disabled={!canScrollCarouselLeft}
+                aria-label="Rolar acomodações para a esquerda"
+                className={`hidden md:flex absolute -left-4 lg:-left-6 top-1/2 -translate-y-1/2 z-20 w-12 h-12 rounded-full items-center justify-center transition-all shadow-xl border cursor-pointer ${
+                  canScrollCarouselLeft
+                    ? "bg-white hover:bg-[#0a301a] text-[#0a301a] hover:text-[#f8faf8] border-[#e2eae3] hover:border-[#0a301a] hover:scale-110 active:scale-95"
+                    : "bg-white/70 text-gray-300 border-[#e2eae3]/60 cursor-not-allowed opacity-20 pointer-events-none"
+                }`}
+              >
+                <span className="text-2xl leading-none font-bold select-none pb-0.5">‹</span>
+              </button>
+
+              {/* Botão Flutuante Direito (Desktop - conforme marcado na imagem) */}
+              <button
+                type="button"
+                onClick={() => scrollCarousel("right")}
+                disabled={!canScrollCarouselRight}
+                aria-label="Rolar acomodações para a direita"
+                className={`hidden md:flex absolute -right-4 lg:-right-6 top-1/2 -translate-y-1/2 z-20 w-12 h-12 rounded-full items-center justify-center transition-all shadow-xl border cursor-pointer ${
+                  canScrollCarouselRight
+                    ? "bg-[#f29b2f] hover:bg-[#d98520] text-[#0a301a] border-[#e2eae3] hover:scale-110 active:scale-95 shadow-[#f29b2f]/20"
+                    : "bg-white/70 text-gray-300 border-[#e2eae3]/60 cursor-not-allowed opacity-20 pointer-events-none"
+                }`}
+              >
+                <span className="text-2xl leading-none font-bold select-none pb-0.5">›</span>
+              </button>
+
+              <div
+                ref={acomodacoesCarouselRef}
+                onScroll={checkCarouselScroll}
+                className="flex gap-5 overflow-x-auto pb-6 pt-2 snap-x snap-mandatory scrollbar-none scroll-smooth"
+              >
               {acomodacoes.map((item, idx) => {
                 const isSelected = item.slug === currentCat.slugPrincipal;
                 return (
@@ -1125,6 +1225,7 @@ export default function EditorialHomeClient() {
                   </div>
                 );
               })}
+              </div>
             </div>
 
             {/* 2-Column Responsive Category Showcase (Print 8 alignment fix) */}
@@ -1411,6 +1512,11 @@ export default function EditorialHomeClient() {
           </div>
         </div>
       </section>
+
+      {/* =====================================================================
+          NOVA SEÇÃO EXCLUSIVA — A CAPELA PÉ NA AREIA & CELEBRAÇÕES FAMILIARES
+      ===================================================================== */}
+      <EditorialCapelaSection />
 
       {/* =====================================================================
           SEÇÃO 7 E SEÇÃO 8 — BENTO GRID ESCURO + CARD DE FAQ + CTA ESCURO +

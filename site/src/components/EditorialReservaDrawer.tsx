@@ -42,9 +42,12 @@ export default function EditorialReservaDrawer({
 
   const handleWhatsAppSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    const unidadeTexto = selectedUnit
-      ? `${selectedUnit.nome} (${selectedUnit.capacidade})`
-      : "Sugestão ideal para meu grupo";
+    const unidadeTexto =
+      acomodacaoSlug === "capela"
+        ? "Capela da Pousada (Renovação de votos / Celebrações)"
+        : selectedUnit
+          ? `${selectedUnit.nome} (${selectedUnit.capacidade})`
+          : "Sugestão ideal para meu grupo";
     const datasTexto =
       checkIn && checkOut
         ? `de ${checkIn.split("-").reverse().join("/")} a ${checkOut.split("-").reverse().join("/")}`
@@ -205,6 +208,9 @@ export default function EditorialReservaDrawer({
                           {a.nome} ({a.capacidade})
                         </option>
                       ))}
+                  </optgroup>
+                  <optgroup label="Espaços Especiais & Celebrações">
+                    <option value="capela">⛪ Capela da Pousada (Renovação de Votos / Celebrações)</option>
                   </optgroup>
                 </select>
               </div>

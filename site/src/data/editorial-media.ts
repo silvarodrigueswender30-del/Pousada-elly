@@ -38,7 +38,7 @@ export const editorialMedia: Record<string, EditorialMediaSlot> = {
     avif: "/media/editorial/hero-2.avif",
     mobileSrc: "/media/editorial/hero-2-mobile.webp",
     mobileAvif: "/media/editorial/hero-2-mobile.avif",
-    alt: "Capela de Nossa Senhora dos Navegantes e restaurante da pousada pé na areia com a Serra do Mar ao fundo",
+    alt: "Capela privativa e restaurante da pousada pé na areia com a Serra do Mar ao fundo",
     isTemporaryPlaceholder: false,
     arquivoEsperadoParaTroca: "hero2.jpg (APLICADO)",
     secaoOndeAparece: "Seção 1 (Hero Slide 02 — Capela & Gastronomia)",
@@ -217,17 +217,17 @@ export const heroSlides: HeroSlide[] = [
     headlinePrefix: "Nossa forma de receber une mar calmo e",
     italicWord: "natureza.",
     subtitle:
-      "Dormir ouvindo a enseada de águas serenas e dar três passos até a areia. Chalés com cozinha para até 15 pessoas, suítes e restaurante próprio.",
+      "Acorde com os pés na areia e o mar sereno sem ondas fortes. 5 chalés com cozinha privativa (3 a 15 pessoas), suítes com varanda, restaurante próprio e piscina.",
     media: editorialMedia.hero1,
   },
   {
     id: "capela-e-gastronomia",
     tabLabel: "Capela & Pátio",
-    eyebrow: "CAPELA HISTÓRICA DOS NAVEGANTES · RESTAURANTE PÉ NA AREIA",
+    eyebrow: "CAPELA PRIVATIVA À BEIRA-MAR · RESTAURANTE PÉ NA AREIA",
     headlinePrefix: "Nossa forma de receber une tradição e",
     italicWord: "acolhimento.",
     subtitle:
-      "Espaço arborizado com quiosque pé na areia, culinária caiçara fresca e a icônica Capela de Nossa Senhora dos Navegantes emoldurada pela Serra do Mar.",
+      "Espaço arborizado com quiosque pé na areia, culinária caiçara fresca e capela privativa em meio ao jardim para momentos de paz e celebrações em família.",
     media: editorialMedia.hero2,
   },
   {
@@ -237,7 +237,7 @@ export const heroSlides: HeroSlide[] = [
     headlinePrefix: "Nossa forma de receber une horizonte e",
     italicWord: "sossego.",
     subtitle:
-      "Uma das praias mais preservadas do norte de Ubatuba, com faixa de areia firme, águas rasas para crianças e pôr do sol dourado entre as montanhas.",
+      "Águas mansas como uma piscina natural, perfeitas para crianças e idosos. Uma enseada protegida com areia firme e o pôr do sol mais bonito de Ubatuba.",
     media: editorialMedia.hero3,
   },
 ];
