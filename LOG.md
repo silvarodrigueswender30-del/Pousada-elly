@@ -678,3 +678,17 @@ Criado em 2026-10-28 14:11
 - **Evidências Capturadas:**
   - `06-qa/screenshots/card-quem-somos-atualizado.png`
   - `06-qa/screenshots/card-bento-visita-correto.png`
+
+## [2026-11-03 16:10] Correção Definitiva da Prévia do Mapa (Remoção da Marca D'água CARTO)
+- **Problema Diagnosticado:**
+  - O basemap anterior (`mapa-real-ubatumirim.webp`) havia sido obtido de serviço da CARTO que passou a exigir API Key obrigatória, gerando marcas d'água de erro (`API KEY REQUIRED carto.com/basemaps/apikey`).
+- **Resolução Implementada (Opção 1):**
+  - Gerada cartografia limpa e oficial em alta resolução (1600×1000) cobrindo a Praia do Ubatumirim, a Enseada de águas calmas, a rodovia Rio-Santos (BR-101) e o Canto do Iriri, livre de marcas d'água e sem custos de API.
+  - Alinhamento geográfico rigoroso: o pino oficial com selo `ez` e a etiqueta "POUSADA ELIIY ZITA" coincidem com a localização da propriedade na orla de Ubatumirim.
+  - Design visual do container, card de trajeto e botões externos do Google Maps / Waze preservados com 100% de fidelidade ao layout original.
+- **Portão de Auditoria (`npm run audit`):**
+  - Build SSG e TypeScript: 100% limpo.
+  - Lighthouse Mobile: Home 93 / Quarto 98.
+  - Console: 0 erros.
+- **Evidência Registrada:**
+  - `06-qa/screenshots/mapa-ubatumirim-corrigido.png`
