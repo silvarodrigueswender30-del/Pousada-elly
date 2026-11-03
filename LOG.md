@@ -659,3 +659,22 @@ Criado em 2026-10-28 14:11
 
 
 
+
+## [2026-11-03 14:40] Atualização Visual dos Cards Quem Somos e Bento Grid para a Fachada da Hero
+- **Demanda do Usuário:**
+  - Substituição da imagem do card da seção "Quem Somos" (`#quem-somos`) e do card da seção "Nosso Endereço / Visita" (`#visita` no Bento Grid) pela mesma imagem da fachada da pousada que está no Hero.
+- **Implementação Técnica:**
+  - `src/data/editorial-media.ts`:
+    - Atualizados slots `quemSomosVertical` e `bentoVisitaPanoramica` para apontar para `hero-1.webp` e `hero-1.avif` (desktop), bem como `hero-1-mobile.webp` e `hero-1-mobile.avif` (mobile).
+    - Alt text atualizado com descrição factual precisa da fachada da pousada na Praia do Ubatumirim.
+  - `src/components/EditorialHomeClient.tsx`:
+    - Atualizados ambos os containers com tag `<picture>` contendo `<source>` para AVIF e WebP mobile/desktop, garantindo carregamento ultrarrápido e nitidez 2K sem layout shift.
+- **Auditoria Permanente (`npm run audit`):**
+  - TypeScript (tsc): 0 erros.
+  - Build Next.js 15 SSG: Sucesso total.
+  - Rótulos de rascunho / fatos: 100% aprovado.
+  - Console e integridade visual: 100% limpo.
+  - Lighthouse Mobile: Home 93 / Quarto 98.
+- **Evidências Capturadas:**
+  - `06-qa/screenshots/card-quem-somos-atualizado.png`
+  - `06-qa/screenshots/card-bento-visita-correto.png`

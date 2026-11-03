@@ -1405,15 +1405,26 @@ export default function EditorialHomeClient() {
             {/* Left Column: Rounded Photo + Floating Circular Badge with Rotating Ring on Right Edge (sec_30.jpg–sec_32.jpg) */}
             <div className="lg:col-span-5 relative">
               <div className="relative rounded-[28px] overflow-hidden aspect-[4/4.6] bg-[#f5efe6] shadow-2xl">
-                <img
-                  src={editorialMedia.quemSomosVertical.src}
-                  alt={editorialMedia.quemSomosVertical.alt}
-                  width={800}
-                  height={920}
-                  loading="lazy"
-                  decoding="async"
-                  className="w-full h-full object-cover object-center"
-                />
+                <picture className="w-full h-full">
+                  {editorialMedia.quemSomosVertical.mobileAvif && (
+                    <source media="(max-width: 640px)" srcSet={editorialMedia.quemSomosVertical.mobileAvif} type="image/avif" />
+                  )}
+                  {editorialMedia.quemSomosVertical.mobileSrc && (
+                    <source media="(max-width: 640px)" srcSet={editorialMedia.quemSomosVertical.mobileSrc} type="image/webp" />
+                  )}
+                  {editorialMedia.quemSomosVertical.avif && (
+                    <source srcSet={editorialMedia.quemSomosVertical.avif} type="image/avif" />
+                  )}
+                  <img
+                    src={editorialMedia.quemSomosVertical.src}
+                    alt={editorialMedia.quemSomosVertical.alt}
+                    width={800}
+                    height={920}
+                    loading="lazy"
+                    decoding="async"
+                    className="w-full h-full object-cover object-center"
+                  />
+                </picture>
                 <div className="absolute inset-0 bg-gradient-to-t from-black/65 via-transparent to-transparent flex items-end p-6">
                   <div className="text-white">
                     <span className="text-[10px] uppercase tracking-[0.2em] text-white/85 block">
@@ -1602,15 +1613,26 @@ export default function EditorialHomeClient() {
               </div>
 
               <div className="relative rounded-[22px] overflow-hidden aspect-[16/10] bg-[#082112]">
-                <img
-                  src={editorialMedia.bentoVisitaPanoramica.src}
-                  alt={editorialMedia.bentoVisitaPanoramica.alt}
-                  width={1000}
-                  height={625}
-                  loading="lazy"
-                  decoding="async"
-                  className="w-full h-full object-cover object-center"
-                />
+                <picture className="w-full h-full">
+                  {editorialMedia.bentoVisitaPanoramica.mobileAvif && (
+                    <source media="(max-width: 640px)" srcSet={editorialMedia.bentoVisitaPanoramica.mobileAvif} type="image/avif" />
+                  )}
+                  {editorialMedia.bentoVisitaPanoramica.mobileSrc && (
+                    <source media="(max-width: 640px)" srcSet={editorialMedia.bentoVisitaPanoramica.mobileSrc} type="image/webp" />
+                  )}
+                  {editorialMedia.bentoVisitaPanoramica.avif && (
+                    <source srcSet={editorialMedia.bentoVisitaPanoramica.avif} type="image/avif" />
+                  )}
+                  <img
+                    src={editorialMedia.bentoVisitaPanoramica.src}
+                    alt={editorialMedia.bentoVisitaPanoramica.alt}
+                    width={1000}
+                    height={625}
+                    loading="lazy"
+                    decoding="async"
+                    className="w-full h-full object-cover object-center"
+                  />
+                </picture>
                 {/* Floating White Location Pill on Bottom-Left of Photo (Exact match to sec_34.jpg & sec_35.jpg!) */}
                 <div className="absolute bottom-4 left-4 right-4 flex flex-wrap items-center justify-between gap-2">
                   <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-[#f8faf8]/95 backdrop-blur-md text-[#0a301a] text-xs font-semibold shadow-lg">

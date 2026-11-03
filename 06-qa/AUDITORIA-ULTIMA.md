@@ -1,6 +1,6 @@
 # Relatório de Auditoria Automática — Pousada Eliiy Zita Pedro
 
-**Data da Auditoria:** 2026-11-03 16:39:58  
+**Data da Auditoria:** 2026-11-03 17:40:10  
 **Status Geral do Portão:** **APROVADO COM SUCESSO ✅**  
 **Versão do Sistema:** Next.js 15.5.28 / React 19 / Tailwind 4  
 
@@ -23,7 +23,7 @@
 | **Checklist Anti-IA** | Cores & Estética Natural | Sem botões roxos/neon de IA | Paleta caiçara autêntica (#0a301a, #f29b2f, #f5efe6) | 🟢 PASSOU |
 | **Qualidade Runtime** | Erros no Console | 0 erros de runtime ou hydration | Console 100% limpo | 🟢 PASSOU |
 | **Acessibilidade (Axe/WCAG)** | Estrutura Semântica | Lang pt-BR e imagens com alt | 100% imagens com alt e lang presente | 🟢 PASSOU |
-| **Performance Mobile** | Lighthouse Mobile (Home & Quarto) | Score >= 90 | Home: 98 / Quarto: 98 | 🟢 PASSOU |
+| **Performance Mobile** | Lighthouse Mobile (Home & Quarto) | Score >= 90 | Home: 93 / Quarto: 98 | 🟢 PASSOU |
 | **QA Visual** | Screenshots Responsivos | Capturas em 375, 768 e 1440px | 6 capturas salvas em 06-qa/screenshots-auditoria/ | 🟢 PASSOU |
 
 ---
