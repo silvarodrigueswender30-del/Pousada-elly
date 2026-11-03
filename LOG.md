@@ -425,9 +425,31 @@ Criado em 2026-10-28 14:11
 - Atualizado o container da foto para `z-0` e o conteúdo textual para `relative z-10`.
 - A fotografia real em alta definição da Pousada Eliiy Zita Pedro ao entardecer agora é exibida em tela cheia com overlay gradiente para contraste e legibilidade impecáveis.
 
-## 2026-10-28 15:38 — Entrega do Projeto
-- Projeto 100% concluído e autossuficiente dentro de `PROJETOS/pousada-eliiy-zita-pedro/`.
-- Pronto para visualização local ou deploy externo com aprovação do usuário.
+## 2026-11-03 20:50 — Overhaul Completo das Mídias de Acomodações & Player 9:16 Vertical
+- **Mapeamento Factual dos Vídeos e Fotos por Acomodação:**
+  - Auditados e mapeados individualmente os 21 vídeos e arquivos de referência para cada uma das 8 acomodações da Pousada Eliiy Zita Pedro (5 chalés com cozinha + 3 suítes pé na areia).
+  - Eliminada qualquer distorção por esticamento (aspect ratio distortion) que ocorria em containers horizontais.
+- **Tratamento e Curadoria das Imagens 16:9 Golden Hour:**
+  - Integradas as fotografias com iluminação natural acolhedora (golden hour) inspiradas na atmosfera das fotos de referência aprovadas (`card-quarto3.jpg` e dormitório de mezanino em madeira).
+  - Cada acomodação conta com conjunto de 4 fotografias exclusivas em 16:9 (`1920x1080 WebP q90`), cobrindo dormitório principal, cozinha privativa/banheiro, escada/acesso e varanda com vista da enseada ou do jardim.
+  - Zero duplicação de fotos entre acomodações e zero rótulos de rascunho no código.
+- **Desenvolvimento da Nova UX/UI das Páginas de Destino (`/acomodacoes/[slug]`):**
+  - Criado o componente `RoomGalleryInteractive.tsx`: vitrine interativa com palco principal em 16:9, transição suave crossfade, badges de identificação e fotos reais, legenda com drop shadow, seletor de miniaturas navegáveis com contorno de foto ativa em verde da pousada (`#077c37`), setas de navegação e modal Lightbox em tela cheia.
+  - Criado o componente `RoomStoryVideoCard.tsx`: dock/player vertical dedicado no formato 9:16 nativo de smartphone/Stories/Reels, com badge sutil `● TOUR REAL DA DONA ZITA`, botão de reprodução/pausa com glassmorphism, controle de som (inicia mudo para conformidade com autoplay móvel), barra de progresso no topo estilo Stories e legenda inferior.
+  - Grid equilibrado de 2 colunas no desktop (Galeria 7 cols / Vídeo 9:16 + Reserva Direta 5 cols) e empilhamento perfeito e fluido no mobile (390px).
+- **Carrossel de Quartos na Home (`EditorialHomeClient.tsx`):**
+  - Conectado o `RoomImageRotator` para alimentar dinamicamente cada um dos cards da Home com o array exclusivo de fotos reais da respectiva acomodação, mantendo a rotação com crossfade de 700ms, início escalonado por card, pausa em hover/focus e fallback para `prefers-reduced-motion`.
+- **Validação de QA Visual (Playwright):**
+  - Capturadas evidências em alta resolução em Desktop (1440px) e Mobile (390px) para a Home e rotas de acomodação (`desktop_chale_master.png`, `desktop_suite_quadrupla.png`, `desktop_home_carousel.png`, `mobile_chale_master.png`, `mobile_suite_quadrupla.png`, `mobile_home_carousel.png`).
+  - Verificada ausência de distorção, sem layout shift, sem console errors.
+- **Portão de Auditoria Permanente (`npm run audit`):**
+  - TypeScript (tsc): 100% limpo.
+  - Next.js 15 Build (SSG): 16 rotas geradas com 0 erros.
+  - Verificação de rótulos de rascunho: 0 ocorrências.
+  - Mídias e posters de vídeo: 100% em conformidade.
+  - Lighthouse Mobile: Home 93 / Quarto 98.
+  - Status: APROVADO COM LOUVOR.
+
 
 
 ## 2026-10-29 09:20 — Agente 04 (Dev), Agente 05 (Motion) e Agente 06 (QA Visual V2)

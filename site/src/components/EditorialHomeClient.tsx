@@ -1175,9 +1175,9 @@ export default function EditorialHomeClient() {
                     {/* Container de Imagens Rotativas com Crossfade e Gradiente Verde Noite */}
                     <RoomImageRotator
                       images={
-                        item.slug === "chale-quinteto-5p" || item.nome.includes("Quinteto")
-                          ? ROOM_CARD_IMAGES
-                          : [item.fotos[0]?.url || editorialMedia.hero1.src]
+                        item.fotos && item.fotos.length > 0
+                          ? item.fotos.map((f) => f.url)
+                          : ROOM_CARD_IMAGES
                       }
                       unitName={item.nome}
                       capacidade={item.capacidade}

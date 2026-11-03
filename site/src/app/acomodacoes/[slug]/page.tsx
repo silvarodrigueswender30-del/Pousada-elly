@@ -2,7 +2,8 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import type { Metadata } from "next";
 import { acomodacoes } from "@/data/acomodacoes";
-import { LazyVideoCard } from "@/components/LazyVideoCard";
+import { RoomGalleryInteractive } from "@/components/RoomGalleryInteractive";
+import { RoomStoryVideoCard } from "@/components/RoomStoryVideoCard";
 import { EditorialFooter } from "@/components/EditorialFooter";
 
 interface Props {
@@ -53,7 +54,7 @@ export default async function AcomodacaoPage({ params }: Props) {
 
   return (
     <div className="min-h-screen bg-[#f8faf8] text-[#0a301a] flex flex-col justify-between selection:bg-[#0a301a] selection:text-[#f8faf8]">
-      {/* HEADER SUÍÇO EM 4 COLUNAS (ESTÉTICA ARQ.MP4) */}
+      {/* HEADER SUÍÇO EM 4 COLUNAS */}
       <header className="w-full px-5 sm:px-10 lg:px-14 pt-6 pb-5 border-b border-[#0a301a]/10 bg-[#f8faf8]">
         <div className="max-w-[1440px] mx-auto grid grid-cols-2 lg:grid-cols-12 items-center gap-4">
           <div className="lg:col-span-3 flex items-center gap-3">
@@ -116,12 +117,12 @@ export default async function AcomodacaoPage({ params }: Props) {
       </header>
 
       {/* CONTEÚDO PRINCIPAL EDITORIAL */}
-      <main className="w-full py-12 sm:py-16">
+      <main className="w-full py-10 sm:py-14">
         <div className="max-w-[1440px] mx-auto px-5 sm:px-10 lg:px-14">
           {/* Topo Editorial da Unidade */}
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-end mb-12">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-end mb-10">
             <div className="lg:col-span-8">
-              <div className="flex flex-wrap items-center gap-3 mb-4">
+              <div className="flex flex-wrap items-center gap-3 mb-3">
                 <Link
                   href="/#acomodacoes"
                   className="text-xs uppercase tracking-[0.18em] text-[#5C5F5B] hover:text-[#141614] font-semibold"
@@ -132,6 +133,14 @@ export default async function AcomodacaoPage({ params }: Props) {
                 <span className="text-xs font-mono uppercase tracking-widest text-[#077c37] font-semibold">
                   [{item.capacidade}]
                 </span>
+                {item.vistaMar && (
+                  <>
+                    <span className="text-xs text-[#5C5F5B]">·</span>
+                    <span className="text-xs font-mono uppercase tracking-widest text-[#f29b2f] font-semibold">
+                      [VISTA PARA O MAR]
+                    </span>
+                  </>
+                )}
               </div>
 
               <h1 className="text-3xl sm:text-5xl lg:text-6xl font-semibold tracking-tight leading-[1.05]">
@@ -140,7 +149,7 @@ export default async function AcomodacaoPage({ params }: Props) {
                   ({item.capacidade}).
                 </span>
               </h1>
-              <p className="mt-4 text-base sm:text-lg text-[#5C5F5B] max-w-2xl leading-relaxed">
+              <p className="mt-3 text-base sm:text-lg text-[#5C5F5B] max-w-2xl leading-relaxed">
                 {item.subtitulo}
               </p>
             </div>
@@ -150,7 +159,7 @@ export default async function AcomodacaoPage({ params }: Props) {
                 href={whatsappUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group inline-flex items-center justify-between gap-4 rounded-full bg-[#141614] text-[#F4F4F0] pl-6 pr-2 py-2 text-sm font-semibold hover:bg-[#077c37] transition-all"
+                className="group inline-flex items-center justify-between gap-4 rounded-full bg-[#141614] text-[#F4F4F0] pl-6 pr-2 py-2 text-sm font-semibold hover:bg-[#077c37] transition-all shadow-md"
               >
                 <span>Consultar datas com Dona Zita</span>
                 <span className="w-10 h-10 rounded-full bg-[#F4F4F0] text-[#141614] flex items-center justify-center text-xs font-bold">
@@ -163,80 +172,68 @@ export default async function AcomodacaoPage({ params }: Props) {
             </div>
           </div>
 
-          {/* VITRINE FOTOGRÁFICA & VÍDEO REAL EM CARDS ARREDONDADOS (28px) */}
+          {/* VITRINE FOTOGRÁFICA INTERATIVA (16:9) & TOUR EM VÍDEO VERTICAL (9:16) */}
           <section aria-label="Galeria e vídeo real da acomodação" className="mb-16">
-            {item.fotos.length > 0 ? (
-              <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
-                {/* Foto Principal Grande Arredondada */}
-                <figure className="lg:col-span-8 rounded-[28px] overflow-hidden bg-[#EAEAE4] relative flex flex-col justify-between shadow-lg">
-                  <div className="aspect-[16/10] w-full overflow-hidden">
-                    <img
-                      src={item.fotos[0].url}
-                      alt={item.fotos[0].alt}
-                      width={1200}
-                      height={750}
-                      fetchPriority="high"
-                      decoding="async"
-                      className="w-full h-full object-cover"
-                    />
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+              {/* Coluna Principal da Esquerda: Galeria Interativa 16:9 */}
+              <div className="lg:col-span-7 flex flex-col gap-5">
+                <RoomGalleryInteractive fotos={item.fotos} roomName={item.nome} />
+
+                {/* Badges de garantia visual */}
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 p-4 rounded-[20px] bg-[#EAEAE4]/60 border border-[#141614]/10">
+                  <div className="flex items-center gap-2">
+                    <span className="w-2 h-2 rounded-full bg-[#077c37]" />
+                    <span className="text-xs font-medium text-[#141614]">Fotos Reais do Quarto</span>
                   </div>
-                  <figcaption className="px-6 py-4 bg-[#EAEAE4] text-xs text-[#5C5F5B] flex flex-wrap items-center justify-between gap-2">
-                    <span className="font-medium text-[#141614]">{item.fotos[0].alt}</span>
-                    <span className="font-mono text-[11px]">{item.fotos[0].origem}</span>
-                  </figcaption>
-                </figure>
-
-                {/* Coluna Lateral: Tour em Vídeo Real + Fotos Secundárias */}
-                <div className="lg:col-span-4 flex flex-col gap-6">
-                  {item.videoCard ? (
-                    <div className="rounded-[28px] overflow-hidden bg-[#141614] text-[#F4F4F0] p-4 shadow-lg">
-                      <LazyVideoCard
-                        mp4={item.videoCard.mp4}
-                        poster={item.videoCard.poster}
-                        title={item.nome}
-                        subtitle={item.videoCard.legenda}
-                        originLabel={`Tour real em vídeo (${item.videoCard.duracaoSeg}s)`}
-                        aspectClass="aspect-[16/10]"
-                      />
-                    </div>
-                  ) : null}
-
-                  {item.fotos.slice(1).map((foto, idx) => (
-                    <figure
-                      key={idx}
-                      className="rounded-[24px] overflow-hidden bg-[#EAEAE4] border border-[#141614]/10"
-                    >
-                      <div className="aspect-[16/10] w-full overflow-hidden">
-                        <img
-                          src={foto.url}
-                          alt={foto.alt}
-                          width={640}
-                          height={400}
-                          loading="lazy"
-                          decoding="async"
-                          className="w-full h-full object-cover"
-                        />
-                      </div>
-                      <figcaption className="px-4 py-3 text-xs text-[#5C5F5B]">
-                        {foto.alt}
-                      </figcaption>
-                    </figure>
-                  ))}
+                  <div className="flex items-center gap-2">
+                    <span className="w-2 h-2 rounded-full bg-[#077c37]" />
+                    <span className="text-xs font-medium text-[#141614]">Pé na Areia Calmo</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <span className="w-2 h-2 rounded-full bg-[#077c37]" />
+                    <span className="text-xs font-medium text-[#141614]">Atendimento da Família</span>
+                  </div>
                 </div>
               </div>
-            ) : (
-              <div className="rounded-[28px] bg-[#EAEAE4] border border-[#141614]/12 p-8 sm:p-12">
-                <span className="text-xs font-mono uppercase tracking-widest text-[#077c37] block mb-2">
-                  [ COMPROMISSO DE TRANSPARÊNCIA VISUAL ]
-                </span>
-                <h2 className="text-2xl font-semibold text-[#141614]">
-                  Sem repetição de fotos de outras acomodações
-                </h2>
-                <p className="mt-2 text-sm text-[#5C5F5B] max-w-3xl leading-relaxed">
-                  {item.pendenciaMidia} Solicite pelo botão de WhatsApp abaixo uma foto ou vídeo atualizado desta unidade específica para as datas da sua viagem.
-                </p>
+
+              {/* Coluna Lateral da Direita: Tour em Vídeo 9:16 + Reserva Direta */}
+              <div className="lg:col-span-5 flex flex-col gap-6">
+                {item.videoCard && (
+                  <RoomStoryVideoCard
+                    mp4={item.videoCard.mp4}
+                    poster={item.videoCard.poster}
+                    title={item.nome}
+                    subtitle={item.videoCard.legenda}
+                    duracaoSeg={item.videoCard.duracaoSeg}
+                  />
+                )}
+
+                {/* Card de Reserva Direta com a Dona Zita */}
+                <div className="rounded-[28px] bg-[#0a301a] text-[#f8faf8] p-6 sm:p-7 shadow-lg flex flex-col justify-between gap-4 border border-[#0a301a]/20">
+                  <div>
+                    <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#f29b2f]/20 text-[#f29b2f] text-xs font-semibold mb-3">
+                      <span>● Reserva Direta</span>
+                    </div>
+                    <h3 className="text-xl font-semibold tracking-tight text-white">
+                      Reserve direto com a Dona Zita
+                    </h3>
+                    <p className="mt-2 text-xs sm:text-sm text-[#f8faf8]/80 leading-relaxed">
+                      Consulte valores específicos para o tamanho do seu grupo e garanta a menor tarifa sem as comissões de plataformas intermediárias.
+                    </p>
+                  </div>
+
+                  <a
+                    href={whatsappUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full inline-flex items-center justify-center gap-2 rounded-full bg-[#f29b2f] hover:bg-[#d98520] text-[#0a301a] px-6 py-3.5 text-sm font-bold shadow-md transition-all text-center"
+                  >
+                    <span>Consultar no WhatsApp</span>
+                    <span aria-hidden="true">↗</span>
+                  </a>
+                </div>
               </div>
-            )}
+            </div>
           </section>
 
           {/* BARRA ARQUITETÔNICA DE ESPECIFICAÇÕES [01] A [04] */}
