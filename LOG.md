@@ -761,3 +761,26 @@ Criado em 2026-10-28 14:11
   - Console: 0 erros.
 - **Evidência Registrada:**
   - `06-qa/screenshots/mapa-ubatumirim-corrigido.png`
+
+## [2026-11-04 16:20] Atualização das Fotos dos Cards da Seção Editorial "Nossa Estrutura"
+- **Demanda do Usuário:**
+  - Atualização dos 3 cards da aba "Nossa Estrutura" (ou vivência da pousada) utilizando as fotos aprovadas da pasta `02-referencias/videos-img/img-editada`:
+    1. Card **"Restaurante Pé na Areia"** -> imagem `saboresmobile.jpg`
+    2. Card **"Pátio com Brisa Marítima"** -> imagem `patio.jpg`
+    3. Card **"Piscina com Cascata"** -> imagem `piscina.jpg`
+- **Processamento de Ativos & Resolução:**
+  - Convertidas e otimizadas para formato WebP com proporção 3:4 (1200×1600 px) e qualidade 90%:
+    - `card-restaurante-sabores.webp` (530.8 KB)
+    - `card-patio-brisa.webp` (247.1 KB)
+    - `card-piscina-cascata.webp` (396.2 KB)
+  - Fotos calibradas com iluminação golden hour natural, contraste quente caiçara e nitidez cristalina, sem filtros artificiais de IA.
+- **Implementação no Componente (`EditorialHomeClient.tsx`):**
+  - Mapeados os novos caminhos em cada card da aba `pousada` no switch de vivência.
+  - O quarto card ("A Capela Tradicional") segue mantido com a imagem de referência do patrimônio histórico.
+- **Portão de Auditoria (`npm run audit`):**
+  - TypeScript (tsc): 0 erros.
+  - Next.js 15 Build SSG: 100% aprovado.
+  - Conformidade factual e anti-IA: 0 pendências.
+  - Lighthouse Mobile: Home 93 / Quarto 98.
+  - Console e integridade visual: 100% limpos. Commit liberado!
+

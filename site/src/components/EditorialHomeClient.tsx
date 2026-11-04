@@ -1813,7 +1813,7 @@ export default function EditorialHomeClient() {
                   {/* Card 1: Restaurante Pé na Areia */}
                   <div className="relative rounded-[24px] overflow-hidden aspect-[3/4] bg-[#0a301a] border border-white/15 shadow-xl group">
                     <img
-                      src={editorialMedia.hero1.src}
+                      src="/media/editorial/card-restaurante-sabores.webp"
                       alt="Restaurante Pé na Areia da Pousada Eliiy Zita"
                       width={600}
                       height={800}
@@ -1841,7 +1841,7 @@ export default function EditorialHomeClient() {
                   {/* Card 2: Pátio com Sombra de Amendoeiras */}
                   <div className="relative rounded-[24px] overflow-hidden aspect-[3/4] bg-[#0a301a] border border-white/15 shadow-xl group">
                     <img
-                      src={editorialMedia.hero3.src}
+                      src="/media/editorial/card-patio-brisa.webp"
                       alt="Pátio arborizado com sombra e brisa na areia"
                       width={600}
                       height={800}
@@ -1869,7 +1869,7 @@ export default function EditorialHomeClient() {
                   {/* Card 3: Piscina com Cascata */}
                   <div className="relative rounded-[24px] overflow-hidden aspect-[3/4] bg-[#0a301a] border border-white/15 shadow-xl group">
                     <img
-                      src={editorialMedia.heroCrepusculo.src}
+                      src="/media/editorial/card-piscina-cascata.webp"
                       alt="Piscina ao ar livre da Pousada Eliiy Zita"
                       width={600}
                       height={800}
