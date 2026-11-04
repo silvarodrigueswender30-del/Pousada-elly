@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Plus_Jakarta_Sans, Instrument_Serif } from "next/font/google";
 import "./globals.css";
 import FloatingWhatsAppButton from "@/components/FloatingWhatsAppButton";
+import CookieConsentBanner from "@/components/CookieConsentBanner";
+
 
 const plusJakarta = Plus_Jakarta_Sans({
   subsets: ["latin"],
@@ -74,6 +76,15 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
+  other: {
+    "geo.region": "BR-SP",
+    "geo.placename": "Ubatuba, Praia do Ubatumirim",
+    "geo.position": "-23.3486585;-44.928734",
+    "ICBM": "-23.3486585, -44.928734",
+    "llms-txt": "/llms.txt",
+    "author": "Pousada e Restaurante Eliiy Zita Pedro",
+    "developer": "Off Data (https://www.offdata.digital/)",
+  },
 };
 
 export default function RootLayout({
@@ -129,6 +140,7 @@ export default function RootLayout({
       <body className="antialiased min-h-screen flex flex-col bg-[#f8faf8] text-[#0a301a] selection:bg-[#0a301a] selection:text-[#f8faf8]">
         {children}
         <FloatingWhatsAppButton />
+        <CookieConsentBanner />
       </body>
     </html>
   );

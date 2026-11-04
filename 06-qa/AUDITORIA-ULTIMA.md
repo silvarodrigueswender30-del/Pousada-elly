@@ -1,6 +1,6 @@
 # Relatório de Auditoria Automática — Pousada Eliiy Zita Pedro
 
-**Data da Auditoria:** 2026-11-04 19:18:07  
+**Data da Auditoria:** 2026-11-04 23:18:35  
 **Status Geral do Portão:** **APROVADO COM SUCESSO ✅**  
 **Versão do Sistema:** Next.js 15.5.28 / React 19 / Tailwind 4  
 
@@ -24,7 +24,7 @@
 | **Qualidade Runtime** | Erros no Console | 0 erros de runtime ou hydration | Console 100% limpo | 🟢 PASSOU |
 | **Acessibilidade (Axe/WCAG)** | Estrutura Semântica | Lang pt-BR e imagens com alt | 100% imagens com alt e lang presente | 🟢 PASSOU |
 | **Performance Mobile** | Lighthouse Mobile (Home & Quarto) | Score >= 90 | Home: 93 / Quarto: 98 | 🟢 PASSOU |
-| **QA Visual** | Screenshots Responsivos | Capturas em 375, 768 e 1440px | 6 capturas salvas em 06-qa/screenshots-auditoria/ | 🟢 PASSOU |
+| **QA Visual** | Screenshots Responsivos | Capturas em 375, 768 e 1440px | 12 capturas salvas em 06-qa/screenshots-auditoria/ | 🟢 PASSOU |
 
 ---
 
@@ -39,6 +39,12 @@ Os screenshots automatizados em resoluções Mobile (375px), Tablet (768px) e De
 - 📸 [`quarto-mobile-375.png`](screenshots-auditoria/quarto-mobile-375.png)
 - 📸 [`quarto-tablet-768.png`](screenshots-auditoria/quarto-tablet-768.png)
 - 📸 [`quarto-desktop-1440.png`](screenshots-auditoria/quarto-desktop-1440.png)
+- 📸 [`privacidade-mobile-375.png`](screenshots-auditoria/privacidade-mobile-375.png)
+- 📸 [`privacidade-tablet-768.png`](screenshots-auditoria/privacidade-tablet-768.png)
+- 📸 [`privacidade-desktop-1440.png`](screenshots-auditoria/privacidade-desktop-1440.png)
+- 📸 [`termos-mobile-375.png`](screenshots-auditoria/termos-mobile-375.png)
+- 📸 [`termos-tablet-768.png`](screenshots-auditoria/termos-tablet-768.png)
+- 📸 [`termos-desktop-1440.png`](screenshots-auditoria/termos-desktop-1440.png)
 
 ---
 

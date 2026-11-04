@@ -1,10 +1,13 @@
 import { MetadataRoute } from "next";
+import { acomodacoes } from "@/data/acomodacoes";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://pousadaeliiyzitapedro.com.br";
+  const baseUrl =
+    process.env.NEXT_PUBLIC_SITE_URL || "https://site-phi-pied-11.vercel.app";
   const lastModified = new Date();
 
-  return [
+  // Rotas institucionais e principais
+  const staticRoutes: MetadataRoute.Sitemap = [
     {
       url: baseUrl,
       lastModified,
@@ -12,34 +15,26 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 1.0,
     },
     {
-      url: `${baseUrl}/#acomodacoes`,
+      url: `${baseUrl}/politica-de-privacidade`,
       lastModified,
       changeFrequency: "monthly",
-      priority: 0.9,
+      priority: 0.5,
     },
     {
-      url: `${baseUrl}/#ubatumirim`,
+      url: `${baseUrl}/termos-de-uso`,
       lastModified,
       changeFrequency: "monthly",
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/#restaurante`,
-      lastModified,
-      changeFrequency: "monthly",
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/#localizacao`,
-      lastModified,
-      changeFrequency: "monthly",
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/#faq`,
-      lastModified,
-      changeFrequency: "monthly",
-      priority: 0.7,
+      priority: 0.5,
     },
   ];
+
+  // Rotas individuais de cada chalé e suíte (SSG dinâmico indexável)
+  const roomRoutes: MetadataRoute.Sitemap = acomodacoes.map((quarto) => ({
+    url: `${baseUrl}/acomodacoes/${quarto.slug}`,
+    lastModified,
+    changeFrequency: "weekly",
+    priority: 0.85,
+  }));
+
+  return [...staticRoutes, ...roomRoutes];
 }

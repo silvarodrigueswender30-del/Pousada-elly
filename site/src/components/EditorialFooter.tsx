@@ -164,13 +164,30 @@ export function EditorialFooter() {
           <div className="absolute inset-0 bg-gradient-to-b from-[#082112] via-[#082112]/45 to-black/75" />
 
           {/* Bottom Bar */}
-          <div className="absolute inset-x-0 bottom-0 z-30 max-w-[1440px] mx-auto px-5 sm:px-10 lg:px-16 py-5 flex flex-col sm:flex-row items-center justify-between text-[11px] text-white/85 gap-2 border-t border-white/10">
-            <span>
-              © {new Date().getFullYear()} Pousada e Restaurante Eliiy Zita Pedro · Praia do Ubatumirim, Ubatuba/SP
-            </span>
-            <span>
-              WhatsApp Oficial: +55 (12) 99232-3656 · Reserva Direta sem Taxas
-            </span>
+          <div className="absolute inset-x-0 bottom-0 z-30 max-w-[1440px] mx-auto px-5 sm:px-10 lg:px-16 py-4 flex flex-col md:flex-row items-center justify-between text-[11px] text-white/80 gap-3 border-t border-white/10">
+            <div className="flex flex-wrap items-center justify-center md:justify-start gap-x-4 gap-y-1">
+              <span>
+                © {new Date().getFullYear()} Pousada e Restaurante Eliiy Zita Pedro · Praia do Ubatumirim, Ubatuba/SP
+              </span>
+              <span className="hidden sm:inline text-white/30">|</span>
+              <Link href="/politica-de-privacidade" className="hover:text-[#f29b2f] transition-colors underline underline-offset-2">
+                Política de Privacidade
+              </Link>
+              <Link href="/termos-de-uso" className="hover:text-[#f29b2f] transition-colors underline underline-offset-2">
+                Termos & Regras de Hospedagem
+              </Link>
+            </div>
+            <div className="flex items-center gap-2 text-white/75">
+              <span>Desenvolvido por</span>
+              <a
+                href="https://www.offdata.digital/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#f29b2f] hover:text-[#d98520] font-semibold underline underline-offset-2 transition-colors"
+              >
+                Off Data
+              </a>
+            </div>
           </div>
         </div>
       </div>

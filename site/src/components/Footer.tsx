@@ -144,8 +144,27 @@ export function Footer() {
 
         {/* Rodapé inferior */}
         <div className="pt-6 flex flex-col sm:flex-row items-center justify-between text-[11px] text-neutral-400 gap-3 text-center sm:text-left">
-          <p>© {new Date().getFullYear()} Pousada e Restaurante Eliiy Zita Pedro. Todos os direitos reservados.</p>
-          <p className="text-neutral-400">Praia do Ubatumirim · Região Norte de Ubatuba, SP</p>
+          <div className="flex flex-wrap items-center justify-center sm:justify-start gap-x-3 gap-y-1">
+            <p>© {new Date().getFullYear()} Pousada e Restaurante Eliiy Zita Pedro.</p>
+            <span className="hidden sm:inline text-neutral-600">|</span>
+            <a href="/politica-de-privacidade" className="hover:text-white transition-colors underline underline-offset-2">
+              Política de Privacidade
+            </a>
+            <a href="/termos-de-uso" className="hover:text-white transition-colors underline underline-offset-2">
+              Termos de Uso
+            </a>
+          </div>
+          <div className="flex items-center gap-1.5 text-neutral-400">
+            <span>Desenvolvido por</span>
+            <a
+              href="https://www.offdata.digital/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[#f29b2f] hover:text-[#d98520] font-semibold underline underline-offset-2 transition-colors"
+            >
+              Off Data
+            </a>
+          </div>
         </div>
       </div>
     </footer>
