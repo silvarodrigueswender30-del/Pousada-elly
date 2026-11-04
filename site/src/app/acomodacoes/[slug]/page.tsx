@@ -196,15 +196,12 @@ export default async function AcomodacaoPage({ params }: Props) {
                 </div>
               </div>
 
-              {/* Coluna Lateral da Direita: Tour em Vídeo 9:16 + Reserva Direta */}
+              {/* Coluna Lateral da Direita: Tour em Múltiplos Vídeos 9:16 + Reserva Direta */}
               <div className="lg:col-span-5 flex flex-col gap-6">
-                {item.videoCard && (
+                {item.videos && item.videos.length > 0 && (
                   <RoomStoryVideoCard
-                    mp4={item.videoCard.mp4}
-                    poster={item.videoCard.poster}
-                    title={item.nome}
-                    subtitle={item.videoCard.legenda}
-                    duracaoSeg={item.videoCard.duracaoSeg}
+                    videos={item.videos}
+                    roomName={item.nome}
                   />
                 )}
 

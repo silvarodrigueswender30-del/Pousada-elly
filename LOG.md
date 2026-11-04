@@ -2,6 +2,29 @@
 
 Criado em 2026-10-28 14:11
 
+## 2026-11-04 11:55 — Substituição Integral de Fotos por Acervo Oficial em Alta Definição Golden Hour, Player Multi-Vídeos 9:16 e Correção do Mapa sem Marcas d'Água
+1. **Eliminação de Imagens Indesejadas e Padronização Visual:**
+   - Atendendo às diretrizes visuais do usuário, foram eliminados todos os frames de baixa estética (escadas verdes, portas sanfonadas de plástico e pias recortadas).
+   - Utilizadas fotografias oficiais do acervo da pousada (Booking/Propriedade) calibradas no padrão estrito de iluminação e cor (luz suave de golden hour, madeiras quentes, brancos em creme suave `#F5EFE6`, vegetação preservada `#077C37` e sombras acolhedoras sem preto lavado).
+   - Geradas 8 novas fotografias em alta definição 1920×1080 (16:9) tratadas com upscale Lanczos e unsharp mask fiel, além do enquadramento da fotografia benchmark aprovada pelo usuário (`suite-quadrupla-master-padrao.png`).
+2. **Atualização Completa dos Cards da Home e Galerias de Destino (`acomodacoes.ts`):**
+   - Todas as 8 unidades agora contam com conjuntos exclusivos de 4 fotos em altíssima definição, acabando com a repetição e garantindo nitidez cristalina em desktop e mobile.
+   - Nomes de arquivos padronizados (`quarto-cama-madeira.webp`, `varanda-panoramica.webp`, `vista-mar-coqueiros.webp`, `quarto-jardim.webp`, `quarto-espacoso.webp`, `suite-familiar.webp`, `chale-amplo.webp`, `varanda-rede.webp`).
+3. **Player Multi-Vídeos 9:16 nas Páginas de Destino (`RoomStoryVideoCard.tsx`):**
+   - Evolução do componente de vídeo para suportar múltiplos vídeos verticais reais por acomodação (Tour do Quarto, Varanda & Mar Calmo, Pátio & Areia).
+   - Implementada navegação em abas estilo Story com barra de progresso segmentada, permitindo ao hóspede alternar entre os vídeos gravados pela Dona Zita de forma fluida.
+4. **Resolução Definitiva do Mapa de Localização:**
+   - Substituídas as camadas cartográficas com marca d'água por mapa de alta precisão baseado em ArcGIS World Street Map (sem qualquer restrição de API key ou marca d'água), perfeitamente centralizado no Canto do Iriri / Praia do Ubatumirim com pino oficial da Pousada Eliiy Zita Pedro.
+5. **Portão de Auditoria Permanente (`npm run audit`):**
+   - TypeScript (tsc): 100% limpo.
+   - Next.js 15 Build: 16 rotas estáticas pré-renderizadas com 0 erros.
+   - Integridade Textual: 0 ocorrências de rótulos de rascunho ou dados não confirmados.
+   - Origem de Mídia: 100% autorizada e nomes em conformidade.
+   - Lighthouse Mobile: Home **93** / Quarto **98**.
+   - Console: 100% limpo sem erros.
+
+---
+
 ## 2026-11-03 13:40 — Implementação de Botões no Carrossel Desktop, Nova Seção da Capela, Otimização de Copy & SEO
 1. **Botões de Navegação Desktop no Carrossel de Acomodações (UX):**
    - Atendendo às marcações visuais enviadas pelo usuário, foram inseridos botões circulares flutuantes nas laterais do carrossel (`‹` e `›`) em desktop (`md:flex`), com elevação suave, sombras (`shadow-xl`) e estados desabilitados quando no início/fim da rolagem.

@@ -139,7 +139,7 @@ export function Suites() {
                         <span className="text-xs font-bold text-[#077c37]">
                           {chale.capacidade}
                         </span>
-                        {chale.videoCard && (
+                        {(chale.videoCard || (chale.videos && chale.videos.length > 0)) && (
                           <span className="text-[11px] font-semibold text-[#3b4d41] bg-[#eef3ef] px-2 py-0.5 rounded-full">
                             Com vídeo real
                           </span>

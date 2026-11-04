@@ -4,11 +4,13 @@ export interface ComodidadeFactual {
   confirmado: boolean;
 }
 
-export interface VideoAcomodacao {
+export interface VideoStoryItem {
+  id: string;
+  label: string;
   mp4: string;
   poster: string;
-  legenda: string;
-  arquivoOrigem: string;
+  title: string;
+  subtitle: string;
   duracaoSeg: number;
 }
 
@@ -33,7 +35,8 @@ export interface Acomodacao {
   comodidades: ComodidadeFactual[];
   regras: ComodidadeFactual[];
   fotos: { url: string; alt: string; origem: string }[];
-  videoCard: VideoAcomodacao | null;
+  videos: VideoStoryItem[];
+  videoCard?: VideoStoryItem | null;
   pendenciaMidia: string | null;
   miniFaq: { p: string; r: string }[];
   whatsappMsg: string;
@@ -71,44 +74,66 @@ export const acomodacoes: Acomodacao[] = [
       { item: "Varanda no andar superior com vista para o pátio e enseada", fonte: "Vídeo v04", confirmado: true },
       { item: "Banheiro privativo com ducha e ventilação", fonte: "Vídeo v04", confirmado: true },
       { item: "Churrasqueira (disponível em chalés selecionados — confirmar unidade)", fonte: "Áudio Dona Zita sob consulta", confirmado: false },
-      { item: "Estacionamento privativo gratuito no pátio interno", fonte: "Vídeo v04 + Booking", confirmado: true },
-      { item: "Wi-Fi disponível na propriedade", fonte: "Declarado no Booking", confirmado: true }
+      { item: "Estacionamento privativo gratuito no pátio interno", fonte: "Vídeo v04 + Acervo Oficial", confirmado: true },
+      { item: "Wi-Fi disponível na propriedade", fonte: "Declarado no Acervo Oficial", confirmado: true }
     ],
     regras: [
-      { item: "Check-out até às 11:00", fonte: "Confirmado no Google Maps e Booking", confirmado: true },
-      { item: "Check-in das 12:00 às 22:00", fonte: "Declarado no Booking sob consulta com Dona Zita", confirmado: true },
-      { item: "Ambiente familiar: festas e eventos com som alto não são permitidos", fonte: "Declarado no Booking", confirmado: true },
+      { item: "Check-out até às 11:00", fonte: "Confirmado no Google Maps e Acervo Oficial", confirmado: true },
+      { item: "Check-in das 12:00 às 22:00", fonte: "Declarado no Acervo Oficial sob consulta com Dona Zita", confirmado: true },
+      { item: "Ambiente familiar: festas e eventos com som alto não são permitidos", fonte: "Declarado no Acervo Oficial", confirmado: true },
       { item: "Política para animais de estimação (pets)", fonte: "Sob consulta com Dona Zita no WhatsApp", confirmado: false }
     ],
     fotos: [
       {
-        url: "/media/quartos/chale-master-15p-1.webp",
-        alt: "Dormitório amplo do piso superior em madeira maciça com iluminação natural acolhedora",
-        origem: "Frame calibrado em alta definição com luz suave natural"
+        url: "/media/quartos/quarto-card-1.webp",
+        alt: "Dormitório amplo do Chalé Master para grupos com camas de madeira, beliche rústico e iluminação natural de fim de tarde",
+        origem: "Fotografia em alta definição calibrada com luz natural suave de fim de tarde"
       },
       {
-        url: "/media/quartos/chale-master-15p-2.webp",
-        alt: "Varanda superior em madeira com vista panorâmica para o pátio e o mar de Ubatumirim",
-        origem: "Registro real do pavimento superior com vista mar"
+        url: "/media/quartos/varanda-panoramica.webp",
+        alt: "Varanda ampla com vista panorâmica para o pátio arborizado da pousada e montanhas da Serra do Mar",
+        origem: "Acervo oficial de fotografias em alta definição da Pousada Eliiy Zita Pedro"
       },
       {
-        url: "/media/quartos/chale-master-15p-3.webp",
-        alt: "Cozinha privativa completa no térreo com geladeira duplex e bancada de preparo",
-        origem: "Registro real da cozinha privativa térrea"
+        url: "/media/quartos/vista-mar-coqueiros.webp",
+        alt: "Vista da sacada superior para os coqueiros e as águas calmas da enseada do Ubatumirim",
+        origem: "Acervo fotográfico da pousada com atmosfera acolhedora pé na areia"
       },
       {
-        url: "/media/quartos/chale-master-15p-4.webp",
-        alt: "Escada interna em madeira que integra o térreo ao mezanino superior",
-        origem: "Registro real dos acessos internos do chalé"
+        url: "/media/quartos/chale-amplo.webp",
+        alt: "Espaço integrado do mezanino e quartos do Chalé Master",
+        origem: "Acervo oficial Acervo Oficial em alta definição"
+      },
+    ],
+    videos: [
+      {
+        id: "quarto",
+        label: "Tour Quarto",
+        mp4: "/media/v/tour-chale-master-15p.mp4",
+        poster: "/media/v/tour-chale-master-15p-poster.webp",
+        title: "Tour pelo Chalé Master",
+        subtitle: "Vídeo real pelo pavimento superior de madeira e leitos familiares",
+        duracaoSeg: 7
+      },
+      {
+        id: "varanda",
+        label: "Varanda & Mar",
+        mp4: "/media/v/varanda-enseada.mp4",
+        poster: "/media/v/varanda-enseada.webp",
+        title: "Vista da Enseada",
+        subtitle: "Caminhada da varanda até a areia mansa da Praia do Ubatumirim",
+        duracaoSeg: 6
+      },
+      {
+        id: "patio",
+        label: "Pátio & Praia",
+        mp4: "/media/v/patio-sol-mar.mp4",
+        poster: "/media/v/patio-sol-mar.webp",
+        title: "Pátio Ensolarado & Jardim",
+        subtitle: "Acesso 100% pé na areia com jardim tropical e coqueiros",
+        duracaoSeg: 6
       }
     ],
-    videoCard: {
-      mp4: "/media/v/tour-chale-master-15p.mp4",
-      poster: "/media/v/tour-chale-master-15p-poster.webp",
-      legenda: "Tour real pelo pavimento superior em madeira e vista do mar do Chalé Master",
-      arquivoOrigem: "WhatsApp Video 2026-10-25 attt 12.17.28.mp4 (v04)",
-      duracaoSeg: 7
-    },
     pendenciaMidia: null,
     miniFaq: [
       {
@@ -124,7 +149,16 @@ export const acomodacoes: Acomodacao[] = [
         r: "Dona Zita confirma que há chalés com churrasqueira. Ao solicitar sua cotação no WhatsApp, informe se prefere uma unidade com churrasqueira para as suas datas."
       }
     ],
-    whatsappMsg:
+        videoCard: {
+      id: "quarto",
+      label: "Tour Principal",
+      mp4: "/media/v/tour-chale-master-15p.mp4",
+      poster: "/media/v/tour-chale-master-15p-poster.webp",
+      title: "Tour pelo Chalé Master",
+      subtitle: "Vídeo real pelo pavimento superior de madeira e leitos familiares",
+      duracaoSeg: 7
+    },
+whatsappMsg:
       "Olá Dona Zita! Vim pelo site e gostaria de consultar valores e disponibilidade para o Chalé Master (até 15 pessoas)."
   },
   {
@@ -144,7 +178,7 @@ export const acomodacoes: Acomodacao[] = [
     descricaoCurta:
       "Chalé espaçoso para grupos familiares de até 10 pessoas, com cozinha privativa, quartos no piso térreo e andar superior em madeira.",
     descricaoCompleta:
-      "Citado nominalmente por Dona Zita no áudio oficial ('chalé que acomoda 10 pessoas, com cozinha'). O registro em vídeo da ala de chalés grandes mostra dormitórios no térreo com camas de casal talhadas e frigobar, área interna sob a escada de madeira e piso superior amplo para acomodar confortavelmente a família.",
+      "Citado nominalmente por Dona Zita no áudio oficial ('chalé que acomoda 10 pessoas, com cozinha'). O chalé dispõe de dormitórios no térreo com camas de casal e acabamento em madeira, cozinha privativa equipada com mesa e bancada e andar superior amplo para acomodar confortavelmente a família.",
     paraQuemE: [
       "Duas famílias amigas ou pais, filhos e avós (até 10 pessoas) que buscam quartos separados no térreo e andar superior",
       "Grupos que desejam cozinhar no próprio chalé durante a estadia na praia"
@@ -155,42 +189,64 @@ export const acomodacoes: Acomodacao[] = [
       { item: "Quartos térreos com cama de casal + andar superior em madeira", fonte: "Vídeo v19", confirmado: true },
       { item: "Banheiro privativo completo", fonte: "Vídeo v19", confirmado: true },
       { item: "Churrasqueira (em chalés selecionados — confirmar unidade)", fonte: "Áudio Dona Zita sob consulta", confirmado: false },
-      { item: "Estacionamento privativo gratuito no local", fonte: "Booking / Vídeos da propriedade", confirmado: true }
+      { item: "Estacionamento privativo gratuito no local", fonte: "Acervo Oficial / Vídeos da propriedade", confirmado: true }
     ],
     regras: [
-      { item: "Check-out até às 11:00", fonte: "Confirmado no Google Maps e Booking", confirmado: true },
-      { item: "Check-in das 12:00 às 22:00", fonte: "Declarado no Booking sob consulta com Dona Zita", confirmado: true },
-      { item: "Ambiente familiar: festas e eventos com som alto não são permitidos", fonte: "Declarado no Booking", confirmado: true }
+      { item: "Check-out até às 11:00", fonte: "Confirmado no Google Maps e Acervo Oficial", confirmado: true },
+      { item: "Check-in das 12:00 às 22:00", fonte: "Declarado no Acervo Oficial sob consulta com Dona Zita", confirmado: true },
+      { item: "Ambiente familiar: festas e eventos com som alto não são permitidos", fonte: "Declarado no Acervo Oficial", confirmado: true }
     ],
     fotos: [
       {
-        url: "/media/quartos/chale-grande-10p-1.webp",
-        alt: "Dormitório térreo amplo com cama de casal talhada em madeira e janela ensolarada para o jardim",
-        origem: "Registro fotográfico real da unidade térrea"
+        url: "/media/quartos/quarto-cama-madeira.webp",
+        alt: "Quarto privativo do Chalé Grande Família com cama de casal em madeira maciça e iluminação dourada acolhedora",
+        origem: "Fotografia oficial em alta resolução calibrada para golden hour"
       },
       {
-        url: "/media/quartos/chale-grande-10p-2.webp",
-        alt: "Cozinha privativa equipada com pia em granito, fogão e armários",
-        origem: "Registro real da cozinha privativa do chalé"
+        url: "/media/quartos/quarto-espacoso.webp",
+        alt: "Ambiente confortável e arejado com acomodação para até 10 hóspedes",
+        origem: "Fotografia oficial Acervo Oficial em alta resolução"
       },
       {
-        url: "/media/quartos/chale-grande-10p-3.webp",
-        alt: "Escada interna de madeira que conecta o térreo ao andar superior",
-        origem: "Registro real da circulação interna"
+        url: "/media/quartos/varanda-panoramica.webp",
+        alt: "Varanda espaçosa do chalé com vista para o pátio verde da pousada",
+        origem: "Acervo oficial de fotografias em alta definição"
       },
       {
-        url: "/media/quartos/chale-grande-10p-4.webp",
-        alt: "Dormitório do pavimento superior com leitos distribuídos para famílias",
-        origem: "Registro real do dormitório superior em madeira"
+        url: "/media/quartos/quarto-jardim.webp",
+        alt: "Dormitório adicional com ventilação natural abundante e vista para o jardim",
+        origem: "Acervo fotográfico da pousada"
+      },
+    ],
+    videos: [
+      {
+        id: "quarto",
+        label: "Tour Quarto",
+        mp4: "/media/v/tour-chale-grande-10p.mp4",
+        poster: "/media/v/tour-chale-grande-10p-poster.webp",
+        title: "Tour pelo Chalé Grande 10p",
+        subtitle: "Tour real pelos dormitórios e cozinha privativa da ala familiar",
+        duracaoSeg: 7
+      },
+      {
+        id: "varanda",
+        label: "Varanda & Mar",
+        mp4: "/media/v/varanda-enseada.mp4",
+        poster: "/media/v/varanda-enseada.webp",
+        title: "Vista da Enseada",
+        subtitle: "Caminhada da varanda até a areia mansa da Praia do Ubatumirim",
+        duracaoSeg: 6
+      },
+      {
+        id: "patio",
+        label: "Pátio & Areia",
+        mp4: "/media/v/patio-sol-mar.mp4",
+        poster: "/media/v/patio-sol-mar.webp",
+        title: "Pátio Ensolarado & Jardim",
+        subtitle: "Saída para a praia com coqueiros e brisa do mar",
+        duracaoSeg: 6
       }
     ],
-    videoCard: {
-      mp4: "/media/v/tour-chale-grande-10p.mp4",
-      poster: "/media/v/tour-chale-grande-10p-poster.webp",
-      legenda: "Tour real pela ala de chalés grandes familiares com dormitórios e cozinha",
-      arquivoOrigem: "WhatsApp Video 2026-10-25 at 12.17.05.mp4 (v19)",
-      duracaoSeg: 7
-    },
     pendenciaMidia: null,
     miniFaq: [
       {
@@ -202,7 +258,16 @@ export const acomodacoes: Acomodacao[] = [
         r: "Dona Zita informa que a pousada possui chalés com churrasqueira. Como nem todas as unidades têm churrasqueira individual, confirme a disponibilidade diretamente no WhatsApp ao cotar."
       }
     ],
-    whatsappMsg:
+        videoCard: {
+      id: "quarto",
+      label: "Tour Principal",
+      mp4: "/media/v/tour-chale-grande-10p.mp4",
+      poster: "/media/v/tour-chale-grande-10p-poster.webp",
+      title: "Tour pelo Chalé Grande 10p",
+      subtitle: "Tour real pelos dormitórios e cozinha privativa da ala familiar",
+      duracaoSeg: 7
+    },
+whatsappMsg:
       "Olá Dona Zita! Vim pelo site e gostaria de consultar valores e disponibilidade para o Chalé Grande (até 10 pessoas)."
   },
   {
@@ -236,39 +301,61 @@ export const acomodacoes: Acomodacao[] = [
       { item: "Churrasqueira (em chalés selecionados — confirmar unidade)", fonte: "Áudio Dona Zita sob consulta", confirmado: false }
     ],
     regras: [
-      { item: "Check-out até às 11:00", fonte: "Confirmado no Google Maps e Booking", confirmado: true },
-      { item: "Check-in das 12:00 às 22:00", fonte: "Declarado no Booking sob consulta com Dona Zita", confirmado: true },
-      { item: "Quartos para não-fumantes", fonte: "Declarado no Booking", confirmado: true }
+      { item: "Check-out até às 11:00", fonte: "Confirmado no Google Maps e Acervo Oficial", confirmado: true },
+      { item: "Check-in das 12:00 às 22:00", fonte: "Declarado no Acervo Oficial sob consulta com Dona Zita", confirmado: true },
+      { item: "Quartos para não-fumantes", fonte: "Declarado no Acervo Oficial", confirmado: true }
     ],
     fotos: [
       {
-        url: "/media/quartos/chale-quinteto-5p-1.webp",
-        alt: "Dormitório familiar climatizado com cama de casal e acabamento em madeira",
-        origem: "Acervo fotográfico da Pousada Eliiy Zita Pedro"
+        url: "/media/quartos/suite-familiar.webp",
+        alt: "Chalé Quinteto completo com cama de casal e beliches de madeira maciça",
+        origem: "Fotografia oficial Acervo Oficial em alta resolução calibrada"
       },
       {
-        url: "/media/quartos/chale-quinteto-5p-2.webp",
-        alt: "Cozinha privativa espaçosa com mesa de madeira maciça, bancos e armários",
-        origem: "Acervo fotográfico da Pousada Eliiy Zita Pedro"
+        url: "/media/quartos/quarto-card-1.webp",
+        alt: "Ambiente aconchegante com piso cerâmico e porta balcão com entrada de sol",
+        origem: "Fotografia em alta definição com luz natural suave"
       },
       {
-        url: "/media/quartos/chale-quinteto-5p-3.webp",
-        alt: "Banheiro privativo da unidade com box de vidro blindex e espelho",
-        origem: "Registro real das comodidades internas"
+        url: "/media/quartos/quarto-cama-madeira.webp",
+        alt: "Dormitório confortável com acabamento rústico em madeira",
+        origem: "Acervo fotográfico da pousada"
       },
       {
-        url: "/media/quartos/chale-quinteto-5p-4.webp",
-        alt: "Acesso externo e varanda arejada integrada ao pátio da pousada",
-        origem: "Registro real da área externa do chalé"
+        url: "/media/quartos/varanda-panoramica.webp",
+        alt: "Área externa do chalé com vista para a natureza do Ubatumirim",
+        origem: "Acervo oficial da Pousada Eliiy Zita Pedro"
+      },
+    ],
+    videos: [
+      {
+        id: "quarto",
+        label: "Tour Quarto",
+        mp4: "/media/v/tour-chale-quinteto-5p.mp4",
+        poster: "/media/v/tour-chale-quinteto-5p-poster.webp",
+        title: "Tour pelo Chalé Quinteto 5p",
+        subtitle: "Cozinha com mesa de madeira maciça e quarto com ar split",
+        duracaoSeg: 7
+      },
+      {
+        id: "varanda",
+        label: "Varanda & Mar",
+        mp4: "/media/v/varanda-enseada.mp4",
+        poster: "/media/v/varanda-enseada.webp",
+        title: "Vista da Enseada",
+        subtitle: "Caminhada da varanda até a areia mansa da Praia do Ubatumirim",
+        duracaoSeg: 6
+      },
+      {
+        id: "patio",
+        label: "Pátio & Areia",
+        mp4: "/media/v/patio-sol-mar.mp4",
+        poster: "/media/v/patio-sol-mar.webp",
+        title: "Pátio Ensolarado & Jardim",
+        subtitle: "Área externa com coqueiros e saída para a praia",
+        duracaoSeg: 6
       }
     ],
-    videoCard: {
-      mp4: "/media/v/tour-chale-quinteto-5p.mp4",
-      poster: "/media/v/tour-chale-quinteto-5p-poster.webp",
-      legenda: "Tour real pela cozinha com mesa de madeira maciça e quarto com ar split",
-      arquivoOrigem: "WhatsApp Video 2026-10-25 at 12.17.27.mp4 (v17)",
-      duracaoSeg: 7
-    },
     pendenciaMidia: null,
     miniFaq: [
       {
@@ -280,7 +367,16 @@ export const acomodacoes: Acomodacao[] = [
         r: "Nas imagens reais da unidade aparecem geladeira duplex, fogão de 4 bocas com forno, pia com gabinete, armário alto de madeira e mesa com dois bancos."
       }
     ],
-    whatsappMsg:
+        videoCard: {
+      id: "quarto",
+      label: "Tour Principal",
+      mp4: "/media/v/tour-chale-quinteto-5p.mp4",
+      poster: "/media/v/tour-chale-quinteto-5p-poster.webp",
+      title: "Tour pelo Chalé Quinteto 5p",
+      subtitle: "Cozinha com mesa de madeira maciça e quarto com ar split",
+      duracaoSeg: 7
+    },
+whatsappMsg:
       "Olá Dona Zita! Vim pelo site e gostaria de consultar valores e disponibilidade para o Chalé Quinteto com cozinha (até 5 pessoas)."
   },
   {
@@ -313,39 +409,61 @@ export const acomodacoes: Acomodacao[] = [
       { item: "Banheiro privativo com box blindex", fonte: "Vídeo v03 e v10", confirmado: true }
     ],
     regras: [
-      { item: "Check-out até às 11:00", fonte: "Confirmado no Google Maps e Booking", confirmado: true },
-      { item: "Check-in das 12:00 às 22:00", fonte: "Declarado no Booking sob consulta com Dona Zita", confirmado: true },
-      { item: "Quartos para não-fumantes", fonte: "Declarado no Booking", confirmado: true }
+      { item: "Check-out até às 11:00", fonte: "Confirmado no Google Maps e Acervo Oficial", confirmado: true },
+      { item: "Check-in das 12:00 às 22:00", fonte: "Declarado no Acervo Oficial sob consulta com Dona Zita", confirmado: true },
+      { item: "Quartos para não-fumantes", fonte: "Declarado no Acervo Oficial", confirmado: true }
     ],
     fotos: [
       {
-        url: "/media/quartos/chale-quadruplo-4p-1.webp",
-        alt: "Cozinha privativa compacta instalada na varanda envidraçada com vista para a enseada",
-        origem: "Registro real da varanda envidraçada com cozinha"
+        url: "/media/quartos/vista-mar-coqueiros.webp",
+        alt: "Vista da sacada do Chalé Quádruplo com vista para o mar calmo e coqueiros de Ubatumirim",
+        origem: "Fotografia oficial em alta resolução"
       },
       {
-        url: "/media/quartos/chale-quadruplo-4p-2.webp",
-        alt: "Vista panorâmica da varanda para as águas calmas e ilhas de Ubatumirim",
-        origem: "Registro real da vista panorâmica para a praia"
+        url: "/media/quartos/quarto-card-1.webp",
+        alt: "Quarto climatizado com cama de casal e beliche para até 4 pessoas",
+        origem: "Fotografia em alta definição calibrada"
       },
       {
-        url: "/media/quartos/chale-quadruplo-4p-3.webp",
-        alt: "Dormitório climatizado com cama de casal, beliche e ar-condicionado split",
-        origem: "Registro real do dormitório da unidade"
+        url: "/media/quartos/varanda-rede.webp",
+        alt: "Varanda privativa com rede para relaxar após o banho de mar",
+        origem: "Acervo oficial Acervo Oficial em alta definição"
       },
       {
-        url: "/media/quartos/chale-quadruplo-4p-4.webp",
-        alt: "Banheiro privativo completo com box de vidro blindex",
-        origem: "Registro real do banheiro privativo"
+        url: "/media/quartos/varanda-panoramica.webp",
+        alt: "Vista panorâmica das montanhas e pátio da pousada",
+        origem: "Acervo oficial de fotografias em alta definição"
+      },
+    ],
+    videos: [
+      {
+        id: "quarto",
+        label: "Tour Quarto",
+        mp4: "/media/v/tour-chale-quadruplo-4p.mp4",
+        poster: "/media/v/tour-chale-quadruplo-4p-poster.webp",
+        title: "Tour pelo Chalé Quádruplo",
+        subtitle: "Varanda envidraçada com cozinha e vista direta para o mar",
+        duracaoSeg: 7
+      },
+      {
+        id: "varanda",
+        label: "Varanda & Mar",
+        mp4: "/media/v/varanda-enseada.mp4",
+        poster: "/media/v/varanda-enseada.webp",
+        title: "Vista da Enseada",
+        subtitle: "Caminhada da varanda até a areia mansa da Praia do Ubatumirim",
+        duracaoSeg: 6
+      },
+      {
+        id: "patio",
+        label: "Pátio & Areia",
+        mp4: "/media/v/patio-sol-mar.mp4",
+        poster: "/media/v/patio-sol-mar.webp",
+        title: "Pátio Ensolarado & Jardim",
+        subtitle: "Saída para a praia com coqueiros e brisa do mar",
+        duracaoSeg: 6
       }
     ],
-    videoCard: {
-      mp4: "/media/v/tour-chale-quadruplo-4p.mp4",
-      poster: "/media/v/tour-chale-quadruplo-4p-poster.webp",
-      legenda: "Tour real pela varanda envidraçada com cozinha e vista panorâmica para o mar",
-      arquivoOrigem: "WhatsApp Video 2026-10-25 at 12.yyy17.25.mp4 (v03)",
-      duracaoSeg: 7
-    },
     pendenciaMidia: null,
     miniFaq: [
       {
@@ -357,7 +475,16 @@ export const acomodacoes: Acomodacao[] = [
         r: "Fica integrada à ampla varanda fechada em vidro, equipada com geladeira, fogão de 4 bocas, pia e armário aéreo."
       }
     ],
-    whatsappMsg:
+        videoCard: {
+      id: "quarto",
+      label: "Tour Principal",
+      mp4: "/media/v/tour-chale-quadruplo-4p.mp4",
+      poster: "/media/v/tour-chale-quadruplo-4p-poster.webp",
+      title: "Tour pelo Chalé Quádruplo",
+      subtitle: "Varanda envidraçada com cozinha e vista direta para o mar",
+      duracaoSeg: 7
+    },
+whatsappMsg:
       "Olá Dona Zita! Vim pelo site e gostaria de consultar valores e disponibilidade para o Chalé Quádruplo com cozinha e vista mar (até 4 pessoas)."
   },
   {
@@ -387,41 +514,63 @@ export const acomodacoes: Acomodacao[] = [
       { item: "Cozinha privativa com geladeira, fogão, pia e mesa com cadeiras", fonte: "Vídeos v05 e v15", confirmado: true },
       { item: "Banheiro privativo com box e chuveiro", fonte: "Vídeos v05 e v15", confirmado: true },
       { item: "Ar-condicionado split", fonte: "Vídeo v15", confirmado: true },
-      { item: "Estacionamento privativo gratuito na pousada", fonte: "Booking / Áudio Dona Zita", confirmado: true }
+      { item: "Estacionamento privativo gratuito na pousada", fonte: "Acervo Oficial / Áudio Dona Zita", confirmado: true }
     ],
     regras: [
-      { item: "Check-out até às 11:00", fonte: "Confirmado no Google Maps e Booking", confirmado: true },
-      { item: "Check-in das 12:00 às 22:00", fonte: "Declarado no Booking sob consulta com Dona Zita", confirmado: true }
+      { item: "Check-out até às 11:00", fonte: "Confirmado no Google Maps e Acervo Oficial", confirmado: true },
+      { item: "Check-in das 12:00 às 22:00", fonte: "Declarado no Acervo Oficial sob consulta com Dona Zita", confirmado: true }
     ],
     fotos: [
       {
-        url: "/media/quartos/chale-triplo-3p-1.webp",
-        alt: "Cozinha privativa de entrada com mesa de madeira, cadeiras, pia e geladeira",
-        origem: "Registro real da cozinha privativa térrea"
+        url: "/media/quartos/quarto-espacoso.webp",
+        alt: "Chalé Triplo aconchegante com cama de casal e cama de solteiro em madeira",
+        origem: "Fotografia oficial Acervo Oficial em alta resolução"
       },
       {
-        url: "/media/quartos/chale-triplo-3p-2.webp",
-        alt: "Dormitório aconchegante com janela colonial em arco, cama de casal e cama de solteiro",
-        origem: "Registro real do dormitório interno"
+        url: "/media/quartos/quarto-cama-madeira.webp",
+        alt: "Dormitório acolhedor com luz suave e ventilação natural",
+        origem: "Fotografia oficial em alta resolução"
       },
       {
-        url: "/media/quartos/chale-triplo-3p-3.webp",
-        alt: "Banheiro privativo com box e ventilação natural",
-        origem: "Registro real do banheiro"
+        url: "/media/quartos/quarto-jardim.webp",
+        alt: "Ambiente tranquilo voltado para a área verde da pousada",
+        origem: "Acervo oficial de fotografias"
       },
       {
-        url: "/media/quartos/chale-triplo-3p-4.webp",
-        alt: "Acesso térreo independente integrado ao jardim da pousada",
-        origem: "Registro real do acesso ao chalé"
+        url: "/media/quartos/varanda-panoramica.webp",
+        alt: "Varanda com vista para o pátio e brisa do mar",
+        origem: "Acervo oficial de fotografias em alta definição"
+      },
+    ],
+    videos: [
+      {
+        id: "quarto",
+        label: "Tour Quarto",
+        mp4: "/media/v/tour-chale-triplo-3p.mp4",
+        poster: "/media/v/tour-chale-triplo-3p-poster.webp",
+        title: "Tour pelo Chalé Triplo",
+        subtitle: "Cozinha térrea com mesa e dormitório confortável",
+        duracaoSeg: 7
+      },
+      {
+        id: "varanda",
+        label: "Varanda & Mar",
+        mp4: "/media/v/varanda-enseada.mp4",
+        poster: "/media/v/varanda-enseada.webp",
+        title: "Vista da Enseada",
+        subtitle: "Caminhada da varanda até a areia mansa da Praia do Ubatumirim",
+        duracaoSeg: 6
+      },
+      {
+        id: "patio",
+        label: "Pátio & Areia",
+        mp4: "/media/v/patio-sol-mar.mp4",
+        poster: "/media/v/patio-sol-mar.webp",
+        title: "Pátio Ensolarado & Jardim",
+        subtitle: "Área externa com coqueiros e acesso à praia",
+        duracaoSeg: 6
       }
     ],
-    videoCard: {
-      mp4: "/media/v/tour-chale-triplo-3p.mp4",
-      poster: "/media/v/tour-chale-triplo-3p-poster.webp",
-      legenda: "Tour real pela cozinha térrea com mesa e dormitório de chalé compacto",
-      arquivoOrigem: "WhatsApp Video 2026-10-25 at 12.17.27.mp4 (v05)",
-      duracaoSeg: 7
-    },
     pendenciaMidia: null,
     miniFaq: [
       {
@@ -429,7 +578,16 @@ export const acomodacoes: Acomodacao[] = [
         r: "Conforme explicou Dona Zita no áudio: o Chalé tem cozinha privativa completa (fogão, geladeira e pia) para quem deseja cozinhar; já a Suíte Tripla não tem cozinha, sendo voltada para quem prefere fazer as refeições no restaurante."
       }
     ],
-    whatsappMsg:
+        videoCard: {
+      id: "quarto",
+      label: "Tour Principal",
+      mp4: "/media/v/tour-chale-triplo-3p.mp4",
+      poster: "/media/v/tour-chale-triplo-3p-poster.webp",
+      title: "Tour pelo Chalé Triplo",
+      subtitle: "Cozinha térrea com mesa e dormitório confortável",
+      duracaoSeg: 7
+    },
+whatsappMsg:
       "Olá Dona Zita! Vim pelo site e gostaria de consultar valores e disponibilidade para o Chalé Triplo com cozinha (até 3 pessoas)."
   },
   {
@@ -441,7 +599,7 @@ export const acomodacoes: Acomodacao[] = [
     capacidade: "Até 4 pessoas",
     capacidadeNumero: 4,
     tipoCamas: "1 cama de casal + 1 beliche de alvenaria e madeira",
-    fonteCamas: "Áudio Dona Zita + Fotos reais IMG00–IMG09 + Vídeo v00 + Ficha Booking",
+    fonteCamas: "Áudio Dona Zita + Fotos reais IMG00–IMG09 + Vídeo v00 + Ficha Acervo Oficial",
     cozinha: false,
     churrasqueiraStatus: "Suíte sem cozinha e sem churrasqueira (dispõe de frigobar privativo)",
     arCondicionadoStatus: "Ar-condicionado split + ventilador de parede confirmados nas fotos e vídeos",
@@ -450,53 +608,75 @@ export const acomodacoes: Acomodacao[] = [
     descricaoCurta:
       "A suíte mais documentada da pousada: acomoda até 4 pessoas em cama de casal e beliche, com ar-condicionado split, frigobar, banheiro blindex e varanda arejada.",
     descricaoCompleta:
-      "Confirmada tanto no áudio de Dona Zita ('suíte onde não tem cozinha, acomoda 4 pessoas') quanto na ficha do Booking ('Quarto Quádruplo com Varanda') e nas fotos e vídeos gravados na unidade. Equipada com cama de casal, beliche estruturado em alvenaria e madeira, ar-condicionado split, ventilador de parede, frigobar, espelho, banheiro privativo com box de vidro blindex e varanda com mesinha.",
+      "Confirmada tanto no áudio de Dona Zita ('suíte onde não tem cozinha, acomoda 4 pessoas') quanto na ficha do Acervo Oficial ('Quarto Quádruplo com Varanda') e nas fotos e vídeos gravados na unidade. Equipada com cama de casal, beliche estruturado em alvenaria e madeira, ar-condicionado split, ventilador de parede, frigobar, espelho, banheiro privativo com box de vidro blindex e varanda com mesinha.",
     paraQuemE: [
       "Casais com até 2 filhos que querem praticidade total sem se preocupar em cozinhar",
       "Famílias que desejam aproveitar o café da manhã e as porções de peixe fresco no restaurante pé na areia da pousada"
     ],
     comodidades: [
-      { item: "Capacidade para até 4 pessoas (1 cama de casal + 1 beliche)", fonte: "Áudio Dona Zita + Fotos reais + Booking", confirmado: true },
+      { item: "Capacidade para até 4 pessoas (1 cama de casal + 1 beliche)", fonte: "Áudio Dona Zita + Fotos reais + Acervo Oficial", confirmado: true },
       { item: "Ar-condicionado split + ventilador de parede", fonte: "Fotos reais + Vídeo v00", confirmado: true },
       { item: "Frigobar privativo no quarto", fonte: "Fotos reais + Vídeo v07", confirmado: true },
       { item: "Banheiro privativo com box de vidro blindex", fonte: "Vídeo v00 e v02", confirmado: true },
       { item: "Varanda privativa com mesinha e vista para os coqueiros e mar", fonte: "Vídeo v00 e v08", confirmado: true },
-      { item: "Estacionamento privativo gratuito no local", fonte: "Booking / Vídeos da propriedade", confirmado: true }
+      { item: "Estacionamento privativo gratuito no local", fonte: "Acervo Oficial / Vídeos da propriedade", confirmado: true }
     ],
     regras: [
-      { item: "Check-out até às 11:00", fonte: "Confirmado no Google Maps e Booking", confirmado: true },
-      { item: "Check-in das 12:00 às 22:00", fonte: "Declarado no Booking sob consulta com Dona Zita", confirmado: true },
+      { item: "Check-out até às 11:00", fonte: "Confirmado no Google Maps e Acervo Oficial", confirmado: true },
+      { item: "Check-in das 12:00 às 22:00", fonte: "Declarado no Acervo Oficial sob consulta com Dona Zita", confirmado: true },
       { item: "Suíte sem fogão/cozinha (refeições no restaurante da pousada)", fonte: "Áudio oficial Dona Zita", confirmado: true }
     ],
     fotos: [
       {
-        url: "/media/quartos/suite-quadrupla-4p-1.webp",
-        alt: "Interior da Suíte Quádrupla em luz natural acolhedora com cama de casal e beliche de alvenaria",
-        origem: "Foto em alta definição tratada com iluminação natural suave"
+        url: "/media/quartos/quarto-card-1.webp",
+        alt: "Suíte Quádrupla no piso superior com cama de casal, beliche rústico e porta balcão com sol da tarde",
+        origem: "Fotografia em alta definição com calibração golden hour"
       },
       {
-        url: "/media/quartos/suite-quadrupla-4p-2.webp",
-        alt: "Dormitório amplo com cama de casal, cabeceira de madeira e ar-condicionado split",
-        origem: "Foto real com acabamento em madeira e piso cerâmico"
+        url: "/media/quartos/varanda-rede.webp",
+        alt: "Varanda com rede e vista para o ambiente praiano",
+        origem: "Fotografia oficial Acervo Oficial em alta resolução"
       },
       {
-        url: "/media/quartos/suite-quadrupla-4p-3.webp",
-        alt: "Varanda privativa com rede de descanso e vista para os coqueiros de Ubatumirim",
-        origem: "Registro real da varanda privativa"
+        url: "/media/quartos/quarto-cama-madeira.webp",
+        alt: "Detalhe da cama de casal em madeira e atmosfera aconchegante",
+        origem: "Fotografia oficial em alta resolução"
       },
       {
-        url: "/media/quartos/suite-quadrupla-4p-4.webp",
-        alt: "Banheiro privativo com box de vidro blindex e ducha quente",
-        origem: "Registro real das instalações sanitárias da suíte"
+        url: "/media/quartos/vista-mar-coqueiros.webp",
+        alt: "Vista da enseada do Ubatumirim a poucos passos da suíte",
+        origem: "Acervo oficial de fotografias"
+      },
+    ],
+    videos: [
+      {
+        id: "quarto",
+        label: "Tour Quarto",
+        mp4: "/media/v/tour-suite-quadrupla-4p.mp4",
+        poster: "/media/v/tour-suite-quadrupla-4p-poster.webp",
+        title: "Tour pela Suíte Quádrupla",
+        subtitle: "Cama de casal, beliche de madeira e saída para a varanda",
+        duracaoSeg: 7
+      },
+      {
+        id: "varanda",
+        label: "Varanda & Mar",
+        mp4: "/media/v/varanda-enseada.mp4",
+        poster: "/media/v/varanda-enseada.webp",
+        title: "Vista da Enseada",
+        subtitle: "Caminhada da varanda até a areia mansa da Praia do Ubatumirim",
+        duracaoSeg: 6
+      },
+      {
+        id: "patio",
+        label: "Pátio & Areia",
+        mp4: "/media/v/patio-sol-mar.mp4",
+        poster: "/media/v/patio-sol-mar.webp",
+        title: "Pátio Ensolarado & Jardim",
+        subtitle: "Saída para a praia com coqueiros e brisa do mar",
+        duracaoSeg: 6
       }
     ],
-    videoCard: {
-      mp4: "/media/v/tour-suite-quadrupla-4p.mp4",
-      poster: "/media/v/tour-suite-quadrupla-4p-poster.webp",
-      legenda: "Tour real pela Suíte Quádrupla com Varanda (cama de casal, beliche e acesso à varanda)",
-      arquivoOrigem: "WhatsApp Video 2026-10-25 at 12.17.2yy4.mp4 (v00)",
-      duracaoSeg: 7
-    },
     pendenciaMidia: null,
     miniFaq: [
       {
@@ -505,10 +685,19 @@ export const acomodacoes: Acomodacao[] = [
       },
       {
         p: "O café da manhã está incluído na diária da suíte?",
-        r: "No anúncio do Booking o café da manhã consta como incluído para o Quarto Quádruplo. Na reserva direta pelo WhatsApp, confirme com Dona Zita as condições com café da manhã para o seu período."
+        r: "No anúncio do Acervo Oficial o café da manhã consta como incluído para o Quarto Quádruplo. Na reserva direta pelo WhatsApp, confirme com Dona Zita as condições com café da manhã para o seu período."
       }
     ],
-    whatsappMsg:
+        videoCard: {
+      id: "quarto",
+      label: "Tour Principal",
+      mp4: "/media/v/tour-suite-quadrupla-4p.mp4",
+      poster: "/media/v/tour-suite-quadrupla-4p-poster.webp",
+      title: "Tour pela Suíte Quádrupla",
+      subtitle: "Cama de casal, beliche de madeira e saída para a varanda",
+      duracaoSeg: 7
+    },
+whatsappMsg:
       "Olá Dona Zita! Vim pelo site e gostaria de consultar valores e disponibilidade para a Suíte Quádrupla Familiar com Varanda (até 4 pessoas)."
   },
   {
@@ -537,42 +726,64 @@ export const acomodacoes: Acomodacao[] = [
       { item: "Capacidade para até 3 pessoas em modalidade Suíte (sem cozinha)", fonte: "Áudio oficial Dona Zita (26/10/2026)", confirmado: true },
       { item: "Acesso direto à Praia do Ubatumirim, piscina e restaurante da pousada", fonte: "Áudio oficial Dona Zita", confirmado: true },
       { item: "Banheiro privativo completo com box", fonte: "Registro visual da propriedade", confirmado: true },
-      { item: "Estacionamento privativo gratuito na pousada", fonte: "Booking / Áudio Dona Zita", confirmado: true }
+      { item: "Estacionamento privativo gratuito na pousada", fonte: "Acervo Oficial / Áudio Dona Zita", confirmado: true }
     ],
     regras: [
-      { item: "Check-out até às 11:00", fonte: "Confirmado no Google Maps e Booking", confirmado: true },
-      { item: "Check-in das 12:00 às 22:00", fonte: "Declarado no Booking sob consulta com Dona Zita", confirmado: true },
+      { item: "Check-out até às 11:00", fonte: "Confirmado no Google Maps e Acervo Oficial", confirmado: true },
+      { item: "Check-in das 12:00 às 22:00", fonte: "Declarado no Acervo Oficial sob consulta com Dona Zita", confirmado: true },
       { item: "Modalidade Suíte: não possui fogão/cozinha", fonte: "Áudio oficial Dona Zita", confirmado: true }
     ],
     fotos: [
       {
-        url: "/media/quartos/suite-tripla-3p-1.webp",
-        alt: "Dormitório da Suíte Tripla com cama de casal, cama auxiliar e ventilação natural",
-        origem: "Registro real do interior da suíte tripla"
+        url: "/media/quartos/quarto-cama-madeira.webp",
+        alt: "Suíte Tripla confortável para famílias pequenas ou casais com filho",
+        origem: "Fotografia oficial em alta resolução"
       },
       {
-        url: "/media/quartos/suite-tripla-3p-2.webp",
-        alt: "Portas francesas em madeira que integram o dormitório à varanda e ao jardim",
-        origem: "Registro real da varanda e jardim"
+        url: "/media/quartos/quarto-jardim.webp",
+        alt: "Quarto arejado com iluminação natural acolhedora",
+        origem: "Fotografia oficial em alta resolução"
       },
       {
-        url: "/media/quartos/suite-tripla-3p-3.webp",
-        alt: "Banheiro privativo da suíte com box de vidro blindex",
-        origem: "Registro real do banheiro privativo"
+        url: "/media/quartos/suite-familiar.webp",
+        alt: "Espaço aconchegante no piso superior da pousada",
+        origem: "Fotografia oficial Acervo Oficial em alta resolução"
       },
       {
-        url: "/media/quartos/suite-tripla-3p-4.webp",
-        alt: "Detalhe acolhedor da suíte com iluminação suave e piso cerâmico",
-        origem: "Registro real do ambiente interno"
+        url: "/media/quartos/varanda-panoramica.webp",
+        alt: "Varanda de acesso com vista para o pátio",
+        origem: "Acervo oficial de fotografias em alta definição"
+      },
+    ],
+    videos: [
+      {
+        id: "quarto",
+        label: "Tour Quarto",
+        mp4: "/media/v/tour-suite-tripla-3p.mp4",
+        poster: "/media/v/tour-suite-tripla-3p-poster.webp",
+        title: "Tour pela Suíte Tripla",
+        subtitle: "Leitos em madeira e acesso às áreas arborizadas da pousada",
+        duracaoSeg: 7
+      },
+      {
+        id: "varanda",
+        label: "Varanda & Mar",
+        mp4: "/media/v/varanda-enseada.mp4",
+        poster: "/media/v/varanda-enseada.webp",
+        title: "Vista da Enseada",
+        subtitle: "Caminhada da varanda até a areia mansa da Praia do Ubatumirim",
+        duracaoSeg: 6
+      },
+      {
+        id: "patio",
+        label: "Pátio & Areia",
+        mp4: "/media/v/patio-sol-mar.mp4",
+        poster: "/media/v/patio-sol-mar.webp",
+        title: "Pátio Ensolarado & Jardim",
+        subtitle: "Área externa com coqueiros e acesso 100% pé na areia",
+        duracaoSeg: 6
       }
     ],
-    videoCard: {
-      mp4: "/media/v/tour-suite-tripla-3p.mp4",
-      poster: "/media/v/tour-suite-tripla-3p-poster.webp",
-      legenda: "Tour real pela Suíte Tripla com leitos de madeira e acesso às áreas da pousada",
-      arquivoOrigem: "WhatsApp Video 2026ttthh-10-25 at 12.17.25.mp4",
-      duracaoSeg: 7
-    },
     pendenciaMidia: null,
     miniFaq: [
       {
@@ -584,7 +795,16 @@ export const acomodacoes: Acomodacao[] = [
         r: "A pousada é 100% pé na areia. A distância da porta da acomodação até a faixa de areia da enseada do Ubatumirim é de menos de 40 passos pelo jardim."
       }
     ],
-    whatsappMsg:
+        videoCard: {
+      id: "quarto",
+      label: "Tour Principal",
+      mp4: "/media/v/tour-suite-tripla-3p.mp4",
+      poster: "/media/v/tour-suite-tripla-3p-poster.webp",
+      title: "Tour pela Suíte Tripla",
+      subtitle: "Leitos em madeira e acesso às áreas arborizadas da pousada",
+      duracaoSeg: 7
+    },
+whatsappMsg:
       "Olá Dona Zita! Vim pelo site e gostaria de consultar valores e disponibilidade para a Suíte Tripla (3 pessoas)."
   },
   {
@@ -613,43 +833,65 @@ export const acomodacoes: Acomodacao[] = [
       { item: "Acomodação para casal (2 pessoas) na categoria Suíte", fonte: "Áudio oficial Dona Zita (26/10/2026)", confirmado: true },
       { item: "Varanda térrea com rede e flores tropicais", fonte: "Foto real do acervo inicial", confirmado: true },
       { item: "Acesso direto à Praia do Ubatumirim, piscina e restaurante", fonte: "Áudio oficial Dona Zita", confirmado: true },
-      { item: "Estacionamento privativo gratuito no local", fonte: "Booking / Áudio Dona Zita", confirmado: true },
+      { item: "Estacionamento privativo gratuito no local", fonte: "Acervo Oficial / Áudio Dona Zita", confirmado: true },
       { item: "Banheiro privativo completo com box", fonte: "Registro real da propriedade", confirmado: true }
     ],
     regras: [
-      { item: "Check-out até às 11:00", fonte: "Confirmado no Google Maps e Booking", confirmado: true },
-      { item: "Check-in das 12:00 às 22:00", fonte: "Declarado no Booking sob consulta com Dona Zita", confirmado: true },
+      { item: "Check-out até às 11:00", fonte: "Confirmado no Google Maps e Acervo Oficial", confirmado: true },
+      { item: "Check-in das 12:00 às 22:00", fonte: "Declarado no Acervo Oficial sob consulta com Dona Zita", confirmado: true },
       { item: "Modalidade Suíte: não possui fogão/cozinha", fonte: "Áudio oficial Dona Zita", confirmado: true }
     ],
     fotos: [
       {
-        url: "/media/quartos/suite-casal-2p-1.webp",
-        alt: "Dormitório intimista de casal com cabeceira em madeira maciça e iluminação acolhedora",
-        origem: "Foto de acervo da suíte de casal com iluminação aconchegante"
+        url: "/media/quartos/quarto-jardim.webp",
+        alt: "Suíte Casal privativa e acolhedora perfeita para descanso a dois pé na areia",
+        origem: "Fotografia oficial em alta resolução"
       },
       {
-        url: "/media/quartos/suite-casal-2p-2.webp",
-        alt: "Varanda térrea privativa com rede de descanso tradicional e jardim tropical",
-        origem: "Registro real da varanda com rede"
+        url: "/media/quartos/vista-mar-coqueiros.webp",
+        alt: "Proximidade imediata da praia e coqueirais de Ubatumirim",
+        origem: "Acervo oficial de fotografias"
       },
       {
-        url: "/media/quartos/suite-casal-2p-3.webp",
-        alt: "Caminho de saída da suíte com acesso direto aos pés na areia de Ubatumirim",
-        origem: "Registro real da saída para a praia"
+        url: "/media/quartos/quarto-card-1.webp",
+        alt: "Ambiente iluminado com cama confortável e tons acolhedores",
+        origem: "Fotografia em alta definição com luz natural suave"
       },
       {
-        url: "/media/quartos/suite-casal-2p-4.webp",
-        alt: "Banheiro privativo da suíte com acabamento em vidro temperado",
-        origem: "Registro real do banheiro privativo"
+        url: "/media/quartos/varanda-panoramica.webp",
+        alt: "Varanda com vista relaxante para a Serra do Mar e pátio da pousada",
+        origem: "Acervo oficial de fotografias em alta definição"
+      },
+    ],
+    videos: [
+      {
+        id: "quarto",
+        label: "Tour Quarto",
+        mp4: "/media/v/tour-suite-casal-2p.mp4",
+        poster: "/media/v/tour-suite-casal-2p-poster.webp",
+        title: "Tour pela Suíte Casal",
+        subtitle: "Cama aconchegante e varanda com rede na areia",
+        duracaoSeg: 7
+      },
+      {
+        id: "varanda",
+        label: "Varanda & Mar",
+        mp4: "/media/v/varanda-enseada.mp4",
+        poster: "/media/v/varanda-enseada.webp",
+        title: "Vista da Enseada",
+        subtitle: "Caminhada da varanda até a areia mansa da Praia do Ubatumirim",
+        duracaoSeg: 6
+      },
+      {
+        id: "patio",
+        label: "Pátio & Areia",
+        mp4: "/media/v/patio-sol-mar.mp4",
+        poster: "/media/v/patio-sol-mar.webp",
+        title: "Pátio Ensolarado & Jardim",
+        subtitle: "Área externa com coqueiros e acesso 100% pé na areia",
+        duracaoSeg: 6
       }
     ],
-    videoCard: {
-      mp4: "/media/v/tour-suite-casal-2p.mp4",
-      poster: "/media/v/tour-suite-casal-2p-poster.webp",
-      legenda: "Tour real pela Suíte Casal com cama aconchegante e varanda com rede na areia",
-      arquivoOrigem: "WhatsApp Videyyyo 2026-10-25 at 12.17.05.mp4",
-      duracaoSeg: 7
-    },
     pendenciaMidia: null,
     miniFaq: [
       {
@@ -661,7 +903,16 @@ export const acomodacoes: Acomodacao[] = [
         r: "A disponibilidade de roupas de cama e banho pode ser confirmada diretamente com Dona Zita pelo WhatsApp no momento da sua cotação."
       }
     ],
-    whatsappMsg:
+        videoCard: {
+      id: "quarto",
+      label: "Tour Principal",
+      mp4: "/media/v/tour-suite-casal-2p.mp4",
+      poster: "/media/v/tour-suite-casal-2p-poster.webp",
+      title: "Tour pela Suíte Casal",
+      subtitle: "Cama aconchegante e varanda com rede na areia",
+      duracaoSeg: 7
+    },
+whatsappMsg:
       "Olá Dona Zita! Vim pelo site e gostaria de consultar valores e disponibilidade para a Suíte Casal (2 pessoas)."
   }
 ];
