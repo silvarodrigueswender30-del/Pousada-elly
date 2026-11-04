@@ -5,13 +5,13 @@ import Link from "next/link";
 import {
   heroSlides,
   showcaseScenes,
-  categoriasInterativas,
   bussolaDiferenciais,
   quemSomosAbas,
   faqEditorial,
   editorialMedia,
 } from "@/data/editorial-media";
 import { acomodacoes } from "@/data/acomodacoes";
+import { atrativosTuristicos } from "@/data/atrativos";
 import EditorialReservaDrawer from "./EditorialReservaDrawer";
 import { EditorialLocationMap } from "./EditorialLocationMap";
 import { EditorialFooter } from "./EditorialFooter";
@@ -55,10 +55,11 @@ export default function EditorialHomeClient() {
   const [mobileSaboresVideoReady, setMobileSaboresVideoReady] = useState(false);
   const saboresVideoRef = useRef<HTMLVideoElement | null>(null);
 
-  // Scroll-Driven + Clickable Interactive Categories state (Seção 4)
+  // Scroll-Driven + Clickable Interactive Categories & Atrativos state
   const acomodacoesTrackRef = useRef<HTMLDivElement | null>(null);
-  const [activeCatIdx, setActiveCatIdx] = useState(0);
-  const [manualCatLockUntil, setManualCatLockUntil] = useState(0);
+  const [activeAtrativoIdx, setActiveAtrativoIdx] = useState(0);
+  const [activeAtrativoPhotoIdx, setActiveAtrativoPhotoIdx] = useState(0);
+  const [activeRoomFilter, setActiveRoomFilter] = useState(0);
   const [activeVideoModal, setActiveVideoModal] = useState<{
     mp4: string;
     poster: string;
@@ -258,25 +259,6 @@ export default function EditorialHomeClient() {
         }
       }
 
-      // 4. Scroll-driven Category Accordion on Desktop (sec_19 -> sec_22)
-      if (
-        acomodacoesTrackRef.current &&
-        window.innerWidth >= 1024 &&
-        Date.now() > manualCatLockUntil
-      ) {
-        const rect = acomodacoesTrackRef.current.getBoundingClientRect();
-        const scrollable = Math.max(1, rect.height - vh);
-        const scrolled = -rect.top;
-        if (scrolled >= 0 && scrolled <= scrollable) {
-          const ratio = scrolled / scrollable;
-          const idx = Math.min(
-            categoriasInterativas.length - 1,
-            Math.floor(ratio * categoriasInterativas.length)
-          );
-          setActiveCatIdx(idx);
-        }
-      }
-
       // 5. Bússola radial burst when scrolled into view
       if (bussolaRef.current) {
         const rect = bussolaRef.current.getBoundingClientRect();
@@ -295,11 +277,11 @@ export default function EditorialHomeClient() {
     window.addEventListener("scroll", handleScroll, { passive: true });
     handleScroll();
     return () => window.removeEventListener("scroll", handleScroll);
-  }, [manualCatLockUntil]);
+  }, []);
 
   const currentHero = heroSlides[activeHeroIdx];
   const currentShowcase = showcaseScenes[activeShowcaseIdx];
-  const currentCat = categoriasInterativas[activeCatIdx];
+  const currentAtrativo = atrativosTuristicos[activeAtrativoIdx];
   const currentQuemSomos = quemSomosAbas[activeQuemSomosIdx];
 
   const manifestoWords = [
@@ -1092,18 +1074,21 @@ export default function EditorialHomeClient() {
                 </div>
               </div>
 
-              {/* Botões de atalho de categoria rápida */}
+              {/* Botões de atalho de categoria rápida das Acomodações */}
               <div className="flex flex-wrap gap-2">
-                {categoriasInterativas.map((c, i) => (
+                {[
+                  { label: "Todas (08 opções)", targetIdx: 0 },
+                  { label: "Grandes Grupos (10 a 15p)", targetIdx: 0 },
+                  { label: "Chalés Família (4 a 5p)", targetIdx: 2 },
+                  { label: "Suítes Pé na Areia (2 a 4p)", targetIdx: 5 },
+                ].map((filtro, i) => (
                   <button
-                    key={c.id}
+                    key={filtro.label}
                     type="button"
                     onClick={() => {
-                      setManualCatLockUntil(Date.now() + 4000);
-                      setActiveCatIdx(i);
-                      const targetIdx = acomodacoes.findIndex((a) => a.slug === c.slugPrincipal);
-                      if (targetIdx !== -1 && acomodacoesCarouselRef.current) {
-                        const targetCard = acomodacoesCarouselRef.current.children[targetIdx] as HTMLElement;
+                      setActiveRoomFilter(i);
+                      if (acomodacoesCarouselRef.current) {
+                        const targetCard = acomodacoesCarouselRef.current.children[filtro.targetIdx] as HTMLElement;
                         if (targetCard) {
                           acomodacoesCarouselRef.current.scrollTo({
                             left: targetCard.offsetLeft - 20,
@@ -1113,12 +1098,12 @@ export default function EditorialHomeClient() {
                       }
                     }}
                     className={`px-3 py-1.5 rounded-full text-xs font-medium transition-all cursor-pointer ${
-                      i === activeCatIdx
+                      i === activeRoomFilter
                         ? "bg-[#0a301a] text-[#f8faf8] shadow-md"
                         : "bg-white text-[#4a5c50] border border-[#e2eae3] hover:border-[#0a301a]"
                     }`}
                   >
-                    {c.tituloBarra}
+                    {filtro.label}
                   </button>
                 ))}
               </div>
@@ -1162,7 +1147,7 @@ export default function EditorialHomeClient() {
                 className="flex gap-5 overflow-x-auto pb-6 pt-2 snap-x snap-mandatory scrollbar-none scroll-smooth"
               >
               {acomodacoes.map((item, idx) => {
-                const isSelected = item.slug === currentCat.slugPrincipal;
+                const isSelected = false;
                 return (
                   <div
                     key={item.slug}
@@ -1228,144 +1213,8 @@ export default function EditorialHomeClient() {
               </div>
             </div>
 
-            {/* 2-Column Responsive Category Showcase (Print 8 alignment fix) */}
-            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
-              {/* Left Column: 4 Stacked Interactive Category Cards */}
-              <div className="lg:col-span-5 flex flex-col justify-between gap-3">
-                {categoriasInterativas.map((cat, idx) => {
-                  const isActive = idx === activeCatIdx;
-                  return (
-                    <button
-                      key={cat.id}
-                      type="button"
-                      onClick={() => {
-                        setManualCatLockUntil(Date.now() + 4000);
-                        setActiveCatIdx(idx);
-                      }}
-                      className={`w-full text-left transition-all duration-300 cursor-pointer rounded-[20px] p-5 sm:p-6 ${
-                        isActive
-                          ? "bg-[#0a301a] text-[#f8faf8] shadow-xl ring-2 ring-[#157d40]/40"
-                          : "bg-white hover:bg-[#f5efe6] text-[#0a301a] border border-[#e2eae3] shadow-sm"
-                      }`}
-                    >
-                      {/* Top row inside bar */}
-                      <div className="flex items-center justify-between gap-4">
-                        <span
-                          className={`text-[11px] font-mono uppercase tracking-widest ${
-                            isActive ? "text-[#f29b2f]" : "text-[#157d40]"
-                          }`}
-                        >
-                          [{cat.numero}] · {cat.capacidadeTag}
-                        </span>
-                        <h3
-                          className={`text-base sm:text-lg font-semibold tracking-tight ${
-                            isActive ? "text-white" : "text-[#0a301a]"
-                          }`}
-                        >
-                          {cat.tituloBarra}
-                        </h3>
-                      </div>
-
-                      {/* Bottom row inside bar */}
-                      <div className="mt-2.5 flex items-end justify-between gap-4">
-                        <p
-                          className={`text-xs sm:text-sm leading-relaxed max-w-xs ${
-                            isActive ? "text-white/80" : "text-[#4a5c50]"
-                          }`}
-                        >
-                          {cat.subtituloBarra}
-                        </p>
-                        <span
-                          className={`text-xs font-bold shrink-0 ${
-                            isActive ? "text-[#f29b2f]" : "text-[#0a301a]/40"
-                          }`}
-                        >
-                          →
-                        </span>
-                      </div>
-                    </button>
-                  );
-                })}
-              </div>
-
-              {/* Right Column: Giant Rounded Photographic Showcase Card (Equal Height & Perfectly Aligned) */}
-              <div className="lg:col-span-7 flex">
-                <div className="relative w-full min-h-[460px] sm:min-h-[520px] rounded-[24px] overflow-hidden bg-[#082112] text-[#f8faf8] flex flex-col justify-between p-6 sm:p-9 shadow-xl border border-[#e2eae3]">
-                  <img
-                    key={currentCat.media.src}
-                    src={currentCat.media.src}
-                    alt={currentCat.media.alt}
-                    width={1200}
-                    height={800}
-                    loading="lazy"
-                    decoding="async"
-                    className="absolute inset-0 w-full h-full object-cover object-center animate-hero-zoom"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/45 to-black/30" />
-
-                  {/* Top Row inside Card: Capacity Pill + Real Video Tour Button */}
-                  <div className="relative z-10 flex flex-wrap items-center justify-between gap-3">
-                    <span className="px-4 py-1.5 rounded-full bg-black/55 backdrop-blur-md border border-white/20 text-xs font-mono tracking-wider uppercase text-white">
-                      [{currentCat.numero}] · {currentCat.capacidadeTag}
-                    </span>
-
-                    <button
-                      type="button"
-                      onClick={() => setActiveVideoModal(currentCat.videoPreview)}
-                      className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-[#f8faf8] text-[#0a301a] text-xs font-semibold shadow-lg hover:bg-[#f29b2f] transition-all hover:scale-105 cursor-pointer"
-                    >
-                      <span className="w-5 h-5 rounded-full bg-[#157d40] text-white flex items-center justify-center text-[10px]">
-                        ▶
-                      </span>
-                      <span>Assistir tour em vídeo real</span>
-                    </button>
-                  </div>
-
-                  {/* Bottom Content inside Card (Exact layout of sec_20.jpg & sec_22.jpg) */}
-                  <div
-                    key={currentCat.id}
-                    className="relative z-10 mt-auto pt-10 animate-scene-text"
-                  >
-                    <span className="text-xs font-mono text-white/80 block mb-1">
-                      [{currentCat.numero}]
-                    </span>
-                    <h3 className="text-2xl sm:text-4xl font-semibold tracking-tight text-white leading-tight">
-                      {currentCat.tituloBarra}
-                    </h3>
-                    <p className="mt-2.5 text-xs sm:text-sm text-white/90 leading-relaxed max-w-xl">
-                      {currentCat.descricaoCard}
-                    </p>
-
-                    {/* Action Pills at base of card (Solicitar orçamento ↗ + Ficha individual) */}
-                    <div className="mt-6 flex flex-wrap items-center justify-between gap-3">
-                      <button
-                        type="button"
-                        onClick={() => openReserva(currentCat.slugPrincipal)}
-                        className="inline-flex items-center gap-2.5 rounded-full bg-[#f29b2f] hover:bg-[#d98520] px-5 py-2.5 text-xs font-semibold text-[#0a301a] transition-all cursor-pointer shadow-lg"
-                      >
-                        <span>Consultar disponibilidade</span>
-                        <span aria-hidden="true">↗</span>
-                      </button>
-
-                      <div className="flex flex-wrap items-center gap-2">
-                        {currentCat.rotasIncluidas.map((r) => (
-                          <Link
-                            key={r.slug}
-                            href={`/acomodacoes/${r.slug}`}
-                            className="px-3.5 py-2 rounded-full bg-black/55 hover:bg-white hover:text-[#0a301a] border border-white/20 text-xs font-medium text-white transition-colors"
-                          >
-                            {r.nomeCurto} ↗
-                          </Link>
-                        ))}
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
             {/* Compact Architectural Strip for Direct Access to All 8 Routes */}
-            <div className="mt-8 pt-6 border-t border-[#e2eae3]">
+            <div className="mt-8 mb-16 pt-6 border-t border-[#e2eae3]">
               <div className="flex flex-wrap items-center justify-between gap-2">
                 <span className="text-[11px] font-mono uppercase tracking-widest text-[#4a5c50]">
                   ACESSO DIRETO ÀS 8 FICHAS TÉCNICAS:
@@ -1375,11 +1224,210 @@ export default function EditorialHomeClient() {
                     <Link
                       key={item.slug}
                       href={`/acomodacoes/${item.slug}`}
-                      className="px-3 py-1.5 rounded-full bg-[#f5efe6] hover:bg-[#0a301a] hover:text-[#f8faf8] text-xs font-medium text-[#0a301a] transition-colors border border-[#e2eae3]"
+                      className="px-3 py-1.5 rounded-full bg-white hover:bg-[#0a301a] hover:text-[#f8faf8] text-xs font-medium text-[#0a301a] transition-colors border border-[#e2eae3]"
                     >
                       0{idx + 1}. {item.nome.split(" (")[0]} ({item.capacidadeNumero}p)
                     </Link>
                   ))}
+                </div>
+              </div>
+            </div>
+
+            {/* =====================================================================
+                SEÇÃO: ATRATIVOS TURÍSTICOS VIZINHOS (A PÉ OU POUCOS MINUTOS)
+                (Conforme solicitado pelo usuário, baseada nas mídias de img-video-sessao)
+            ===================================================================== */}
+            <div id="visita" className="pt-10 border-t border-[#dce5dd]">
+              {/* Header Editorial dos Atrativos */}
+              <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-8 sm:mb-10">
+                <div className="max-w-2xl">
+                  <span className="text-[11px] font-mono uppercase tracking-[0.2em] text-[#157d40] font-semibold block mb-2">
+                    • ATRATIVOS TURÍSTICOS VIZINHOS · A PÉ OU POUCOS MINUTOS
+                  </span>
+                  <h3 className="text-2xl sm:text-4xl font-medium tracking-tight text-[#0a301a] leading-tight">
+                    Praias paradisíacas e natureza preservada ao lado da{" "}
+                    <span className="font-editorial-italic font-normal text-[1.1em] text-gradient-caiçara">
+                      sua estadia.
+                    </span>
+                  </h3>
+                  <p className="mt-3 text-xs sm:text-sm text-[#4a5c50] leading-relaxed">
+                    De enseadas de águas calmas para crianças e piscinas de água esmeralda para snorkel na Praia da Justa até o banho revigorante de água doce na Cachoeira do Tombador: descubra os tesouros do Litoral Norte sem enfrentar trânsito.
+                  </p>
+                </div>
+                <div className="flex items-center gap-2">
+                  <span className="px-3.5 py-1.5 rounded-full bg-white border border-[#dce5dd] text-[11px] font-mono text-[#0a301a] font-semibold shadow-xs">
+                    04 DESTINOS SELECIONADOS
+                  </span>
+                </div>
+              </div>
+
+              {/* 2-Column Responsive Destination Showcase (Mesmo efeito e design visual do print) */}
+              <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+                {/* Coluna Esquerda: 4 Cards Interativos Empilhados */}
+                <div className="lg:col-span-5 flex flex-col justify-between gap-3">
+                  {atrativosTuristicos.map((atr, idx) => {
+                    const isActive = idx === activeAtrativoIdx;
+                    return (
+                      <button
+                        key={atr.id}
+                        type="button"
+                        onClick={() => {
+                          setActiveAtrativoIdx(idx);
+                          setActiveAtrativoPhotoIdx(0);
+                        }}
+                        className={`w-full text-left transition-all duration-300 cursor-pointer rounded-[20px] p-5 sm:p-6 ${
+                          isActive
+                            ? "bg-[#0a301a] text-[#f8faf8] shadow-xl ring-2 ring-[#157d40]/40 scale-[1.01]"
+                            : "bg-white hover:bg-[#f5efe6] text-[#0a301a] border border-[#dce5dd] shadow-xs"
+                        }`}
+                      >
+                        {/* Linha Superior */}
+                        <div className="flex items-center justify-between gap-4">
+                          <span
+                            className={`text-[11px] font-mono uppercase tracking-widest ${
+                              isActive ? "text-[#f29b2f]" : "text-[#157d40]"
+                            }`}
+                          >
+                            [{atr.numero}] · {atr.tagAcesso}
+                          </span>
+                          <h4
+                            className={`text-base sm:text-lg font-semibold tracking-tight ${
+                              isActive ? "text-white" : "text-[#0a301a]"
+                            }`}
+                          >
+                            {atr.nome}
+                          </h4>
+                        </div>
+
+                        {/* Linha Inferior */}
+                        <div className="mt-2.5 flex items-end justify-between gap-4">
+                          <p
+                            className={`text-xs sm:text-sm leading-relaxed max-w-xs ${
+                              isActive ? "text-white/80" : "text-[#4a5c50]"
+                            }`}
+                          >
+                            {atr.subtitulo}
+                          </p>
+                          <span
+                            className={`text-xs font-bold shrink-0 ${
+                              isActive ? "text-[#f29b2f]" : "text-[#0a301a]/40"
+                            }`}
+                          >
+                            →
+                          </span>
+                        </div>
+                      </button>
+                    );
+                  })}
+                </div>
+
+                {/* Coluna Direita: Grande Card Fotográfico de Destaque com Vídeo e Destaques */}
+                <div className="lg:col-span-7 flex">
+                  <div className="relative w-full min-h-[500px] sm:min-h-[560px] rounded-[24px] overflow-hidden bg-[#082112] text-[#f8faf8] flex flex-col justify-between p-6 sm:p-9 shadow-xl border border-[#dce5dd]">
+                    {/* Imagem de Fundo com Transição Suave */}
+                    <img
+                      key={currentAtrativo.imagensGaleria[activeAtrativoPhotoIdx] || currentAtrativo.imagemPrincipal}
+                      src={currentAtrativo.imagensGaleria[activeAtrativoPhotoIdx] || currentAtrativo.imagemPrincipal}
+                      alt={currentAtrativo.nome}
+                      width={1920}
+                      height={1080}
+                      loading="lazy"
+                      decoding="async"
+                      className="absolute inset-0 w-full h-full object-cover object-center animate-hero-zoom"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/55 to-black/35" />
+
+                    {/* Linha Superior: Pílula de Acesso + Botão de Vídeo Real */}
+                    <div className="relative z-10 flex flex-wrap items-center justify-between gap-3">
+                      <span className="px-4 py-1.5 rounded-full bg-black/60 backdrop-blur-md border border-white/20 text-xs font-mono tracking-wider uppercase text-white">
+                        [{currentAtrativo.numero}] · {currentAtrativo.tagAcesso} · {currentAtrativo.distancia}
+                      </span>
+
+                      {currentAtrativo.video && (
+                        <button
+                          type="button"
+                          onClick={() =>
+                            setActiveVideoModal({
+                              mp4: currentAtrativo.video.mp4,
+                              poster: currentAtrativo.video.poster,
+                              legenda: currentAtrativo.video.titulo,
+                            })
+                          }
+                          className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-[#f8faf8] text-[#0a301a] text-xs font-semibold shadow-lg hover:bg-[#f29b2f] transition-all hover:scale-105 cursor-pointer"
+                        >
+                          <span className="w-5 h-5 rounded-full bg-[#157d40] text-white flex items-center justify-center text-[10px]">
+                            ▶
+                          </span>
+                          <span>Assistir vídeo real</span>
+                        </button>
+                      )}
+                    </div>
+
+                    {/* Conteúdo Inferior */}
+                    <div
+                      key={currentAtrativo.id}
+                      className="relative z-10 mt-auto pt-8 animate-scene-text"
+                    >
+                      <span className="text-xs font-mono text-[#f29b2f] block mb-1">
+                        [{currentAtrativo.numero}] · {currentAtrativo.distancia}
+                      </span>
+                      <h4 className="text-2xl sm:text-4xl font-semibold tracking-tight text-white leading-tight">
+                        {currentAtrativo.nome}
+                      </h4>
+                      <p className="mt-2.5 text-xs sm:text-sm text-white/90 leading-relaxed max-w-xl">
+                        {currentAtrativo.descricao}
+                      </p>
+
+                      {/* Destaques / Badges em Pílulas */}
+                      <div className="mt-4 flex flex-wrap gap-2">
+                        {currentAtrativo.destaques.map((tag, tIdx) => (
+                          <span
+                            key={tIdx}
+                            className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/15 backdrop-blur-sm border border-white/20 text-[11px] text-white"
+                          >
+                            <span className="w-1.5 h-1.5 rounded-full bg-[#f29b2f]" />
+                            {tag}
+                          </span>
+                        ))}
+                      </div>
+
+                      {/* Barra de Ações: WhatsApp + Alternador de Fotos */}
+                      <div className="mt-6 flex flex-wrap items-center justify-between gap-3 pt-4 border-t border-white/15">
+                        <a
+                          href={`https://wa.me/5512992323656?text=${encodeURIComponent(
+                            currentAtrativo.whatsappMsg
+                          )}`}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center gap-2.5 rounded-full bg-[#f29b2f] hover:bg-[#d98520] px-5 py-2.5 text-xs font-semibold text-[#0a301a] transition-all cursor-pointer shadow-lg hover:scale-105"
+                        >
+                          <span>Pedir dicas de trajeto no WhatsApp</span>
+                          <span aria-hidden="true">↗</span>
+                        </a>
+
+                        {/* Miniaturas de Fotos do Atrativo */}
+                        {currentAtrativo.imagensGaleria.length > 1 && (
+                          <div className="flex items-center gap-1.5">
+                            <span className="text-[10px] font-mono text-white/60 mr-1 uppercase">Fotos:</span>
+                            {currentAtrativo.imagensGaleria.map((_, pIdx) => (
+                              <button
+                                key={pIdx}
+                                type="button"
+                                onClick={() => setActiveAtrativoPhotoIdx(pIdx)}
+                                className={`text-[11px] font-mono px-2.5 py-1 rounded-full transition-all cursor-pointer border ${
+                                  pIdx === activeAtrativoPhotoIdx
+                                    ? "bg-white text-[#0a301a] font-bold border-white"
+                                    : "bg-black/40 text-white/80 hover:bg-white/20 border-white/20"
+                                }`}
+                              >
+                                0{pIdx + 1}
+                              </button>
+                            ))}
+                          </div>
+                        )}
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -1535,7 +1583,7 @@ export default function EditorialHomeClient() {
           BASE DO RODAPÉ (arq.mp4: 33s–44s)
       ===================================================================== */}
       <div
-        id="visita"
+        id="informacoes-uteis"
         ref={bentoRef}
         className="w-full bg-gradient-to-b from-[#0a2615] via-[#082112] to-[#05170d] text-[#f8faf8] pt-16 sm:pt-24 overflow-hidden"
       >

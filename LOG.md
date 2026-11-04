@@ -2,6 +2,30 @@
 
 Criado em 2026-10-28 14:11
 
+## 2026-11-04 15:45 — Nova Seção de Atrativos Turísticos Vizinhos (Praia da Justa, Estaleiro, Ubatumirim e Cachoeira do Tombador)
+1. **Transformação da Seção Interativa da Home (`EditorialHomeClient.tsx`):**
+   - Substituição do antigo bloco de categorias de quartos pelo novo e elegante mostrador interativo **Atrativos Turísticos Vizinhos (a pé ou poucos minutos)**, mantendo rigorosamente a mesma linguagem e os mesmos efeitos do design de referência aprovado (4 abas interativas à esquerda + mega card fotográfico à direita com vídeo real, badges e botão WhatsApp).
+2. **Processamento e Otimização Estrita de Mídias (`img-video-sessao`):**
+   - Apenas os destinos especificados nas mídias fornecidas pelo usuário foram integrados:
+     1. **Praia do Ubatumirim**: Vídeo real (`praia-ubatumirim.mp4`, 8.9MB) + 3 fotos em alta resolução WebP (1920×1080).
+     2. **Praia da Justa**: Vídeo real otimizado (`praia-da-justa.mp4`, 9.4MB, < 12MB) + 4 fotos de águas esmeraldas e snorkel.
+     3. **Praia do Estaleiro do Padre**: Vídeo real (`praia-estaleiro.mp4`, 7.3MB) + foto de mar sereno e quiosques.
+     4. **Cachoeira do Tombador**: Vídeo real otimizado (`cachoeira-tombador.mp4`, 8.6MB, < 12MB) + 2 fotos de piscina natural na mata.
+   - Todos os vídeos foram convertidos para H.264 vertical 9:16 abaixo do limite de 12MB com posters WebP correspondentes.
+3. **Novo Módulo de Dados (`site/src/data/atrativos.ts`):**
+   - Criação de estrutura tipada com títulos, subtítulos, cópias persuasivas, destaques pontuais, galeria de imagens intercambiáveis e links personalizados de WhatsApp direto para a Dona Zita para dúvidas de trajeto.
+4. **Filtros Rápidos no Carrossel Superior:**
+   - Adicionados botões de filtro dedicados para as 8 acomodações (`Todas (08 opções)`, `Grandes Grupos`, `Chalés Família`, `Suítes Pé na Areia`), proporcionando navegação suave e clara.
+5. **Portão de Auditoria Permanente (`npm run audit`):**
+   - TypeScript (tsc): 100% limpo.
+   - Next.js 15 Build: 16 rotas estáticas pré-renderizadas com 0 erros.
+   - Integridade Textual: 0 ocorrências de termos de rascunho.
+   - Origem de Mídia: 100% autorizada e nomes em conformidade.
+   - Lighthouse Mobile: Home **93** / Quarto **98**.
+   - Console: 100% limpo.
+
+---
+
 ## 2026-11-04 11:55 — Substituição Integral de Fotos por Acervo Oficial em Alta Definição Golden Hour, Player Multi-Vídeos 9:16 e Correção do Mapa sem Marcas d'Água
 1. **Eliminação de Imagens Indesejadas e Padronização Visual:**
    - Atendendo às diretrizes visuais do usuário, foram eliminados todos os frames de baixa estética (escadas verdes, portas sanfonadas de plástico e pias recortadas).
