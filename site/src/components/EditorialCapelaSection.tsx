@@ -6,7 +6,7 @@ export function EditorialCapelaSection() {
   const whatsappUrl =
     "https://wa.me/5512992323656?text=" +
     encodeURIComponent(
-      "Olá Dona Zita! Vim pelo site e gostaria de informações sobre a Capela da pousada (para renovação de votos, celebrações em família ou visita)."
+      "Olá, Eliiy! Vim pelo site e gostaria de informações sobre a Capela da pousada (para renovação de votos, celebrações em família ou visita)."
     );
 
   return (
@@ -145,7 +145,7 @@ export function EditorialCapelaSection() {
                     Hospedagem & Gastronomia Integradas
                   </h3>
                   <p className="text-xs text-[#4a5c50] mt-0.5 leading-relaxed">
-                    Sua família se hospeda nos chalés com cozinha para até 15 pessoas e desfruta do nosso restaurante caiçara próprio de frente para a enseada.
+                    Sua família se hospeda nas acomodações com cozinha para até 15 pessoas e desfruta do nosso restaurante caiçara próprio de frente para a enseada.
                   </p>
                 </div>
               </div>
@@ -158,7 +158,7 @@ export function EditorialCapelaSection() {
                   &ldquo;A capela foi feita para acolher quem vem em busca de paz e de coração aberto.&rdquo;
                 </p>
                 <span className="text-[11px] font-mono text-[#157d40] font-semibold block mt-1">
-                  — Dona Zita, anfitriã oficial
+                  — Eliiy & Pedro, anfitriões da pousada
                 </span>
               </div>
 
@@ -168,7 +168,7 @@ export function EditorialCapelaSection() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2.5 rounded-full bg-[#f29b2f] hover:bg-[#d98520] text-[#0a301a] px-6 py-3.5 text-xs sm:text-sm font-bold transition-all shadow-lg hover:shadow-xl hover:scale-[1.02] cursor-pointer shrink-0"
               >
-                <span>Falar com Dona Zita sobre a Capela</span>
+                <span>Falar com a Eliiy sobre a Capela</span>
                 <span aria-hidden="true" className="text-sm font-bold">↗</span>
               </a>
             </div>

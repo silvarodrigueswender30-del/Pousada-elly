@@ -202,7 +202,7 @@ export function RoomImageRotator({
       {/* Legenda na base da foto */}
       <div className="absolute bottom-3 left-3 right-3 flex items-center justify-between text-white text-xs z-20">
         <span className="font-semibold">
-          {categoria === "Chale" ? "Chalé c/ Cozinha" : "Suíte"}
+          {categoria === "Chale" ? "Unidade c/ Cozinha" : "Suíte"}
         </span>
         <span className="text-[11px] opacity-80">Pé na areia</span>
       </div>

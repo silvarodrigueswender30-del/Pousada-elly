@@ -13,9 +13,9 @@ export function Testimonials() {
     },
     {
       num: "02",
-      title: "Atendimento Familiar da Dona Zita",
-      desc: "Menções diretas à recepção conduzida pela proprietária Dona Zita e sua equipe no restaurante e nas acomodações.",
-      fonte: "Ficha oficial no Google Maps + Áudio Dona Zita",
+      title: "Atendimento Familiar com Eliiy e Pedro",
+      desc: "Menções diretas à recepção acolhedora conduzida por Eliiy, Pedro e sua equipe no restaurante e nas acomodações.",
+      fonte: "Ficha oficial no Google Maps + Áudio oficial da pousada",
     },
     {
       num: "03",
@@ -101,7 +101,7 @@ export function Testimonials() {
                   </p>
                 </div>
                 <p className="text-[11px] font-medium text-[#3b4d41] pt-3 border-t border-[#f0f4f1]">
-                  Fonte: {item.fonte}
+                  {item.fonte}
                 </p>
               </div>
             ))}

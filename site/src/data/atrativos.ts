@@ -45,7 +45,7 @@ export const atrativosTuristicos: AtrativoTuristico[] = [
       titulo: "Vídeo real da Praia do Ubatumirim em frente à pousada"
     },
     whatsappMsg:
-      "Olá Dona Zita! Estou no site da Pousada Eliiy Zita Pedro e gostaria de saber mais sobre a Praia do Ubatumirim e as comodidades da pousada pé na areia."
+      "Olá, Eliiy! Estou no site da Pousada Eliiy Zita Pedro e gostaria de saber mais sobre a Praia do Ubatumirim e as comodidades da pousada pé na areia."
   },
   {
     id: "praia-da-justa",
@@ -75,7 +75,7 @@ export const atrativosTuristicos: AtrativoTuristico[] = [
       titulo: "Vídeo real da Praia da Justa e águas transparentes"
     },
     whatsappMsg:
-      "Olá Dona Zita! Estou no site da Pousada Eliiy Zita Pedro e gostaria de dicas para visitar a Praia da Justa e melhor horário de maré para caminhar até lá."
+      "Olá, Eliiy! Estou no site da Pousada Eliiy Zita Pedro e gostaria de dicas para visitar a Praia da Justa e melhor horário de maré para caminhar até lá."
   },
   {
     id: "praia-estaleiro",
@@ -102,7 +102,7 @@ export const atrativosTuristicos: AtrativoTuristico[] = [
       titulo: "Vídeo real da Praia do Estaleiro do Padre"
     },
     whatsappMsg:
-      "Olá Dona Zita! Estou no site da Pousada Eliiy Zita Pedro e gostaria de informações sobre os quiosques e travessia para a Praia do Estaleiro do Padre."
+      "Olá, Eliiy! Estou no site da Pousada Eliiy Zita Pedro e gostaria de informações sobre os quiosques e travessia para a Praia do Estaleiro do Padre."
   },
   {
     id: "cachoeira-tombador",
@@ -130,6 +130,6 @@ export const atrativosTuristicos: AtrativoTuristico[] = [
       titulo: "Vídeo real da Cachoeira do Tombador no sertão de Ubatumirim"
     },
     whatsappMsg:
-      "Olá Dona Zita! Estou no site da Pousada Eliiy Zita Pedro e gostaria de orientações para conhecer a Cachoeira do Tombador durante a minha hospedagem."
+      "Olá, Eliiy! Estou no site da Pousada Eliiy Zita Pedro e gostaria de orientações para conhecer a Cachoeira do Tombador durante a minha hospedagem."
   }
 ];

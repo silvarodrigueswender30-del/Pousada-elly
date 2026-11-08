@@ -14,7 +14,7 @@ export function InteractiveMap() {
   const wazeUrl =
     "https://waze.com/ul?ll=-23.3486585,-44.928734&navigate=yes";
   const whatsappUrl =
-    "https://wa.me/5512992323656?text=Ol%C3%A1%20Dona%20Zita!%20Gostaria%20de%20orienta%C3%A7%C3%B5es%20de%20como%20chegar%20na%20Pousada%20Eliiy%20Zita%20Pedro%20em%20Ubatumirim.";
+    "https://wa.me/5512992323656?text=Ol%C3%A1%2C%20Eliiy!%20Gostaria%20de%20orienta%C3%A7%C3%B5es%20de%20como%20chegar%20na%20Pousada%20Eliiy%20Zita%20Pedro%20em%20Ubatumirim.";
 
   useEffect(() => {
     if (!activateWebGL || mapInstance.current || !mapContainer.current) return;

@@ -28,7 +28,7 @@ export default function PoliticaPrivacidadePage() {
             </span>
             <div className="flex flex-col">
               <span className="text-sm font-bold tracking-wider uppercase">
-                ELIIY ZITA
+                ELIIY ZITA PEDRO
               </span>
               <span className="text-[10px] tracking-widest uppercase text-white/70">
                 Pousada & Restaurante
@@ -102,7 +102,7 @@ export default function PoliticaPrivacidadePage() {
               <li className="flex items-start gap-2.5">
                 <CheckCircle2 className="w-4 h-4 text-[#077c37] shrink-0 mt-1" />
                 <span>
-                  <strong>Atendimento e Reserva Direta:</strong> Nome completo, telefone de contato, data de entrada e saída, número de hóspedes e preferências de acomodação (chalé ou suíte), fornecidos voluntariamente via WhatsApp ou formulário de consulta.
+                  <strong>Atendimento e Reserva Direta:</strong> Nome completo, telefone de contato, data de entrada e saída, número de hóspedes e preferências de acomodação (acomodação ou suíte), fornecidos voluntariamente via WhatsApp ou formulário de consulta.
                 </span>
               </li>
               <li className="flex items-start gap-2.5">
@@ -146,7 +146,7 @@ export default function PoliticaPrivacidadePage() {
               A Pousada Eliiy Zita Pedro <strong>não comercializa, não aluga e não repassa</strong> seus dados pessoais para terceiros, bureaus de crédito ou plataformas de publicidade comportamental.
             </p>
             <p className="mt-3">
-              Suas informações de contato permanecem confidenciais e são usadas exclusivamente para gerenciar seu atendimento direto com a família anfitriã (Dona Zita e equipe).
+              Suas informações de contato permanecem confidenciais e são usadas exclusivamente para gerenciar seu atendimento direto com a família anfitriã (Eliiy, Pedro e equipe).
             </p>
           </section>
 

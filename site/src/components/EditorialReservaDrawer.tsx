@@ -56,7 +56,7 @@ export default function EditorialReservaDrawer({
           : "datas a definir";
     const obsTexto = observacao.trim() ? ` | Obs: ${observacao.trim()}` : "";
 
-    const msg = `Olá Dona Zita! Vim pelo site oficial e gostaria de consultar disponibilidade e tarifa direta:\n• Acomodação: ${unidadeTexto}\n• Período: ${datasTexto}\n• Hóspedes: ${hospedes} pessoa(s)${obsTexto}`;
+    const msg = `Olá, Eliiy! Vim pelo site oficial e gostaria de consultar disponibilidade e tarifa direta:\n• Acomodação: ${unidadeTexto}\n• Período: ${datasTexto}\n• Hóspedes: ${hospedes} pessoa(s)${obsTexto}`;
     window.open(
       `https://wa.me/5512992323656?text=${encodeURIComponent(msg)}`,
       "_blank",
@@ -69,7 +69,7 @@ export default function EditorialReservaDrawer({
       className="fixed inset-0 z-50 flex justify-end bg-black/65 backdrop-blur-sm transition-opacity"
       role="dialog"
       aria-modal="true"
-      aria-label="Solicitar reserva direta com Dona Zita"
+      aria-label="Solicitar reserva direta com a Eliiy"
       onClick={onClose}
     >
       <div
@@ -114,7 +114,7 @@ export default function EditorialReservaDrawer({
               </span>
             </h2>
             <p className="mt-3 text-sm text-[#4a5c50] leading-relaxed">
-              Ao reservar diretamente pelo WhatsApp da pousada, você conversa com a equipe da Dona Zita, escolhe entre os 5 chalés com cozinha (3 a 15 pessoas) ou as 3 suítes (2 a 4 pessoas) e garante a tarifa direta sem comissões de intermediários.
+              Ao reservar diretamente pelo WhatsApp da pousada, você conversa com a equipe da Eliiy, escolhe entre as 5 acomodações com cozinha (3 a 15 pessoas) ou as 3 suítes (2 a 4 pessoas) e garante a tarifa direta sem comissões de intermediários.
             </p>
           </div>
 
@@ -173,7 +173,7 @@ export default function EditorialReservaDrawer({
                   <option value="5">5 pessoas</option>
                   <option value="6 a 8">6 a 8 pessoas</option>
                   <option value="9 a 10">9 a 10 pessoas</option>
-                  <option value="11 a 15">11 a 15 pessoas (Chalé Master)</option>
+                  <option value="11 a 15">11 a 15 pessoas (Acomodação Master)</option>
                 </select>
               </div>
 
@@ -191,7 +191,7 @@ export default function EditorialReservaDrawer({
                   className="w-full rounded-2xl bg-white border border-[#e2eae3] px-4 py-3 text-sm text-[#0a301a] focus:outline-none focus:border-[#0a301a]"
                 >
                   <option value="">Quero indicação para meu grupo</option>
-                  <optgroup label="Chalés com Cozinha Privativa (3 a 15 pessoas)">
+                  <optgroup label="Acomodações com Cozinha Privativa (3 a 15 pessoas)">
                     {acomodacoes
                       .filter((a) => a.categoria === "Chale")
                       .map((a) => (
@@ -226,7 +226,7 @@ export default function EditorialReservaDrawer({
               <input
                 id="drawer-obs"
                 type="text"
-                placeholder="Ex.: Queremos cozinhar no chalé / Temos crianças pequenas"
+                placeholder="Ex.: Queremos cozinhar na acomodação / Temos crianças pequenas"
                 value={observacao}
                 onChange={(e) => setObservacao(e.target.value)}
                 className="w-full rounded-2xl bg-white border border-[#e2eae3] px-4 py-3 text-sm text-[#0a301a] focus:outline-none focus:border-[#0a301a]"

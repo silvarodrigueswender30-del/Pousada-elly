@@ -81,7 +81,7 @@ export default async function AcomodacaoPage({ params }: Props) {
           <div className="hidden lg:block lg:col-span-3 text-xs text-[#4a5c50]">
             <p className="font-medium text-[#0a301a]">
               {item.categoria === "Chale"
-                ? "Modalidade Chalé com Cozinha"
+                ? "Modalidade Acomodação com Cozinha"
                 : "Modalidade Suíte Pé na Areia"}
             </p>
             <p>Capacidade oficial: {item.capacidade}</p>
@@ -161,7 +161,7 @@ export default async function AcomodacaoPage({ params }: Props) {
                 rel="noopener noreferrer"
                 className="group inline-flex items-center justify-between gap-4 rounded-full bg-[#141614] text-[#F4F4F0] pl-6 pr-2 py-2 text-sm font-semibold hover:bg-[#077c37] transition-all shadow-md"
               >
-                <span>Consultar datas com Dona Zita</span>
+                <span>Consultar datas com a Eliiy</span>
                 <span className="w-10 h-10 rounded-full bg-[#F4F4F0] text-[#141614] flex items-center justify-center text-xs font-bold">
                   ↗
                 </span>
@@ -212,7 +212,7 @@ export default async function AcomodacaoPage({ params }: Props) {
                       <span>● Reserva Direta</span>
                     </div>
                     <h3 className="text-xl font-semibold tracking-tight text-white">
-                      Reserve direto com a Dona Zita
+                      Reserve direto com a Eliiy
                     </h3>
                     <p className="mt-2 text-xs sm:text-sm text-[#f8faf8]/80 leading-relaxed">
                       Consulte valores específicos para o tamanho do seu grupo e garanta a menor tarifa sem as comissões de plataformas intermediárias.
@@ -239,7 +239,7 @@ export default async function AcomodacaoPage({ params }: Props) {
               <div className="rounded-[24px] bg-[#EAEAE4]/80 p-6 border border-[#141614]/10">
                 <span className="text-xs font-mono text-[#077c37] block mb-2">[01] CAPACIDADE</span>
                 <p className="text-xl font-semibold">{item.capacidade}</p>
-                <p className="text-xs text-[#5C5F5B] mt-1">Confirmado por Dona Zita</p>
+                <p className="text-xs text-[#5C5F5B] mt-1">Confirmado pela pousada</p>
               </div>
               <div className="rounded-[24px] bg-[#EAEAE4]/80 p-6 border border-[#141614]/10">
                 <span className="text-xs font-mono text-[#077c37] block mb-2">[02] COZINHA</span>
@@ -340,7 +340,7 @@ export default async function AcomodacaoPage({ params }: Props) {
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-4 rounded-full bg-[#f29b2f] hover:bg-[#d98520] text-[#0a301a] pl-6 pr-2 py-2 text-xs sm:text-sm font-semibold shadow-md transition-all"
                   >
-                    <span>Falar com Dona Zita no WhatsApp</span>
+                    <span>Falar com a Eliiy no WhatsApp</span>
                     <span className="w-8 h-8 rounded-full bg-[#0a301a] text-[#f8faf8] flex items-center justify-center text-xs font-bold">
                       ↗
                     </span>
@@ -377,7 +377,7 @@ export default async function AcomodacaoPage({ params }: Props) {
                   className="rounded-2xl bg-white/10 hover:bg-[#f8faf8] hover:text-[#0a301a] p-4 transition-all border border-white/15 flex flex-col justify-between"
                 >
                   <span className="text-[11px] font-mono opacity-85">
-                    {outra.categoria === "Chale" ? "Chalé c/ Cozinha" : "Suíte"} · {outra.capacidade}
+                    {outra.categoria === "Chale" ? "Unidade c/ Cozinha" : "Suíte"} · {outra.capacidade}
                   </span>
                   <p className="text-sm font-semibold mt-1">{outra.nome}</p>
                 </Link>

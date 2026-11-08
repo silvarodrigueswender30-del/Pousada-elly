@@ -13,7 +13,7 @@ export function DayAtPousada() {
       periodo: "Tarde · 12h às 17h",
       titulo: "Banho de mar sem ondas fortes, piscina e almoço na praia",
       texto:
-        "Enquanto as crianças aproveitam a água rasa da enseada ou a piscina ao ar livre do pátio, o almoço é servido no restaurante pé na areia — ou preparado com liberdade na cozinha do seu chalé.",
+        "Enquanto as crianças aproveitam a água rasa da enseada ou a piscina ao ar livre do pátio, o almoço é servido no restaurante pé na areia — ou preparado com liberdade na cozinha do seu acomodação.",
       imagem: "/media/quartos/chale-master-15p-1.webp",
       alt: "Pátio ensolarado da pousada com o mar azul de Ubatumirim ao fundo",
       legenda: "Vista real em dia de sol (vídeo v04)",

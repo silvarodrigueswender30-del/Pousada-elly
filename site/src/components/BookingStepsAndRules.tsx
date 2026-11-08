@@ -2,13 +2,13 @@ export function BookingStepsAndRules() {
   const passos = [
     {
       num: "01",
-      titulo: "Escolha entre Chalé com Cozinha ou Suíte",
+      titulo: "Escolha entre Acomodação com Cozinha ou Suíte",
       texto:
-        "Defina quantas pessoas vão viajar (de um casal até grupos de 15 pessoas) e se sua família prefere preparar as próprias refeições no chalé ou usar o restaurante pé na areia.",
+        "Defina quantas pessoas vão viajar (de um casal até grupos de 15 pessoas) e se sua família prefere preparar as próprias refeições na acomodação ou usar o restaurante pé na areia.",
     },
     {
       num: "02",
-      titulo: "Chame a Dona Zita no WhatsApp (12) 99232-3656",
+      titulo: "Chame a Eliiy no WhatsApp (12) 99232-3656",
       texto:
         "Cada botão do site já envia o nome da acomodação escolhida. Informe as datas desejadas e a quantidade de adultos e crianças.",
     },
@@ -36,7 +36,7 @@ export function BookingStepsAndRules() {
     {
       regra: "Crianças e Camas",
       detalhe: "Crianças de qualquer idade são bem-vindas (configurações de 2 a 15 lugares)",
-      fonte: "Confirmado no Áudio de Dona Zita e Booking",
+      fonte: "Confirmado no Áudio oficial da pousada e Booking",
       confirmado: true,
     },
     {
@@ -47,7 +47,7 @@ export function BookingStepsAndRules() {
     },
     {
       regra: "Animais de Estimação (Pets)",
-      detalhe: "No Booking consta como não permitido; consultar flexibilidade para chalés",
+      detalhe: "No Booking consta como não permitido; consultar flexibilidade para acomodações",
       fonte: "Declarado no Booking sob consulta prévia",
       confirmado: false,
     },
@@ -67,11 +67,11 @@ export function BookingStepsAndRules() {
                 07 · Reserva Direta Simplificada
               </span>
               <h2 className="text-2xl sm:text-4xl font-bold text-[#0a301a] tracking-tight leading-tight">
-                Como reservar diretamente com a Dona Zita em 3 passos.
+                Como reservar diretamente com a Eliiy em 3 passos.
               </h2>
             </div>
             <p className="lg:col-span-5 text-sm sm:text-base text-[#4a5c50] leading-relaxed">
-              Não exibimos preços fixos engessados: como a pousada possui desde suítes de casal até chalés para 15 pessoas, a cotação é feita sob medida para o tamanho da sua família.
+              Não exibimos preços fixos engessados: como a pousada possui desde suítes de casal até acomodações para 15 pessoas, a cotação é feita sob medida para o tamanho da sua família.
             </p>
           </div>
 

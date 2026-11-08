@@ -4,31 +4,31 @@ export function Amenities() {
       num: "01",
       title: "Piscina ao Ar Livre com Cascata",
       desc: "Piscina aberta para adultos e crianças dentro da propriedade, cercada pelo jardim e visível das varandas superiores.",
-      fonte: "Fonte confirmada: Áudio de Dona Zita + Vídeos v02 e v03 (00:51)",
+      fonte: "Verificado: Áudio oficial da pousada + Vídeos v02 e v03 (00:51)",
     },
     {
       num: "02",
       title: "Capela com Jardim no Terreno da Pousada",
-      desc: "Capela própria situada à beira-mar dentro do complexo da pousada, cercada por jardim e coqueiros, citada nominalmente por Dona Zita.",
-      fonte: "Fonte confirmada: Áudio de Dona Zita ('tem capela') + Vídeo aéreo v02.mp4",
+      desc: "Capela própria situada à beira-mar dentro do complexo da pousada, cercada por jardim e coqueiros, citada nominalmente pela pousada.",
+      fonte: "Verificado: Áudio oficial da pousada ('tem capela') + Vídeo aéreo v02.mp4",
     },
     {
       num: "03",
       title: "Churrasqueira na Propriedade",
-      desc: "No áudio oficial, Dona Zita informa que há chalé com churrasqueira e o vídeo v02 registra a área coberta de churrasqueira. Confirme a disponibilidade individual para a sua unidade no ato da reserva.",
-      fonte: "Fonte: Áudio Dona Zita ('tem chalé que tem churrasqueira') [Unidade a confirmar]",
+      desc: "No áudio oficial, a pousada informa que há acomodação com churrasqueira e o vídeo v02 registra a área coberta de churrasqueira. Confirme a disponibilidade individual para a sua unidade no ato da reserva.",
+      fonte: "Áudio oficial da pousada ('tem acomodação que tem churrasqueira') [Unidade a confirmar]",
     },
     {
       num: "04",
       title: "Estacionamento Interno no Pátio",
-      desc: "Pátio interno amplo dentro da área da pousada para estacionar os veículos dos hóspedes. Para grupos grandes (chalés de 10 e 15 pessoas), confirme o número de vagas no WhatsApp.",
-      fonte: "Fonte confirmada: Vídeos v02, v04 (01:39), v07 (00:42) e v10 (00:48)",
+      desc: "Pátio interno amplo dentro da área da pousada para estacionar os veículos dos hóspedes. Para grupos grandes (acomodações de 10 e 15 pessoas), confirme o número de vagas no WhatsApp.",
+      fonte: "Verificado: Vídeos v02, v04 (01:39), v07 (00:42) e v10 (00:48)",
     },
     {
       num: "05",
       title: "Campo Gramado e Áreas de Convivência",
       desc: "Área gramada arborizada entre os blocos de acomodações e a praia, permitindo circulação livre e segura para famílias com crianças.",
-      fonte: "Fonte confirmada: Vídeo aéreo v02.mp4 + Vídeo v04.mp4",
+      fonte: "Verificado: Vídeo aéreo v02.mp4 + Vídeo v04.mp4",
     },
     {
       num: "06",
@@ -54,7 +54,7 @@ export function Amenities() {
             </h2>
           </div>
           <p className="lg:col-span-5 text-sm sm:text-base text-[#3b4d41] leading-relaxed">
-            Como resume Dona Zita: <em>&ldquo;é um monte de coisa em uma coisa só&rdquo;</em>. Todos os itens abaixo possuem origem documentada em áudio ou vídeo real da propriedade.
+            Como resume a pousada: <em>&ldquo;é um monte de coisa em uma coisa só&rdquo;</em>. Todos os itens abaixo possuem origem documentada em áudio ou vídeo real da propriedade.
           </p>
         </div>
 

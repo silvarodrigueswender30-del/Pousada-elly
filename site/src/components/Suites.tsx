@@ -19,24 +19,24 @@ export function Suites() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-end pb-6 border-b border-[#dce5dd]">
           <div className="lg:col-span-7 space-y-2">
             <span className="text-xs font-semibold uppercase tracking-widest text-[#077c37]">
-              02 · Duas Formas de se Hospedar (Fonte: Áudio Dona Zita)
+              02 · Duas Formas de se Hospedar
             </span>
             <h2 className="text-2xl sm:text-4xl font-bold text-[#0a301a] tracking-tight leading-tight">
-              Chalés com cozinha para grupos de 3 a 15 pessoas e suítes pé na areia.
+              Acomodações com cozinha para grupos de 3 a 15 pessoas e suítes pé na areia.
             </h2>
           </div>
           <p className="lg:col-span-5 text-sm sm:text-base text-[#3b4d41] leading-relaxed">
-            Como explica Dona Zita: os <strong>chalés</strong> são unidades equipadas com cozinha privativa para quem deseja cozinhar; já as <strong>suítes</strong> não têm cozinha, perfeitas para quem prefere fazer as refeições no restaurante da pousada. Cada página dedicada traz fotos exclusivas e vídeo real quando disponível.
+            Como explica a pousada: os <strong>acomodações</strong> são unidades equipadas com cozinha privativa para quem deseja cozinhar; já as <strong>suítes</strong> não têm cozinha, perfeitas para quem prefere fazer as refeições no restaurante da pousada. Cada página dedicada traz fotos exclusivas e vídeo real quando disponível.
           </p>
         </div>
 
         {/* =====================================================================
-            BLOCO A: CHALÉS COM COZINHA PRIVATIVA (DESTAQUE + LISTA ASSIMÉTRICA)
+            BLOCO A: ACOMODAÇÕES COM COZINHA PRIVATIVA (DESTAQUE + LISTA ASSIMÉTRICA)
            ===================================================================== */}
         <div className="space-y-6">
           <div className="flex flex-col sm:flex-row sm:items-baseline justify-between gap-2">
             <h3 className="text-xl sm:text-2xl font-bold text-[#0a301a]">
-              Categoria A — 5 Chalés com Cozinha Privativa (3 a 15 pessoas)
+              Categoria A — 5 Acomodações com Cozinha Privativa (3 a 15 pessoas)
             </h3>
             <span className="text-xs font-medium text-[#3b4d41]">
               Todos com fogão, geladeira e pia · Churrasqueira na propriedade (consultar por unidade)
@@ -270,7 +270,7 @@ export function Suites() {
                       </Link>
                     ) : (
                       <div className="w-24 h-24 rounded-xl shrink-0 bg-[#f5efe6] border border-[#dfd6c7] p-2 flex items-center justify-center text-center text-[11px] font-medium text-[#3b4d41]">
-                        Foto exclusiva solicitada à Zita
+                        Foto exclusiva da unidade
                       </div>
                     )}
 

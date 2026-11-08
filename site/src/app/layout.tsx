@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: "Pousada e Restaurante Eliiy Zita Pedro | Pé na Areia na Praia do Ubatumirim, Ubatuba/SP",
   description:
-    "Pousada pé na areia na enseada de mar calmo da Praia do Ubatumirim, Ubatuba/SP. 5 chalés com cozinha privativa (3 a 15 pessoas), 3 suítes, piscina, capela e restaurante próprio.",
+    "Pousada pé na areia na enseada de mar calmo da Praia do Ubatumirim, Ubatuba/SP. 5 acomodações com cozinha privativa (3 a 15 pessoas), 3 suítes, piscina, capela e restaurante próprio.",
   icons: {
     icon: "/brand/favicon-32x32.webp",
     apple: "/brand/favicon-192x192.webp",
@@ -37,10 +37,9 @@ export const metadata: Metadata = {
   keywords: [
     "pousada ubatumirim",
     "pousada eliiy zita pedro",
-    "pousada zita pedro",
     "pousada pe na areia ubatuba",
-    "chale com cozinha ubatumirim",
-    "chale para 15 pessoas ubatuba",
+    "acomodacao com cozinha ubatumirim",
+    "hospedagem para 15 pessoas ubatuba",
     "praia do ubatumirim",
     "pousada com capela ubatuba",
     "pousada mar calmo criancas ubatuba",
@@ -50,7 +49,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Pousada e Restaurante Eliiy Zita Pedro | Pé na Areia em Ubatumirim",
     description:
-      "Enseada de mar calmo em Ubatuba/SP. Chalés com cozinha para até 15 pessoas, suítes, piscina e restaurante na areia. Reserva direta com Dona Zita pelo WhatsApp.",
+      "Enseada de mar calmo em Ubatuba/SP. Acomodações com cozinha para até 15 pessoas, suítes, piscina e restaurante na areia. Reserva direta com a Eliiy pelo WhatsApp.",
     url: siteUrl,
     siteName: "Pousada e Restaurante Eliiy Zita Pedro",
     images: [
@@ -76,7 +75,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Pousada e Restaurante Eliiy Zita Pedro | Pé na Areia em Ubatumirim",
     description:
-      "Enseada de mar calmo em Ubatuba/SP. Chalés com cozinha para até 15 pessoas, suítes, piscina e restaurante na areia.",
+      "Enseada de mar calmo em Ubatuba/SP. Acomodações com cozinha para até 15 pessoas, suítes, piscina e restaurante na areia.",
     images: ["/media/og-whatsapp.jpg"],
   },
   robots: {
@@ -103,9 +102,8 @@ export default function RootLayout({
     "@context": "https://schema.org",
     "@type": ["LodgingBusiness", "Restaurant"],
     name: "Pousada e Restaurante Eliiy Zita Pedro",
-    alternateName: "Pousada Zita Pedro",
     description:
-      "Pousada pé na areia e restaurante caiçara na Praia do Ubatumirim, Ubatuba/SP. Chalés com cozinha privativa para 3 a 15 pessoas, suítes para 2 a 4 pessoas, piscina e estacionamento privativo.",
+      "Pousada pé na areia e restaurante caiçara na Praia do Ubatumirim, Ubatuba/SP. Acomodações com cozinha privativa para 3 a 15 pessoas, suítes para 2 a 4 pessoas, piscina e estacionamento privativo.",
     url: "https://pousadaeliiyzitapedro.com.br",
     telephone: "+55-12-99232-3656",
     address: {
@@ -128,7 +126,7 @@ export default function RootLayout({
     },
     amenityFeature: [
       { "@type": "LocationFeatureSpecification", name: "Pé na areia na Praia do Ubatumirim", value: true },
-      { "@type": "LocationFeatureSpecification", name: "5 Chalés com cozinha privativa (3 a 15 pessoas)", value: true },
+      { "@type": "LocationFeatureSpecification", name: "5 Acomodações com cozinha privativa (3 a 15 pessoas)", value: true },
       { "@type": "LocationFeatureSpecification", name: "3 Suítes para 2 a 4 pessoas", value: true },
       { "@type": "LocationFeatureSpecification", name: "Piscina ao ar livre com cascata", value: true },
       { "@type": "LocationFeatureSpecification", name: "Restaurante e quiosque próprio na areia", value: true },

@@ -336,7 +336,7 @@ export default function EditorialHomeClient() {
             {/* Frase Monumental da Pousada em Harmonia Óptica com o Ícone */}
             <div className="overflow-hidden animate-preloader-word whitespace-nowrap pl-3 sm:pl-5">
               <p className="text-xl sm:text-2xl lg:text-3xl font-bold tracking-[0.16em] uppercase text-[#0a301a] leading-none">
-                ELIIY ZITA
+                ELIIY ZITA PEDRO
               </p>
               <p className="mt-1 sm:mt-1.5 text-[9px] sm:text-[11px] lg:text-xs tracking-[0.24em] uppercase text-[#4a5c50] font-mono">
                 POUSADA & RESTAURANTE · UBATUMIRIM
@@ -413,7 +413,7 @@ export default function EditorialHomeClient() {
                 />
                 <div className="leading-tight">
                   <span className="block text-sm sm:text-base font-bold tracking-tight text-white">
-                    ELIIY ZITA
+                    ELIIY ZITA PEDRO
                   </span>
                   <span className="block text-[10px] text-white/80 tracking-[0.2em] uppercase">
                     POUSADA & RESTAURANTE
@@ -504,10 +504,10 @@ export default function EditorialHomeClient() {
                 A Capela & Celebrações
               </a>
               <a href="#diferenciais" onClick={() => setMobileMenuOpen(false)} className="hover:text-[#f29b2f] transition-colors">
-                Diferenciais Dona Zita
+                Diferenciais da Pousada
               </a>
               <a href="#quem-somos" onClick={() => setMobileMenuOpen(false)} className="hover:text-[#f29b2f] transition-colors">
-                Quem somos · Família Zita Pedro
+                Quem somos · Eliiy & Pedro
               </a>
               <a href="#visita" onClick={() => setMobileMenuOpen(false)} className="hover:text-[#f29b2f] transition-colors">
                 Horários, Localização & FAQ
@@ -658,11 +658,11 @@ export default function EditorialHomeClient() {
                 </span>
                 <span className="text-[#157d40]/40 font-bold">✦</span>
                 <span className="flex items-center gap-2">
-                  <span>CHALÉS COM COZINHA PRIVATIVA</span>
+                  <span>ACOMODAÇÕES COM COZINHA PRIVATIVA</span>
                 </span>
                 <span className="text-[#157d40]/40 font-bold">✦</span>
                 <span className="flex items-center gap-2">
-                  <span>HOSPITALIDADE DONA ZITA</span>
+                  <span>HOSPITALIDADE ELIIY & PEDRO</span>
                 </span>
               </div>
             ))}
@@ -723,7 +723,7 @@ export default function EditorialHomeClient() {
               </h2>
 
               <p className="mt-6 text-sm sm:text-base text-[#4a5c50] leading-relaxed max-w-xl">
-                Fundada pela família Zita Pedro na orla mais mansa do litoral norte, onde a areia firme encontra a sombra natural das árvores e o mar sem correntezas abraça todas as gerações.
+                Totalmente reformada e modernizada por Eliiy e Pedro — mantendo no nome a homenagem afetiva ao legado de Dona Zita — na orla mais mansa do litoral norte, onde a areia firme encontra a sombra natural das árvores e o mar sem correntezas abraça todas as gerações.
               </p>
 
               <div className="mt-8 flex items-center gap-4">
@@ -732,7 +732,7 @@ export default function EditorialHomeClient() {
                   onClick={() => openReserva()}
                   className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-[#0a301a] hover:bg-[#157d40] text-[#f8faf8] text-xs font-semibold tracking-wide transition-colors"
                 >
-                  <span>Conhecer os chalés</span>
+                  <span>Conhecer as acomodações</span>
                   <span>↓</span>
                 </button>
                 <a
@@ -749,7 +749,7 @@ export default function EditorialHomeClient() {
               <div className="relative rounded-[28px] overflow-hidden aspect-[4/5] bg-[#082112] shadow-xl border border-[#e2eae3] group">
                 <img
                   src={editorialMedia.heroCrepusculo.src}
-                  alt="Vista da praia do Ubatumirim e chalés da Pousada Eliiy Zita"
+                  alt="Vista da praia do Ubatumirim e acomodações da Pousada e Restaurante Eliiy Zita Pedro"
                   width={800}
                   height={1000}
                   loading="lazy"
@@ -787,7 +787,7 @@ export default function EditorialHomeClient() {
                 {statsAnimated ? "08" : "00"}
               </span>
               <span className="mt-2 text-xs sm:text-sm font-semibold uppercase tracking-[0.18em] text-[#0a301a]">
-                Chalés independentes
+                Acomodações independentes
               </span>
               <span className="mt-1 text-xs text-[#4a5c50] leading-snug">
                 Privacidade para casais, famílias e grandes grupos.
@@ -813,7 +813,7 @@ export default function EditorialHomeClient() {
                 3<span className="text-2xl sm:text-3xl text-[#4a5c50]"> a </span>15
               </span>
               <span className="mt-2 text-xs sm:text-sm font-semibold uppercase tracking-[0.18em] text-[#0a301a]">
-                Pessoas por chalé
+                Pessoas por acomodação
               </span>
               <span className="mt-1 text-xs text-[#4a5c50] leading-snug">
                 Cozinha equipada, churrasqueira e varanda arejada.
@@ -1079,7 +1079,7 @@ export default function EditorialHomeClient() {
                 {[
                   { label: "Todas (08 opções)", targetIdx: 0 },
                   { label: "Grandes Grupos (10 a 15p)", targetIdx: 0 },
-                  { label: "Chalés Família (4 a 5p)", targetIdx: 2 },
+                  { label: "Acomodações Família (4 a 5p)", targetIdx: 2 },
                   { label: "Suítes Pé na Areia (2 a 4p)", targetIdx: 5 },
                 ].map((filtro, i) => (
                   <button
@@ -1755,7 +1755,7 @@ export default function EditorialHomeClient() {
                   <div className="w-12 h-12 rounded-[14px] overflow-hidden bg-black/40 shrink-0">
                     <img
                       src={editorialMedia.hero1.src}
-                      alt="Dona Zita"
+                      alt="Pousada e Restaurante Eliiy Zita Pedro"
                       width={96}
                       height={96}
                       className="w-full h-full object-cover"
@@ -1814,7 +1814,7 @@ export default function EditorialHomeClient() {
                   <div className="relative rounded-[24px] overflow-hidden aspect-[3/4] bg-[#0a301a] border border-white/15 shadow-xl group">
                     <img
                       src="/media/editorial/card-restaurante-sabores.webp"
-                      alt="Restaurante Pé na Areia da Pousada Eliiy Zita"
+                      alt="Restaurante Pé na Areia da Pousada e Restaurante Eliiy Zita Pedro"
                       width={600}
                       height={800}
                       loading="lazy"
@@ -1870,7 +1870,7 @@ export default function EditorialHomeClient() {
                   <div className="relative rounded-[24px] overflow-hidden aspect-[3/4] bg-[#0a301a] border border-white/15 shadow-xl group">
                     <img
                       src="/media/editorial/card-piscina-cascata.webp"
-                      alt="Piscina ao ar livre da Pousada Eliiy Zita"
+                      alt="Piscina ao ar livre da Pousada e Restaurante Eliiy Zita Pedro"
                       width={600}
                       height={800}
                       loading="lazy"
@@ -1898,7 +1898,7 @@ export default function EditorialHomeClient() {
                   <div className="relative rounded-[24px] overflow-hidden aspect-[3/4] bg-[#0a301a] border border-white/15 shadow-xl group">
                     <img
                       src={editorialMedia.hero2.src}
-                      alt="Capela tradicional da família Zita Pedro"
+                      alt="Capela à beira-mar da Pousada e Restaurante Eliiy Zita Pedro"
                       width={600}
                       height={800}
                       loading="lazy"
@@ -2070,7 +2070,7 @@ export default function EditorialHomeClient() {
 
               <div className="lg:col-span-7 flex flex-col justify-between">
                 <p className="text-xs sm:text-sm text-[#4a5c50] leading-relaxed">
-                  Depoimentos reais deixados por hóspedes que vivenciaram a calmaria da Praia do Ubatumirim e o atendimento carinhoso da Dona Zita e sua equipe.
+                  Depoimentos reais deixados por hóspedes que vivenciaram a calmaria da Praia do Ubatumirim e o atendimento acolhedor da Eliiy, do Pedro e de toda a equipe.
                 </p>
 
                 {/* Navigation Arrows (Print 5 style: circular buttons) */}
@@ -2100,7 +2100,7 @@ export default function EditorialHomeClient() {
               {activeReviewIdx === 0 && (
                 <div className="animate-scene-text flex flex-col justify-between min-h-[170px]">
                   <p className="text-base sm:text-xl font-normal leading-relaxed text-[#0a301a]">
-                    “Ambiente maravilhoso, pé na areia mesmo! Atendimento super familiar da Zita e de toda a equipe. As crianças amaram o mar calmo e a liberdade de brincar descalças. Com certeza voltaremos em família!”
+                    “Ambiente maravilhoso, pé na areia mesmo! Atendimento super familiar da Eliiy, do Pedro e de toda a equipe. As crianças amaram o mar calmo e a liberdade de brincar descalças. Com certeza voltaremos em família!”
                   </p>
                   <div className="mt-6 pt-4 border-t border-[#e2eae3] flex items-center justify-between">
                     <div className="flex items-center gap-3">
@@ -2140,7 +2140,7 @@ export default function EditorialHomeClient() {
               {activeReviewIdx === 2 && (
                 <div className="animate-scene-text flex flex-col justify-between min-h-[170px]">
                   <p className="text-base sm:text-xl font-normal leading-relaxed text-[#0a301a]">
-                    “Ficamos no chalé grande com 10 pessoas e foi impecável. Cozinha equipada, varanda com brisa constante e segurança total para estacionar o carro e só curtir a praia a pé.”
+                    “Ficamos na acomodação grande com 10 pessoas e foi impecável. Cozinha equipada, varanda com brisa constante e segurança total para estacionar o carro e só curtir a praia a pé.”
                   </p>
                   <div className="mt-6 pt-4 border-t border-[#e2eae3] flex items-center justify-between">
                     <div className="flex items-center gap-3">
@@ -2183,7 +2183,7 @@ export default function EditorialHomeClient() {
 
                 <div className="mt-8">
                   <a
-                    href="https://wa.me/5512992323656?text=Ol%C3%A1%20Dona%20Zita!%20Vim%20pelo%20site%20e%20gostaria%20de%20tirar%20uma%20d%C3%BAvida%20sobre%20as%20acomoda%C3%A7%C3%B5es."
+                    href="https://wa.me/5512992323656?text=Ol%C3%A1%2C%20Eliiy!%20Vim%20pelo%20site%20e%20gostaria%20de%20tirar%20uma%20d%C3%BAvida%20sobre%20as%20acomoda%C3%A7%C3%B5es."
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center justify-between gap-6 rounded-full bg-[#0a301a] text-[#f8faf8] pl-6 pr-2 py-2 text-xs sm:text-sm font-semibold hover:bg-[#157d40] transition-colors"

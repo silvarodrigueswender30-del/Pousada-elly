@@ -2,7 +2,7 @@ import { MessageCircle, MapPin, Phone } from "lucide-react";
 
 export function Footer() {
   const whatsappUrl =
-    "https://wa.me/5512992323656?text=Ol%C3%A1%21+Vim+pelo+site+da+Pousada+Eliiy+Zita+Pedro+e+gostaria+de+informa%C3%A7%C3%B5es.";
+    "https://wa.me/5512992323656?text=Ol%C3%A1%2C+Eliiy%21+Vim+pelo+site+da+Pousada+Eliiy+Zita+Pedro+e+gostaria+de+informa%C3%A7%C3%B5es.";
 
   return (
     <footer className="bg-[#051c0d] text-white pt-14 pb-10 px-4 sm:px-6 border-t border-white/10">
@@ -36,7 +36,7 @@ export function Footer() {
               </div>
             </div>
             <p className="text-xs text-neutral-300 leading-relaxed">
-              Hospitalidade familiar caiçara na beira da Praia do Ubatumirim, enseada de mar calmo no norte de Ubatuba/SP. 5 chalés com cozinha privativa e 3 suítes.
+              Hospitalidade familiar caiçara na beira da Praia do Ubatumirim, enseada de mar calmo no norte de Ubatuba/SP. 5 acomodações com cozinha privativa e 3 suítes.
             </p>
           </div>
 
@@ -53,7 +53,7 @@ export function Footer() {
               </li>
               <li>
                 <a href="/#acomodacoes" className="hover:text-white transition-colors">
-                  02 · Acomodações (5 Chalés e 3 Suítes)
+                  02 · Acomodações (5 Unidades c/ Cozinha e 3 Suítes)
                 </a>
               </li>
               <li>
@@ -102,7 +102,7 @@ export function Footer() {
                   <br />
                   Praia do Ubatumirim
                   <br />
-                  Ubatuba - SP (Fonte: Google Maps)
+                  Ubatuba - SP
                 </span>
               </div>
               <div className="flex items-center gap-2">
@@ -136,7 +136,7 @@ export function Footer() {
                 className="inline-flex items-center gap-2 text-xs text-neutral-300 hover:text-white transition-colors"
               >
                 <MessageCircle className="w-4 h-4 text-[#157d40]" />
-                <span>WhatsApp Direto com Dona Zita</span>
+                <span>WhatsApp Direto com a Eliiy</span>
               </a>
             </div>
           </div>

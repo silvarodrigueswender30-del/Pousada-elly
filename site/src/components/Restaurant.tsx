@@ -1,25 +1,25 @@
 export function Restaurant() {
   const whatsappUrl =
-    "https://wa.me/5512992323656?text=Ol%C3%A1%20Dona%20Zita!%20Gostaria%20de%20saber%20mais%20sobre%20o%20Restaurante%20e%20Quiosque%20da%20Pousada%20Eliiy%20Zita%20Pedro.";
+    "https://wa.me/5512992323656?text=Ol%C3%A1%2C%20Eliiy!%20Gostaria%20de%20saber%20mais%20sobre%20o%20Restaurante%20e%20Quiosque%20da%20Pousada%20Eliiy%20Zita%20Pedro.";
 
   const destaques = [
     {
       num: "I",
       title: "Restaurante e Quiosque na Areia da Praia",
-      desc: "Confirmado por Dona Zita no áudio oficial e registrado nas imagens da fachada: mesas sombreadas diretamente na areia da Praia do Ubatumirim para hóspedes e visitantes.",
-      fonte: "Fonte: Áudio Dona Zita + Vídeo real v02.mp4",
+      desc: "Confirmado pela pousada no áudio oficial e registrado nas imagens da fachada: mesas sombreadas diretamente na areia da Praia do Ubatumirim para hóspedes e visitantes.",
+      fonte: "Áudio oficial da pousada + Vídeo real v02.mp4",
     },
     {
       num: "II",
       title: "Refeições e Porções à Beira-Mar",
       desc: "Atendimento de praia e salão próprio em frente à pousada, sem precisar sair da propriedade ou tirar o carro do estacionamento.",
-      fonte: "Fonte: Perfil Google Meu Negócio + Vídeo v02.mp4",
+      fonte: "Perfil Google Meu Negócio + Vídeo v02.mp4",
     },
     {
       num: "III",
-      title: "Apoio às Suítes ou Autonomia de Cozinha nos Chalés",
-      desc: "Quem fica nas 3 suítes conta com o apoio do restaurante da pousada (consulte condições de café da manhã e refeições na sua cotação); quem fica nos 5 chalés possui cozinha privativa equipada.",
-      fonte: "Fonte: Áudio oficial Dona Zita",
+      title: "Apoio às Suítes ou Autonomia de Cozinha nas Acomodações",
+      desc: "Quem fica nas 3 suítes conta com o apoio do restaurante da pousada (consulte condições de café da manhã e refeições na sua cotação); quem fica nas 5 acomodações possui cozinha privativa equipada.",
+      fonte: "Áudio oficial da pousada",
     },
   ];
 
@@ -40,7 +40,7 @@ export function Restaurant() {
             </h2>
           </div>
           <p className="lg:col-span-5 text-sm sm:text-base text-emerald-100/90 leading-relaxed">
-            Como conta Dona Zita, a pousada integra hospedagem e restaurante na mesma estrutura pé na areia: você desce do quarto direto para almoçar ou petiscar olhando o mar calmo da enseada.
+            Como conta a pousada, a pousada integra hospedagem e restaurante na mesma estrutura pé na areia: você desce do quarto direto para almoçar ou petiscar olhando o mar calmo da enseada.
           </p>
         </div>
 

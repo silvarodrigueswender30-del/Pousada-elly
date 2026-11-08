@@ -7,7 +7,7 @@ const GOOGLE_MAPS_DIRECTIONS_URL =
 const WAZE_URL =
   "https://waze.com/ul?ll=-23.3486585,-44.928734&navigate=yes";
 const WHATSAPP_TRAJETO_URL =
-  "https://wa.me/5512992323656?text=Ol%C3%A1%20Dona%20Zita!%20Estou%20no%20site%20da%20Pousada%20Eliiy%20Zita%20Pedro%20e%20gostaria%20de%20orienta%C3%A7%C3%B5es%20sobre%20o%20trajeto%20at%C3%A9%20a%20Praia%20do%20Ubatumirim.";
+  "https://wa.me/5512992323656?text=Ol%C3%A1%2C%20Eliiy!%20Estou%20no%20site%20da%20Pousada%20Eliiy%20Zita%20Pedro%20e%20gostaria%20de%20orienta%C3%A7%C3%B5es%20sobre%20o%20trajeto%20at%C3%A9%20a%20Praia%20do%20Ubatumirim.";
 
 export function EditorialLocationMap() {
   const [zoomScale, setZoomScale] = useState(1);
@@ -107,7 +107,7 @@ export function EditorialLocationMap() {
             </div>
           </div>
           <span className="px-2.5 py-0.5 rounded-full bg-[#0a301a] text-white text-[9px] font-mono tracking-wider uppercase mt-1.5 shadow-md">
-            Pousada Eliiy Zita
+            Pousada Eliiy Zita Pedro
           </span>
         </a>
 

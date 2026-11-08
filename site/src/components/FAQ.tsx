@@ -3,34 +3,34 @@ import { ChevronDown } from "lucide-react";
 export function FAQ() {
   const faqs = [
     {
-      q: "Quantas acomodações a pousada possui e qual a diferença entre chalé e suíte?",
-      a: "Conforme áudio oficial da proprietária Dona Zita, a pousada conta com 5 chalés (equipados com cozinha privativa para até 15, 10, 5, 4 e 3 pessoas) e 3 suítes (para 4, 3 e 2 pessoas, que não possuem cozinha e contam com apoio direto do restaurante da pousada).",
-      fonte: "Fonte confirmada: Áudio oficial Dona Zita + Vídeos v00 a v20",
+      q: "Quantas acomodações a pousada possui e qual a diferença entre acomodação com cozinha e suíte?",
+      a: "Conforme áudio oficial da pousada, a pousada conta com 5 acomodações (equipados com cozinha privativa para até 15, 10, 5, 4 e 3 pessoas) e 3 suítes (para 4, 3 e 2 pessoas, que não possuem cozinha e contam com apoio direto do restaurante da pousada).",
+      fonte: "Verificado: Áudio oficial da pousada + Vídeos v00 a v20",
     },
     {
-      q: "Todos os chalés possuem churrasqueira privativa?",
-      a: "No áudio oficial, Dona Zita confirma que há 'chalé com churrasqueira' e o vídeo v02 mostra a área de churrasqueira na pousada. Como o áudio não especifica se cada um dos 5 chalés possui churrasqueira individual ou se o uso é compartilhado/específico de algumas unidades, recomendamos confirmar a disponibilidade para o seu chalé no ato da reserva via WhatsApp.",
-      fonte: "Status: Churrasqueira existente no local (áudio + vídeo v02); individualidade por chalé sob consulta prévia",
+      q: "Todas as acomodações possuem churrasqueira privativa?",
+      a: "No áudio oficial, a pousada confirma que há 'acomodação com churrasqueira' e o vídeo v02 mostra a área de churrasqueira na pousada. Como o áudio não especifica se cada um das 5 acomodações possui churrasqueira individual ou se o uso é compartilhado/específico de algumas unidades, recomendamos confirmar a disponibilidade para o seu acomodação no ato da reserva via WhatsApp.",
+      fonte: "Status: Churrasqueira existente no local (áudio + vídeo v02); individualidade por acomodação sob consulta prévia",
     },
     {
       q: "Quais são os horários de check-in, check-out e silêncio?",
-      a: "O check-in ocorre das 12:00 às 22:00 e o check-out até as 11:00 (registrados nas políticas da propriedade). Regras específicas de horário de silêncio noturno e política de pets devem ser confirmadas diretamente com a Dona Zita pelo WhatsApp antes da estadia.",
+      a: "O check-in ocorre das 12:00 às 22:00 e o check-out até as 11:00 (registrados nas políticas da propriedade). Regras específicas de horário de silêncio noturno e política de pets devem ser confirmadas diretamente com a Eliiy pelo WhatsApp antes da estadia.",
       fonte: "Status: Check-in/out confirmados; horário exato de silêncio sob consulta prévia",
     },
     {
       q: "Como funciona a reserva direta pelo WhatsApp?",
-      a: "Você escolhe a acomodação ideal para o tamanho da sua família, clica no botão de cotação e conversa diretamente com a Dona Zita no número oficial (12) 99232-3656, sem taxas de plataformas intermediárias.",
-      fonte: "Fonte confirmada: Canal oficial de atendimento da Pousada Eliiy Zita Pedro",
+      a: "Você escolhe a acomodação ideal para o tamanho da sua família, clica no botão de cotação e conversa diretamente com a Eliiy no número oficial (12) 99232-3656, sem taxas de plataformas intermediárias.",
+      fonte: "Verificado: Canal oficial de atendimento da Pousada Eliiy Zita Pedro",
     },
     {
       q: "O restaurante e o quiosque de praia funcionam no próprio local?",
-      a: "Sim. O vídeo institucional (v02.mp4) e o áudio da Dona Zita confirmam que a pousada possui restaurante próprio amplo e quiosques com mesas e guarda-sóis diretamente na areia da Praia do Ubatumirim.",
-      fonte: "Fonte confirmada: Áudio oficial Dona Zita + Vídeo v02.mp4",
+      a: "Sim. O vídeo institucional (v02.mp4) e o áudio oficial da pousada confirmam que a pousada possui restaurante próprio amplo e quiosques com mesas e guarda-sóis diretamente na areia da Praia do Ubatumirim.",
+      fonte: "Verificado: Áudio oficial da pousada + Vídeo v02.mp4",
     },
     {
       q: "Como é o acesso até a Praia do Ubatumirim?",
       a: "O acesso parte da Rodovia Rio-Santos (BR-101, km 34, região norte de Ubatuba) seguindo pela Rua Maria José de Jesus até o nº 3006, na beira da Praia do Ubatumirim.",
-      fonte: "Fonte confirmada: Google Maps oficial (-23.3486585, -44.928734)",
+      fonte: "Verificado: Google Maps oficial (-23.3486585, -44.928734)",
     },
   ];
 
@@ -46,7 +46,7 @@ export function FAQ() {
             Dúvidas comuns respondidas com base em fatos verificados.
           </h2>
           <p className="text-sm sm:text-base text-[#3b4d41] leading-relaxed max-w-2xl">
-            Indicamos claramente a fonte de cada informação e destacamos o que deve ser alinhado diretamente com a Dona Zita no WhatsApp.
+            Indicamos claramente a fonte de cada informação e destacamos o que deve ser alinhado diretamente com a Eliiy no WhatsApp.
           </p>
         </div>
 

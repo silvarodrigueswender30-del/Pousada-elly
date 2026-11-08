@@ -60,7 +60,7 @@ export const editorialMedia: Record<string, EditorialMediaSlot> = {
     avif: "/media/editorial/footer-crepusculo.avif",
     mobileSrc: "/media/editorial/footer-crepusculo-mobile.webp",
     mobileAvif: "/media/editorial/footer-crepusculo-mobile.avif",
-    alt: "Vista crepuscular do terraço da Pousada Eliiy Zita Pedro com luzes acolhedoras nos chalés e mar dourado da Praia do Ubatumirim",
+    alt: "Vista crepuscular do terraço da Pousada Eliiy Zita Pedro com luzes acolhedoras nas acomodações e mar dourado da Praia do Ubatumirim",
     isTemporaryPlaceholder: false,
     arquivoEsperadoParaTroca: "footer.jpg (APLICADO)",
     secaoOndeAparece: "Seção 8C (Base Fotográfica do Rodapé sob a Mega-Wordmark)",
@@ -147,28 +147,28 @@ export const editorialMedia: Record<string, EditorialMediaSlot> = {
     id: "cat01ChalesMaster",
     src: "/media/editorial/placeholder-cat-01-chales-master.webp",
     avif: "/media/editorial/placeholder-cat-01-chales-master.avif",
-    alt: "Vista da varanda superior do Chalé Master para até 15 pessoas com o pátio e o mar de Ubatumirim ao fundo",
+    alt: "Vista da varanda superior da Acomodação Master para até 15 pessoas com o pátio e o mar de Ubatumirim ao fundo",
     isTemporaryPlaceholder: true,
     arquivoEsperadoParaTroca: "public/media/editorial/placeholder-cat-01-chales-master.webp",
-    secaoOndeAparece: "Seção 4 (Seletor Interativo — Aba 01: Chalés para Grandes Grupos 10 a 15p)",
+    secaoOndeAparece: "Seção 4 (Seletor Interativo — Aba 01: Acomodações para Grandes Grupos 10 a 15p)",
   },
   cat02ChalesFamilia: {
     id: "cat02ChalesFamilia",
     src: "/media/editorial/placeholder-cat-02-chales-familia.webp",
     avif: "/media/editorial/placeholder-cat-02-chales-familia.avif",
-    alt: "Vista panorâmica da varanda do Chalé Familiar para a enseada de Ubatumirim",
+    alt: "Vista panorâmica da varanda da Acomodação Familiar para a enseada de Ubatumirim",
     isTemporaryPlaceholder: true,
     arquivoEsperadoParaTroca: "public/media/editorial/placeholder-cat-02-chales-familia.webp",
-    secaoOndeAparece: "Seção 4 (Seletor Interativo — Aba 02: Chalés Família com Cozinha 4 a 5p)",
+    secaoOndeAparece: "Seção 4 (Seletor Interativo — Aba 02: Acomodações Família com Cozinha 4 a 5p)",
   },
   cat03ChaleTriplo: {
     id: "cat03ChaleTriplo",
     src: "/media/editorial/placeholder-cat-03-chale-triplo.webp",
     avif: "/media/editorial/placeholder-cat-03-chale-triplo.avif",
-    alt: "Cozinha privativa equipada com mesa de madeira do Chalé Triplo para até 3 pessoas",
+    alt: "Cozinha privativa equipada com mesa de madeira da Acomodação Tripla para até 3 pessoas",
     isTemporaryPlaceholder: true,
     arquivoEsperadoParaTroca: "public/media/editorial/placeholder-cat-03-chale-triplo.webp",
-    secaoOndeAparece: "Seção 4 (Seletor Interativo — Aba 03: Chalé Triplo com Cozinha 3p)",
+    secaoOndeAparece: "Seção 4 (Seletor Interativo — Aba 03: Acomodação Tripla com Cozinha 3p)",
   },
   cat04Suites: {
     id: "cat04Suites",
@@ -221,7 +221,7 @@ export const heroSlides: HeroSlide[] = [
     headlinePrefix: "Nossa forma de receber une mar calmo e",
     italicWord: "natureza.",
     subtitle:
-      "Acorde com os pés na areia e o mar sereno sem ondas fortes. 5 chalés com cozinha privativa (3 a 15 pessoas), suítes com varanda, restaurante próprio e piscina.",
+      "Acorde com os pés na areia e o mar sereno sem ondas fortes. 5 acomodações com cozinha privativa (3 a 15 pessoas), suítes com varanda, restaurante próprio e piscina.",
     media: editorialMedia.hero1,
   },
   {
@@ -270,7 +270,7 @@ export const showcaseScenes: ShowcaseScene[] = [
     title: "Um pátio que se abre direto na",
     italicAccent: "areia",
     description:
-      "Sem atravessar rua ou pegar carro: você sai do seu chalé ou suíte, passa pela piscina com cascata e pela capela azul da propriedade e já pisa na areia da praia.",
+      "Sem atravessar rua ou pegar carro: você sai do seu acomodação ou suíte, passa pela piscina com cascata e pela capela azul da propriedade e já pisa na areia da praia.",
     tag: "Pé na areia real · Estacionamento interno gratuito",
     media: editorialMedia.patioShowcase,
   },
@@ -312,38 +312,38 @@ export const categoriasInterativas: CategoriaInterativa[] = [
   {
     id: "chales-grandes",
     numero: "01",
-    tituloBarra: "Chalés para Grandes Grupos",
+    tituloBarra: "Acomodações para Grandes Grupos",
     subtituloBarra: "Dois andares, cozinha privativa no térreo e até 15 hóspedes",
     capacidadeTag: "10 a 15 pessoas",
     headlineCard: "Casas completas de dois pavimentos dentro da pousada",
     descricaoCard:
-      "Projetados para grandes famílias que viajam juntas: cozinha equipada no térreo (geladeira duplex, fogão, pia), escada interna e amplo andar superior em madeira com varanda.",
+      "Projetadas para grandes famílias que viajam juntas: cozinha equipada no térreo (geladeira duplex, fogão, pia), escada interna e amplo andar superior em madeira com varanda.",
     destaques: [
       "Cozinha 100% privativa no térreo",
       "Dois pavimentos com camas de casal e beliches",
-      "Varanda superior com vista no Chalé Master",
+      "Varanda superior com vista na Acomodação Master",
     ],
     media: editorialMedia.cat01ChalesMaster,
     videoPreview: {
       mp4: "/media/v/chale-master-15p.mp4",
       poster: "/media/v/chale-master-15p.webp",
-      legenda: "Tour real pelo Chalé Master (até 15 pessoas)",
+      legenda: "Tour real pela Acomodação Master (até 15 pessoas)",
     },
     rotasIncluidas: [
-      { slug: "chale-master-15p", nomeCurto: "Chalé Master (15p)", capacidade: "Até 15 pessoas" },
-      { slug: "chale-grande-10p", nomeCurto: "Chalé Grande Família (10p)", capacidade: "Até 10 pessoas" },
+      { slug: "chale-master-15p", nomeCurto: "Acomodação Master (15p)", capacidade: "Até 15 pessoas" },
+      { slug: "chale-grande-10p", nomeCurto: "Acomodação Grande Família (10p)", capacidade: "Até 10 pessoas" },
     ],
     slugPrincipal: "chale-master-15p",
   },
   {
     id: "chales-familia",
     numero: "02",
-    tituloBarra: "Chalés Família com Cozinha",
+    tituloBarra: "Acomodações Família com Cozinha",
     subtituloBarra: "Ar-condicionado split, cozinha equipada e opções com vista mar",
     capacidadeTag: "4 a 5 pessoas",
     headlineCard: "Autonomia de cozinha própria com conforto de quarto climatizado",
     descricaoCard:
-      "Unidades familiares documentadas em vídeo por Dona Zita: escolha entre o Chalé Quinteto (com grande mesa de madeira e bancos) ou o Chalé Quádruplo (com cozinha na varanda envidraçada de frente para o mar).",
+      "Unidades familiares documentadas em vídeo pela pousada: escolha entre a Acomodação Quinteto (com grande mesa de madeira e bancos) ou a Acomodação Quádrupla (com cozinha na varanda envidraçada de frente para o mar).",
     destaques: [
       "Ar-condicionado split + ventilador confirmados em vídeo",
       "Geladeira, fogão de 4 bocas, pia e armário",
@@ -353,23 +353,23 @@ export const categoriasInterativas: CategoriaInterativa[] = [
     videoPreview: {
       mp4: "/media/v/chale-quadruplo-4p.mp4",
       poster: "/media/v/chale-quadruplo-4p.webp",
-      legenda: "Vista real da varanda envidraçada e cozinha do Chalé Quádruplo",
+      legenda: "Vista real da varanda envidraçada e cozinha da Acomodação Quádrupla",
     },
     rotasIncluidas: [
-      { slug: "chale-quinteto-5p", nomeCurto: "Chalé Quinteto (5p)", capacidade: "Até 5 pessoas" },
-      { slug: "chale-quadruplo-4p", nomeCurto: "Chalé Quádruplo Vista Mar (4p)", capacidade: "Até 4 pessoas" },
+      { slug: "chale-quinteto-5p", nomeCurto: "Acomodação Quinteto (5p)", capacidade: "Até 5 pessoas" },
+      { slug: "chale-quadruplo-4p", nomeCurto: "Acomodação Quádrupla Vista Mar (4p)", capacidade: "Até 4 pessoas" },
     ],
     slugPrincipal: "chale-quadruplo-4p",
   },
   {
     id: "chale-triplo",
     numero: "03",
-    tituloBarra: "Chalé Compacto com Cozinha",
+    tituloBarra: "Acomodação Compacta com Cozinha",
     subtituloBarra: "Liberdade para cozinhar em família pequena a poucos passos da areia",
     capacidadeTag: "Até 3 pessoas",
     headlineCard: "Praticidade e economia para casal com 1 filho ou trio",
     descricaoCard:
-      "Confirmado no áudio de Dona Zita para famílias de 3 pessoas que preferem preparar o próprio café e refeições leves na praia, com cozinha de entrada, mesa com cadeiras e quarto privativo.",
+      "Unidade ideal para famílias de 3 pessoas que preferem preparar o próprio café e refeições leves na praia, com cozinha de entrada, mesa com cadeiras e quarto privativo.",
     destaques: [
       "Cozinha privativa com geladeira, fogão e mesa",
       "Acesso rápido ao pátio, piscina e praia",
@@ -379,10 +379,10 @@ export const categoriasInterativas: CategoriaInterativa[] = [
     videoPreview: {
       mp4: "/media/v/chale-triplo-3p.mp4",
       poster: "/media/v/chale-triplo-3p.webp",
-      legenda: "Tour real pela cozinha e dormitório do Chalé Triplo",
+      legenda: "Tour real pela cozinha e dormitório da Acomodação Tripla",
     },
     rotasIncluidas: [
-      { slug: "chale-triplo-3p", nomeCurto: "Chalé Família Triplo (3p)", capacidade: "Até 3 pessoas" },
+      { slug: "chale-triplo-3p", nomeCurto: "Acomodação Família Tripla (3p)", capacidade: "Até 3 pessoas" },
     ],
     slugPrincipal: "chale-triplo-3p",
   },
@@ -428,7 +428,7 @@ export const bussolaDiferenciais = [
     pos: "top-right",
     titulo: "Duas formas de se hospedar",
     descricao:
-      "5 Chalés com cozinha privativa equipada (para 3, 4, 5, 10 ou 15 pessoas) ou 3 Suítes práticas (para 2, 3 ou 4 pessoas) para quem quer apenas descansar.",
+      "5 Acomodações com cozinha privativa equipada (para 3, 4, 5, 10 ou 15 pessoas) ou 3 Suítes práticas (para 2, 3 ou 4 pessoas) para quem quer apenas descansar.",
   },
   {
     num: "03",
@@ -440,7 +440,7 @@ export const bussolaDiferenciais = [
   {
     num: "04",
     pos: "bottom-right",
-    titulo: "Reserva direta com Dona Zita",
+    titulo: "Reserva direta com a Eliiy",
     descricao:
       "Sem taxas extras de plataformas intermediárias. Você conversa direto pelo WhatsApp, escolhe a unidade ideal para a sua família e recebe orientação real.",
   },
@@ -449,21 +449,21 @@ export const bussolaDiferenciais = [
 export const quemSomosAbas = [
   {
     id: "pousada",
-    label: "Dona Zita & A Pousada",
+    label: "Nossa História & A Pousada",
     eyebrow: "TRADIÇÃO FAMILIAR EM UBATUMIRIM",
     titulo: "Uma família anfitriã, uma forma autêntica de construir memórias reais.",
     paragrafoIntro:
-      "Na Praia do Ubatumirim, a Pousada e Restaurante Eliiy Zita Pedro nasceu para receber famílias e grupos que buscam a simplicidade acolhedora do Litoral Norte de Ubatuba aliada ao privilégio de estar com os pés na areia.",
-    cardNome: "Família Zita Pedro",
+      "Na Praia do Ubatumirim, a Pousada e Restaurante Eliiy Zita Pedro foi totalmente reformada e modernizada por Eliiy e Pedro — preservando no nome a homenagem em memória de Dona Zita — para oferecer estrutura independente de pousada e restaurante com os pés na areia.",
+    cardNome: "Eliiy & Pedro · Família Anfitriã",
     cardCargo: "ANFITRIÕES OFICIAIS · PRAIA DO UBATUMIRIM",
     cardBotaoLabel: "WhatsApp Oficial ↗",
     cardCitacao:
-      "\"Aqui cada família é recebida pessoalmente: mostramos nossos chalés e suítes exatamente como são, sem filtros e de frente para o mar calmo.\"",
+      "\"Aqui cada família é recebida pessoalmente: mostramos nossas acomodações e suítes exatamente como são, sem filtros e de frente para o mar calmo.\"",
     paragrafoCard:
-      "No áudio e nos vídeos gravados pela própria Dona Zita, você conhece desde o Chalé Master de dois andares em madeira para 15 pessoas até a piscina com cascata, a capela da propriedade e as varandas abertas para a brisa da enseada.",
+      "Nos vídeos reais gravados na propriedade, você conhece desde a Acomodação Master de dois andares em madeira para 15 pessoas até a piscina com cascata, a capela à beira-mar e as varandas abertas para a brisa da enseada.",
     metricas: [
       { valor: "4,3 ★", rotulo: "117 avaliações verificadas no Google Maps" },
-      { valor: "8 opções", rotulo: "5 chalés com cozinha (3–15p) e 3 suítes (2–4p)" },
+      { valor: "8 opções", rotulo: "5 acomodações com cozinha (3–15p) e 3 suítes (2–4p)" },
     ],
   },
   {
@@ -477,7 +477,7 @@ export const quemSomosAbas = [
     cardCargo: "COZINHA CAIÇARA & QUIOSQUE DE PRAIA",
     cardBotaoLabel: "Consultar estadia ↗",
     cardCitacao:
-      "\"Mesmo quem se hospeda nos chalés com cozinha privativa aproveita a comodidade de pedir porções de peixe, camarão e bebidas geladas na areia.\"",
+      "\"Mesmo quem se hospeda nas acomodações com cozinha privativa aproveita a comodidade de pedir porções de peixe, camarão e bebidas geladas na areia.\"",
     paragrafoCard:
       "O salão envidraçado e os quiosques de piaçava na areia atendem durante o dia todo, permitindo que crianças e adultos aproveitem a praia com suporte completo de cozinha e banheiro a poucos passos.",
     metricas: [
@@ -508,20 +508,20 @@ export const quemSomosAbas = [
 
 export const faqEditorial = [
   {
-    p: "Qual a diferença entre os Chalés e as Suítes da pousada?",
-    r: "Conforme explica Dona Zita no áudio oficial: os 5 Chalés possuem cozinha privativa equipada (fogão, geladeira e pia) e acomodam de 3 até 15 pessoas (3p, 4p, 5p, 10p e 15p). Já as 3 Suítes não possuem cozinha (dispõem de frigobar na Suíte Quádrupla) e acomodam casal (2p), 3 ou 4 pessoas.",
+    p: "Qual a diferença entre as Acomodações com Cozinha e as Suítes da pousada?",
+    r: "Conforme explica a pousada no áudio oficial: as 5 Acomodações possuem cozinha privativa equipada (fogão, geladeira e pia) e acomodam de 3 até 15 pessoas (3p, 4p, 5p, 10p e 15p). Já as 3 Suítes não possuem cozinha (dispõem de frigobar na Suíte Quádrupla) e acomodam casal (2p), 3 ou 4 pessoas.",
   },
   {
     p: "Como funcionam os horários de Check-in e Check-out?",
-    r: "O check-out é realizado até às 11:00 (confirmado no Google Maps e Booking). O horário de check-in praticado é das 12:00 às 22:00 — ao fechar sua reserva diretamente com Dona Zita no WhatsApp, informe seu horário previsto de chegada na Praia do Ubatumirim.",
+    r: "O check-out é realizado até às 11:00 (confirmado no Google Maps e Booking). O horário de check-in praticado é das 12:00 às 22:00 — ao fechar sua reserva diretamente com a Eliiy no WhatsApp, informe seu horário previsto de chegada na Praia do Ubatumirim.",
   },
   {
-    p: "Todos os chalés possuem churrasqueira e ar-condicionado?",
-    r: "Nos vídeos gravados por Dona Zita, o ar-condicionado split está confirmado nas filmagens da Suíte Quádrupla, Chalé Quádruplo, Chalé Quinteto e Chalé Triplo. Quanto à churrasqueira, Dona Zita informa que há chalé com churrasqueira — confirme no WhatsApp qual unidade específica está disponível para as suas datas.",
+    p: "Todas as acomodações possuem churrasqueira e ar-condicionado?",
+    r: "Nos vídeos gravados pela pousada, o ar-condicionado split está confirmado nas filmagens da Suíte Quádrupla, Acomodação Quádrupla, Acomodação Quinteto e Acomodação Tripla. Quanto à churrasqueira, a pousada informa que há acomodação com churrasqueira — confirme no WhatsApp qual unidade específica está disponível para as suas datas.",
   },
   {
     p: "Por que reservar diretamente pelo site/WhatsApp em vez de plataformas de terceiros?",
-    r: "Nos portais de reserva online aparecem apenas algumas categorias disponíveis por data e incidem comissões de intermediação. Pelo WhatsApp oficial você fala direto com a equipe da Dona Zita, consulta todos os chalés (inclusive os de 10 e 15 pessoas) e negocia o valor direto da pousada.",
+    r: "Nos portais de reserva online aparecem apenas algumas categorias disponíveis por data e incidem comissões de intermediação. Pelo WhatsApp oficial você fala direto com a equipe da Eliiy, consulta todas as acomodações (inclusive as de 10 e 15 pessoas) e negocia o valor direto da pousada.",
   },
   {
     p: "A pousada tem estacionamento e cobra taxa extra para usar a piscina?",

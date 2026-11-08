@@ -2,7 +2,7 @@ import { MessageCircle } from "lucide-react";
 
 export function FinalCTA() {
   const whatsappUrl =
-    "https://wa.me/5512992323656?text=Ol%C3%A1%2C+Dona+Zita%21+Vim+pelo+site+da+Pousada+Eliiy+Zita+Pedro+e+gostaria+de+consultar+disponibilidade+e+valores.";
+    "https://wa.me/5512992323656?text=Ol%C3%A1%2C+Eliiy%21+Vim+pelo+site+da+Pousada+Eliiy+Zita+Pedro+e+gostaria+de+consultar+disponibilidade+e+valores.";
 
   return (
     <section className="py-20 sm:py-24 px-4 sm:px-6 bg-[#0a301a] text-white border-t border-white/10">
@@ -12,7 +12,7 @@ export function FinalCTA() {
             Atendimento Direto · Sem Intermediários
           </p>
           <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold tracking-tight leading-[1.1] text-white">
-            Converse diretamente com a Dona Zita pelo WhatsApp.
+            Converse diretamente com a Eliiy pelo WhatsApp.
           </h2>
           <p className="text-sm sm:text-base text-emerald-100/90 max-w-2xl leading-relaxed">
             Informe as datas desejadas, o número de pessoas (de casais a grupos de até 15 pessoas) e receba a disponibilidade real direto da proprietária na Praia do Ubatumirim.

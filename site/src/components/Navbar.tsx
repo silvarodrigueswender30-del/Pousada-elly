@@ -3,7 +3,7 @@ import { MessageCircle, Menu } from "lucide-react";
 
 export function Navbar() {
   const whatsappUrl =
-    "https://wa.me/5512992323656?text=Ol%C3%A1%21+Vim+pelo+site+da+Pousada+Eliiy+Zita+Pedro+e+gostaria+de+consultar+valores+e+disponibilidade+para+uma+reserva.";
+    "https://wa.me/5512992323656?text=Ol%C3%A1%2C+Eliiy%21+Vim+pelo+site+da+Pousada+Eliiy+Zita+Pedro+e+gostaria+de+consultar+valores+e+disponibilidade+para+uma+reserva.";
 
   const navLinks = [
     { label: "Ubatumirim", href: "/#experiencia" },

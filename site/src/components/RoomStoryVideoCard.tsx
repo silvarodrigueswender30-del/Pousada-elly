@@ -183,7 +183,7 @@ export function RoomStoryVideoCard({ videos, roomName }: RoomStoryVideoCardProps
             <div className="flex items-center gap-2 bg-[#141614]/80 backdrop-blur-md px-3 py-1.5 rounded-full border border-white/10">
               <span className="w-2 h-2 rounded-full bg-[#f29b2f] animate-pulse" />
               <span className="text-[10px] font-mono uppercase tracking-wider text-white font-semibold">
-                Tour Real · Dona Zita
+                Tour Real · Pousada Eliiy Zita Pedro
               </span>
             </div>
 

@@ -73,7 +73,7 @@ export function EditorialFooter() {
               </li>
               <li>
                 <Link href="/#acomodacoes" className="hover:text-[#f29b2f] transition-colors">
-                  Chalés e Acomodações
+                  Acomodações e Suítes
                 </Link>
               </li>
               <li>
@@ -124,7 +124,7 @@ export function EditorialFooter() {
             aria-hidden="true"
             className="text-[15.5vw] leading-[0.80] font-bold tracking-tighter text-center uppercase bg-gradient-to-b from-[#f8faf8] via-[#f8faf8]/85 to-white/10 bg-clip-text text-transparent"
           >
-            ELIIY ZITA
+            ELIIY ZITA PEDRO
           </p>
         </div>
 

@@ -28,7 +28,7 @@ export default function TermosDeUsoPage() {
             </span>
             <div className="flex flex-col">
               <span className="text-sm font-bold tracking-wider uppercase">
-                ELIIY ZITA
+                ELIIY ZITA PEDRO
               </span>
               <span className="text-[10px] tracking-widest uppercase text-white/70">
                 Pousada & Restaurante
@@ -105,11 +105,11 @@ export default function TermosDeUsoPage() {
               </h2>
             </div>
             <p>
-              Ao realizar sua reserva diretamente pelos nossos canais oficiais (WhatsApp com Dona Zita e Família), você tem a garantia de:
+              Ao realizar sua reserva diretamente pelos nossos canais oficiais (WhatsApp com a Eliiy e Pedro), você tem a garantia de:
             </p>
             <ul className="space-y-2 mt-3 list-disc list-inside pl-2 text-sm">
               <li><strong>Tarifa mais vantajosa:</strong> Sem comissões de intermediários ou plataformas terceiras (OTAs);</li>
-              <li><strong>Escolha exata da unidade:</strong> Seleção precisa do chalé privativo com cozinha ou suíte de acordo com a quantidade de pessoas da sua família;</li>
+              <li><strong>Escolha exata da unidade:</strong> Seleção precisa da acomodação privativa com cozinha ou suíte de acordo com a quantidade de pessoas da sua família;</li>
               <li><strong>Confirmação formal:</strong> Envio de comprovante de reserva, roteiro detalhado de chegada via BR-101 e orientações locais da maré.</li>
             </ul>
           </section>
@@ -129,7 +129,7 @@ export default function TermosDeUsoPage() {
               Nossa estrutura familiar foi concebida para momentos de repouso e contato com a natureza. Por isso:
             </p>
             <ul className="space-y-2 mt-3 list-disc list-inside pl-2 text-sm">
-              <li><strong>Capacidade Máxima:</strong> Cada chalé e suíte possui limite estrito de ocupação registrado na reserva (ex: Chalé Master até 15 pessoas, Suíte até 4 pessoas). Não é permitida a entrada de hóspedes adicionais sem autorização prévia;</li>
+              <li><strong>Capacidade Máxima:</strong> Cada acomodação e suíte possui limite estrito de ocupação registrado na reserva (ex: Acomodação Master até 15 pessoas, Suíte até 4 pessoas). Não é permitida a entrada de hóspedes adicionais sem autorização prévia;</li>
               <li><strong>Lei do Silêncio:</strong> Entre 22:00h e 08:00h é exigido silêncio respeitoso para preservar a calmaria dos demais hóspedes e da vizinhança caiçara;</li>
               <li><strong>Área de Piscina e Quiosque:</strong> O uso da piscina e chuveiros externos é exclusivo para hóspedes e clientes do restaurante conforme sinalização de segurança.</li>
             </ul>

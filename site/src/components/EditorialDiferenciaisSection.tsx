@@ -114,7 +114,7 @@ export default function EditorialDiferenciaisSection({
               </h2>
 
               <p className="mt-4 sm:mt-5 text-sm sm:text-base text-[#4a5c50] leading-relaxed max-w-md">
-                Aqui você não é um número de reserva. É acolhido pela própria família da Dona Zita, com atendimento humano, mar calmo de enseada e chalés com estrutura privativa para cozinhar e descansar com os pés na areia.
+                Aqui você não é um número de reserva. É acolhido diretamente por Eliiy e Pedro, com atendimento familiar humano, mar calmo de enseada e acomodações com estrutura privativa para cozinhar e descansar com os pés na areia.
               </p>
 
               {/* Botão de Reserva Direta com Gradiente Caiçara */}
@@ -216,7 +216,7 @@ export default function EditorialDiferenciaisSection({
               >
                 <Image
                   src={editorialMedia.quemSomosVertical.src}
-                  alt="Dona Zita e a recepção familiar na Pousada Eliiy Zita"
+                  alt="Recepção familiar na Pousada e Restaurante Eliiy Zita Pedro"
                   fill
                   sizes="(max-width: 768px) 240px, 300px"
                   priority={false}
@@ -227,7 +227,7 @@ export default function EditorialDiferenciaisSection({
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0a301a]/70 via-transparent to-transparent pointer-events-none" />
                 <div className="absolute bottom-3 sm:bottom-5 inset-x-0 text-center px-2">
                   <span className="text-[10px] sm:text-xs font-mono uppercase tracking-[0.2em] text-[#f8faf8] font-semibold drop-shadow-md">
-                    Dona Zita & Família
+                    Eliiy & Pedro · Família Anfitriã
                   </span>
                   <span className="block text-[9px] text-[#f5efe6]/80 font-sans mt-0.5">
                     Anfitriões desde 2012

@@ -13,7 +13,7 @@ export function Hero() {
   });
 
   const whatsappUrl =
-    "https://wa.me/5512992323656?text=Ol%C3%A1%20Dona%20Zita!%20Vim%20pelo%20site%20da%20Pousada%20Eliiy%20Zita%20Pedro%20e%20gostaria%20de%20consultar%20disponibilidade%20e%20valores.";
+    "https://wa.me/5512992323656?text=Ol%C3%A1%2C%20Eliiy!%20Vim%20pelo%20site%20da%20Pousada%20Eliiy%20Zita%20Pedro%20e%20gostaria%20de%20consultar%20disponibilidade%20e%20valores.";
 
   return (
     <section
@@ -56,11 +56,11 @@ export function Hero() {
             </p>
 
             <h1 className="text-3xl sm:text-5xl lg:text-[54px] font-bold tracking-tight leading-[1.08] text-white">
-              Pé na areia em uma enseada de mar calmo, com chalés para toda a família.
+              Pé na areia em uma enseada de mar calmo, com acomodações para toda a família.
             </h1>
 
             <p className="text-sm sm:text-lg text-white/95 max-w-2xl leading-relaxed font-normal">
-              Na beira da Praia do Ubatumirim, a Pousada e Restaurante Eliiy Zita Pedro reúne 5 chalés com cozinha privativa (de 3 a 15 pessoas), 3 suítes, piscina ao ar livre, capela e restaurante próprio na areia.
+              Na beira da Praia do Ubatumirim, a Pousada e Restaurante Eliiy Zita Pedro reúne 5 acomodações com cozinha privativa (de 3 a 15 pessoas), 3 suítes, piscina ao ar livre, capela e restaurante próprio na areia.
             </p>
 
             <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 pt-2">
@@ -70,14 +70,14 @@ export function Hero() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2.5 bg-[#f29b2f] hover:bg-[#d98520] text-[#0a301a] font-bold text-sm sm:text-base px-7 py-3.5 rounded-xl shadow-md transition-colors"
               >
-                <span>Cotar Direto com Dona Zita no WhatsApp</span>
+                <span>Cotar Direto com a Eliiy no WhatsApp</span>
               </a>
 
               <a
                 href="#acomodacoes"
                 className="inline-flex items-center justify-center gap-2 bg-[#0a301a]/85 hover:bg-[#0a301a] text-white font-semibold text-sm sm:text-base px-6 py-3.5 rounded-xl border border-white/30 transition-colors"
               >
-                <span>Ver os 5 Chalés e 3 Suítes</span>
+                <span>Ver as 5 Unidades c/ Cozinha e 3 Suítes</span>
               </a>
             </div>
           </div>
@@ -97,7 +97,7 @@ export function Hero() {
             </div>
             <div className="flex items-baseline justify-between border-b border-white/15 pb-2.5">
               <span className="text-xs text-white/85">Hospedagem</span>
-              <span className="text-xs sm:text-sm font-semibold">5 Chalés (c/ cozinha) + 3 Suítes</span>
+              <span className="text-xs sm:text-sm font-semibold">5 Unidades (c/ cozinha) + 3 Suítes</span>
             </div>
             <div className="flex items-baseline justify-between">
               <span className="text-xs text-white/85">WhatsApp Oficial</span>

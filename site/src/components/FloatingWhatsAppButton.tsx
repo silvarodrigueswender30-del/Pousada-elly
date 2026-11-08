@@ -15,7 +15,7 @@ export function FloatingWhatsAppButton() {
   }, [dismissed]);
 
   const whatsappUrl =
-    "https://wa.me/5512992323656?text=Ol%C3%A1%20Dona%20Zita!%20Estou%20no%20site%20da%20pousada%20e%20gostaria%20de%20consultar%20a%20melhor%20tarifa%20de%20reserva%20direta.";
+    "https://wa.me/5512992323656?text=Ol%C3%A1%2C%20Eliiy!%20Estou%20no%20site%20da%20pousada%20e%20gostaria%20de%20consultar%20a%20melhor%20tarifa%20de%20reserva%20direta.";
 
   return (
     <div className="fixed bottom-6 right-5 sm:bottom-8 sm:right-8 z-40 flex flex-col items-end">
@@ -40,7 +40,7 @@ export function FloatingWhatsAppButton() {
                 Economize até 20% na Reserva Direta!
               </p>
               <p className="mt-1 text-[11px] text-[#4a5c50] leading-snug">
-                Fale direto com a Dona Zita pelo WhatsApp e garanta a menor tarifa sem as comissões do Booking.
+                Fale direto com a Eliiy pelo WhatsApp e garanta a menor tarifa sem as comissões do Booking.
               </p>
               <a
                 href={whatsappUrl}

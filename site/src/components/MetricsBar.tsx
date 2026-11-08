@@ -4,25 +4,25 @@ export function MetricsBar() {
       value: "0 m",
       title: "Pé na Areia na Praia do Ubatumirim",
       desc: "Saída direta para a faixa de areia, sem travessia de rua ou rodovia",
-      source: "Fonte: Fotos aéreas, vídeos e Booking",
+      source: "Fotos aéreas, vídeos e Booking",
     },
     {
       value: "4,3 ★",
       title: "117 Avaliações no Google Maps",
       desc: "Nota pública verificada na ficha oficial do estabelecimento",
-      source: "Fonte: Google Maps em 28/10/2026",
+      source: "Google Maps em 28/10/2026",
     },
     {
       value: "3 a 15",
-      title: "Pessoas nos Chalés com Cozinha",
-      desc: "5 configurações de chalés equipados com fogão, geladeira e pia",
-      source: "Fonte: Áudio oficial Dona Zita",
+      title: "Pessoas nas Acomodações com Cozinha",
+      desc: "5 configurações de acomodações equipadas com fogão, geladeira e pia",
+      source: "Áudio oficial da pousada",
     },
     {
       value: "2 a 4",
       title: "Pessoas nas Suítes Pé na Areia",
       desc: "3 configurações de suítes para casais e famílias pequenas",
-      source: "Fonte: Áudio oficial Dona Zita",
+      source: "Áudio oficial da pousada",
     },
   ];
 
