@@ -3,7 +3,7 @@ import { Plus_Jakarta_Sans, Instrument_Serif } from "next/font/google";
 import "./globals.css";
 import FloatingWhatsAppButton from "@/components/FloatingWhatsAppButton";
 import CookieConsentBanner from "@/components/CookieConsentBanner";
-
+import { SITE_URL } from "@/lib/site-config";
 
 const plusJakarta = Plus_Jakarta_Sans({
   subsets: ["latin"],
@@ -22,11 +22,11 @@ const instrumentSerif = Instrument_Serif({
   style: ["normal", "italic"],
 });
 
-const siteUrl =
-  process.env.NEXT_PUBLIC_SITE_URL || "https://site-phi-pied-11.vercel.app";
-
 export const metadata: Metadata = {
-  metadataBase: new URL(siteUrl),
+  metadataBase: new URL(SITE_URL),
+  alternates: {
+    canonical: "/",
+  },
   title: "Pousada e Restaurante Eliiy Zita Pedro | Pé na Areia na Praia do Ubatumirim, Ubatuba/SP",
   description:
     "Pousada pé na areia na enseada de mar calmo da Praia do Ubatumirim, Ubatuba/SP. 5 acomodações com cozinha privativa (3 a 15 pessoas), 3 suítes, piscina, capela e restaurante próprio.",
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
     title: "Pousada e Restaurante Eliiy Zita Pedro | Pé na Areia em Ubatumirim",
     description:
       "Enseada de mar calmo em Ubatuba/SP. Acomodações com cozinha para até 15 pessoas, suítes, piscina e restaurante na areia. Reserva direta com a Eliiy pelo WhatsApp.",
-    url: siteUrl,
+    url: SITE_URL,
     siteName: "Pousada e Restaurante Eliiy Zita Pedro",
     images: [
       {
@@ -104,7 +104,7 @@ export default function RootLayout({
     name: "Pousada e Restaurante Eliiy Zita Pedro",
     description:
       "Pousada pé na areia e restaurante caiçara na Praia do Ubatumirim, Ubatuba/SP. Acomodações com cozinha privativa para 3 a 15 pessoas, suítes para 2 a 4 pessoas, piscina e estacionamento privativo.",
-    url: "https://pousadaeliiyzitapedro.com.br",
+    url: SITE_URL,
     telephone: "+55-12-99232-3656",
     address: {
       "@type": "PostalAddress",

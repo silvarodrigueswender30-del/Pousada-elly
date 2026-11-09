@@ -5,6 +5,7 @@ import { acomodacoes } from "@/data/acomodacoes";
 import { RoomGalleryInteractive } from "@/components/RoomGalleryInteractive";
 import { RoomStoryVideoCard } from "@/components/RoomStoryVideoCard";
 import { EditorialFooter } from "@/components/EditorialFooter";
+import { SITE_URL } from "@/lib/site-config";
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -22,13 +23,18 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!item) return {};
 
   const imageUrl = item.fotos[0]?.url || "/media/og-whatsapp.jpg";
+  const canonicalPath = `/acomodacoes/${item.slug}`;
 
   return {
     title: `${item.nome} | Pousada Eliiy Zita Pedro`,
     description: item.descricaoCurta,
+    alternates: {
+      canonical: canonicalPath,
+    },
     openGraph: {
       title: `${item.nome} | Pousada Eliiy Zita Pedro`,
       description: item.descricaoCurta,
+      url: `${SITE_URL}${canonicalPath}`,
       images: [{ url: imageUrl }],
     },
     twitter: {

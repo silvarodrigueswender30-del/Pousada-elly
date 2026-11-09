@@ -1,9 +1,9 @@
 import { MetadataRoute } from "next";
 import { acomodacoes } from "@/data/acomodacoes";
+import { SITE_URL } from "@/lib/site-config";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl =
-    process.env.NEXT_PUBLIC_SITE_URL || "https://site-phi-pied-11.vercel.app";
+  const baseUrl = SITE_URL;
   const lastModified = new Date();
 
   // Rotas institucionais e principais

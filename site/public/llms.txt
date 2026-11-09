@@ -32,7 +32,7 @@ A pousada oferece duas modalidades de acomodação para atender casais, família
 - **Praia do Ubatumirim:** Enseada abrigada de mar raso, calmo e sem correnteza de tombo, ideal para crianças, banho de mar seguro, stand-up paddle e caminhadas na maré baixa até a Praia da Justa e Estaleiro.
 
 ## Links Oficiais
-- **Página Inicial:** https://site-phi-pied-11.vercel.app/
+- **Página Inicial:** https://pousadaelliiyzitapedro.com.br/
 - **Reserva Direta no WhatsApp:** https://wa.me/5512992323656
-- **Política de Privacidade (LGPD):** https://site-phi-pied-11.vercel.app/politica-de-privacidade
-- **Termos e Regras de Hospedagem:** https://site-phi-pied-11.vercel.app/termos-de-uso
+- **Política de Privacidade (LGPD):** https://pousadaelliiyzitapedro.com.br/politica-de-privacidade
+- **Termos e Regras de Hospedagem:** https://pousadaelliiyzitapedro.com.br/termos-de-uso
